@@ -1,0 +1,19 @@
+---
+description: >-
+  Our data commons helps new users of the aleph tools to easily get access to
+  some key open datasets that might be helpful in building an investigative
+  archive.
+---
+
+# Bulk data excerpts
+
+The data below is available in [Follow the Money](../developers/followthemoney.md) format, suitable for processing using [ftm](../developers/ftm.md) and [alephclient](../developers/alephclient.md) and direct import into Aleph.
+
+## OpenSanctions
+
+Sanctions lists, databases of politicians and criminal figures can be a good way to find leads within other data, using [cross-referencing](../guide/cross-referencing.md). That's why we operate a series of crawlers that generate up-to-date resources.
+
+{% page-ref page="sanctions.md" %}
+
+
+
