@@ -6,6 +6,11 @@ description: >-
 
 # Changelog
 
+### 3.8.1
+
+* "Expand node" support in network diagrams pulls relevant connections from the backend and shows them to the user while browsing a network diagram.
+* Correctly handle the use of multi-threading when using Google Cloud Storage Python client libraries.
+
 ### 3.8.0
 
 * We've re-worked the way entities are aggregated before they are being loaded into the search index. This was required because Aleph is become more interactive and needs to handle non-bulk operations better. It also improves metadata handling, like which user uploaded a document, or when an entity was last updated. Aleph will now always keep a full record of the entities in the SQL database, whichever way they are submitted. To this end, we've migrated from `balkhash` to `followthemoney-store` \(i.e. balkhash 2.0\). This will start to apply to existing collections when they are re-ingested or re-indexed.
