@@ -4,9 +4,13 @@ There are several ways for you to analyse and share your own data with Aleph. Ho
 
 ## Personal Datasets
 
-Personal datasets are contained workspaces within Aleph where you can upload, edit, and organize data related to an investigation or topic of interest.
+**Personal Datasets** are contained workspaces within Aleph where you can upload, edit, and organize data related to an investigation or topic of interest - and they can be shared with any other user or access group within Aleph.
 
+To create a Personal Dataset, click the "**Personal datasets"** button in the left sidebar on the homepage and then click the **"New dataset"** button. 
 
+![](../.gitbook/assets/screenshot-2019-12-02-at-16.14.51.png)
+
+While source datasets like company registries and other evidentiary collections cannot be edited, **Personal Datasets** allow you to upload documents, map data into structured entities, and create your own network diagrams. 
 
 ## Importing documents and files
 
@@ -16,9 +20,7 @@ The most common type of data to import into Aleph is files, such as PDFs, E-Mail
 If you want to upload a small number of documents, you can do so directly in the Aleph interface as described below. However, when you're dealing with a **large trove of documents** \(such as a leak\) use the command-line based [alephclient tool](../developers/alephclient.md) to submit documents in an automated fashion.
 {% endhint %}
 
-1. **Create a personal dataset** using the user interface.
-
-![](../.gitbook/assets/screenshot-2019-12-02-at-16.14.51.png)
+1. **Create a personal dataset** \(see above\).
 
 2. Then **upload your documents** using the upload function inside that dataset.  
 

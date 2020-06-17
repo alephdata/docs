@@ -7,9 +7,9 @@
 ## User documentation <a id="guide"></a>
 
 * [Getting started](guide/getting-started.md)
-* [Network Diagrams](guide/vis-desktop.md)
 * [Search guide](guide/search.md)
 * [Adding your own data](guide/loading-data.md)
+* [Network Diagrams](guide/vis-desktop.md)
 * [Cross-referencing](guide/cross-referencing.md)
 * [OpenRefine Reconciliation](guide/reconciliation.md)
 * [Frequently Asked Questions](guide/frequently-asked-questions.md)

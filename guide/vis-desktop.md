@@ -13,36 +13,21 @@ Network diagrams let you sketch out networks of people, companies and other enti
 
 ## Creating Diagrams in Aleph
 
-Network diagrams can be created in the Aleph interface by following the steps below.
-
-### Enabling your account
-
-1. Log in to Aleph using your usual account information
-2. Network diagrams are currently a test feature on Aleph, so you will need to first enable test features on your Aleph account:
-   * From the Home Screen, click on the Settings tab in the bottom left corner of the screen.
-   * Then click the box titled "Test new features before they are finished"
-   * Click "Update" to save your user settings
-   * You should now see the “Network diagrams” tab in the list on the left side of your screen. 
-
-![Enable your Aleph account to show test features](../.gitbook/assets/screen-shot-2020-03-16-at-14.14.00.png)
-
 ### Creating your first diagram
 
-Now that you've enabled diagrams for your account, you'll be able to create new diagrams within any Personal Dataset you have access to on Aleph. 
+Network diagrams can be created within any [Personal Dataset ](https://docs.alephdata.org/guide/loading-data#personal-datasets)you have access to on Aleph. To get started, click the "**Network diagrams**" button on any Personal Dataset page, and then the "**New diagram**" button.
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-14.29.26.png)
-
-Click the "Network diagrams" button on any Personal Dataset page, and then the "New diagram" button to get started.
 
 You will now be able to map people, companies, and the relationships between them, which will be saved within your Aleph account, and only be visible to you and whoever you choose to share the diagram with.
 
 ### Adding entities to your diagram
 
-To add people, companies, or other entities to your diagram, click the "Add entities" icon in the toolbar on the left side of the screen, or double click anywhere in the graphing area.
+To add people, companies, or other entities to your diagram, click the **"Add entities"** icon in the toolbar on the left side of the screen, or double click anywhere in the graphing area.
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-14.55.13.png)
 
-Once you have created multiple entities in your diagram, you can connect them by clicking the "Add edges" icon.
+Once you have created multiple entities in your diagram, you can connect them by clicking the **"Add links"** icon.
 
 ![](../.gitbook/assets/screen-shot-2020-03-16-at-14.58.28.png)
 
