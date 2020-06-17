@@ -43,7 +43,7 @@ You can also export your diagram to be saved as a file on your computer by click
 
 Creating network diagrams within Aleph allows you to map networks of people and influence directly alongside the rich ecosystem of data and processing tools that Aleph provides.  Sometimes, though, you might want to work on a diagram offline, within the private confines of your own device.
 
-For this reason, we have created a desktop application, called VIS Desktop, which is available for download on Github for ****[**Microsoft Windows**](https://github.com/alephdata/visdesktop/releases/latest/download/VIS-Desktop.exe)**,** [**Apple MacOS X**](https://github.com/alephdata/visdesktop/releases/latest/download/VIS-Desktop.dmg) ****and common [**Linux distributions**](https://github.com/alephdata/visdesktop/releases/latest/download/VIS.Desktop.deb).
+For this reason, we have created a desktop application, called Aleph Data Desktop, which is available for download on Github for ****[**Microsoft Windows**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph-Data-Desktop.exe)**,** [**Apple MacOS X**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph-Data-Desktop.dmg) ****and common [**Linux distributions**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph.Data.Desktop.deb).
 
 Creating and editing diagrams within the desktop app works the same as  in Aleph, but allows you to work on your investigation files offline, with all data contained on your own device. Using the desktop app, investigation files can be created, edited, and shared as you would any other file on your computer, and will not be shared with others unless you explicitly decide to.
 
@@ -51,17 +51,17 @@ If you are interested, you are also welcome to explore and contribute to [the so
 
 ## Frequently Asked Questions
 
-Below some of the common questions we've received about VIS Desktop. If you have another question or want to suggest an improvement, please [get in touch](../get-in-touch.md).
+Below some of the common questions we've received about network diagrams. If you have another question or want to suggest an improvement, please [get in touch](../get-in-touch.md).
 
 ### How does this relate to OCCRP VIS?
 
-[Visual Investigative Scenarios](https://vis.occrp.org/) \(VIS\) is an application developed by OCCRP, [RISE Project](https://www.riseproject.ro/) and [QuickData](http://www.quickdata.ro/) that is the inspiration for VIS Desktop. While it's been a beloved tool to some reporters, it has also become slow and cumbersome. We're unable to add new features and ensure its continued safety.
+[Visual Investigative Scenarios](https://vis.occrp.org/) \(VIS\) is an application developed by OCCRP, [RISE Project](https://www.riseproject.ro/) and [QuickData](http://www.quickdata.ro/) that is the inspiration for network diagrams. While it's been a beloved tool to some reporters, it has also become slow and cumbersome. We're unable to add new features and ensure its continued safety.
 
-That's why we are planning to phase out the old version of VIS once VIS Desktop has become stable and battle-tested. Our goal is to export all existing VIS diagrams so that they can be opened in VIS Desktop, so that people can continue to work with their data. It's unlikely this transition will happen before 202.
+That's why we are planning to phase out the old version of VIS once Data Desktop has become stable and battle-tested. Our goal is to export all existing VIS diagrams so that they can be opened in Data Desktop, so that people can continue to work with their data. It's unlikely this transition will happen before 202.
 
-### How much data can I add to a VIS Desktop diagram?
+### How much data can I add to a network diagram?
 
-The goal of VIS Desktop is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar%27s_number).
+The goal of Data Desktop is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar%27s_number).
 
 ### Can I make entities into groups?
 
@@ -73,7 +73,7 @@ Yes. Simply select two or more entities, then click the "Group selection" button
 
 Yes. In main the toolbar, you have an option to export an SVG graphic to a file. This SVG can be opened and "beautified" in a program like Adobe Illustrator or Inkscape \(open source\), and eventually published to the web as an image.
 
-Please be conscious, however, that VIS diagrams are mainly intended to be investigative sketches. Their complexity can easily exceed the complexity we should force our readers to deal with. Be nice to the mortals.
+Please be conscious, however, that network diagrams are mainly intended to be investigative sketches. Their complexity can easily exceed the complexity we should force our readers to deal with. Be nice to the mortals.
 
 ### Can I import a spreadsheet of names and companies?
 
