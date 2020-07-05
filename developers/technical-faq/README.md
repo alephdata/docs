@@ -150,6 +150,14 @@ redis-cli --scan --pattern aleph:authz:* | xargs redis-cli del
 redis-cli --scan --pattern aleph:metadata:* | xargs redis-cli del
 ```
 
+## Can I customise the text of the about page?
+
+The "About" section in the Navbar is based on a micro-CMS that is a bit like Jekyll. You can see the templates in the Aleph GitHub repository at `aleph/pages`. Pages can be customised by setting an environment variable, `ALEPH_PAGES_PATH` to point to a directory with content pages.
+
+All pages with the `menu: true` header set will be added to the Navbar, others will just be shown in the sidebar menu inside the "About" section.
+
+How to add these pages to the running Aleph container is more of a Docker problem, so you might want to look into how to build a derived image for the `api` service, or just mount a path from the server as a volume inside the `api`.
+
 ## Why do entities have two-part IDs?
 
 When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
