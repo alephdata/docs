@@ -66,6 +66,10 @@ aleph --help
 
 This will enter a docker container where the `aleph` shell command is available \(see [Usage](https://github.com/alephdata/aleph/wiki/Usage) for details\). You can also access the host computers file system at `/host`. This means a file stored at `/tmp/bla.txt` on your computer can be found at `/host/tmp/bla.txt` inside the container.
 
+{% hint style="info" %}
+When you run Aleph in development mode, the default configuration will not run the worker component used to index documents and do other background work. You can start it either via `make worker` or inside an Aleph shell using `aleph worker`.
+{% endhint %}
+
 ### Users
 
 For development purposes, you can quickly create a new user with the `aleph createuser` command, inside a shell:
