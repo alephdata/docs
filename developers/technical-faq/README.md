@@ -57,6 +57,18 @@ If running `aleph` commands gives you warnings about missing tables, you probabl
 make upgrade
 ```
 
+## My import is stuck at 67%, what's wrong?
+
+This often means you're not running an Aleph `worker` process - the component responsible for indexing documents, generating caches, cross-reference and email alerts. When you operate in development mode \(using the `make` commands\), this is the case by default.
+
+To fix this issue in development mode, just run a worker:
+
+```bash
+make worker
+```
+
+If you're encountering this issue in production mode, try to check the worker log files to understand the issue.
+
 ## Why do entities have two-part IDs?
 
 When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
