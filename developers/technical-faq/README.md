@@ -41,6 +41,8 @@ Can Britain leave the European Union? Yes, it's possible; but complicated and wi
 
 Aleph's document ingest services requires a large number of command-line utilities and libraries to be installed within a certain version range in order to operate correctly. While we'd love to be able to ship e.g. a Debian package in the long term, the work required for this is significant.
 
+Here's a guide for [running Aleph sans docker on Debian w/ systemd](look-ma-no-docker.md).
+
 ## How can I upgrade to a new version of Aleph?
 
 Aleph does not perform updates and database migrations automatically. \(Except for the Kubernetes setup, which does it as a job\) Once you have the latest version, you can run the command bellow to upgrade the existing installation \(i.e. apply changes to the database model or the search index format\). In production mode, you may want to perform a backup before running an upgrade.
@@ -68,16 +70,6 @@ make worker
 ```
 
 If you're encountering this issue in production mode, try to check the worker log files to understand the issue.
-
-## Why do entities have two-part IDs?
-
-When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
-
-The background for this is a security mitigation. There are various places in Aleph where a user can actually assign arbitrary IDs to new entities, including the collection `_bulk` API. In these cases, an attacher could attempt to inject an ID already used by another collection and thus overwrite its data.
-
-To avoid this, each entity ID is assigned a namespace ID suffix for the collection it is submitted to. This way, multiple collections can have entities with the same ID without overwriting each other's data.
-
-When using the Aleph API, you can submit either form: a version of the entity with its signature, or without, via the `_bulk` API. The signature will be fixed up automatically.
 
 ## ElasticSearch will not start. What's wrong?
 
@@ -122,23 +114,49 @@ To fix this, try the following:
 * Run `docker system prune` on the host machine
 * Inside a `make shell`, run this CURL command: `curl -XPUT -H "Content-Type: application/json" http://elasticsearch:9200/_all/_settings -d '{"index.blocks.read_only_allow_delete": null}'`
 
+## How do I shut down Aleph?
+
+When you're running in development mode, run:
+
+```bash
+make stop
+```
+
+In production mode, the equivalent command is:
+
+```bash
+docker-compose down --remove-orphans
+```
+
 ## Something else is wrong, what do I do?
 
 #### Try turning it off and on again
 
-If all else fails, you may just need to wait a little longer for the ES service to initialize before you run upgrade. Doing the following \(after `make build`\) should be sufficient:
+If all else fails, you may just need to wait a little longer for the ES service to initialize before you run upgrade.
 
-1. `make shell`
-2. Inside the aleph shell run `aleph upgrade`.
-3. If that succeeds, in a new terminal run `make web` to launch the UI and API.
+1. Shut down all Aleph components: `make stop`
+2. Re-build the development docker containers: `make build`
+3. Apply the latest data migrations: `make upgrade`
+4. If that succeeds, in a new terminal run `make web` to launch the UI and API, and `make worker` to start a worker service.
+
+**Talk to the community**
 
 If that does not help, come visit the [Aleph slack](../../get-in-touch.md) and talk to the community to get support.
 
 ## How can I clear parts of the redis cache?
 
 ```bash
-redis-cli --scan --pattern ocr:* | xargs redis-cli del 
 redis-cli --scan --pattern aleph:authz:* | xargs redis-cli del 
 redis-cli --scan --pattern aleph:metadata:* | xargs redis-cli del
 ```
+
+## Why do entities have two-part IDs?
+
+When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
+
+The background for this is a security mitigation. There are various places in Aleph where a user can actually assign arbitrary IDs to new entities, including the collection `_bulk` API. In these cases, an attacher could attempt to inject an ID already used by another collection and thus overwrite its data.
+
+To avoid this, each entity ID is assigned a namespace ID suffix for the collection it is submitted to. This way, multiple collections can have entities with the same ID without overwriting each other's data.
+
+When using the Aleph API, you can submit either form: a version of the entity with its signature, or without, via the `_bulk` API. The signature will be fixed up automatically.
 
