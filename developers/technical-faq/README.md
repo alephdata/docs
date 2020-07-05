@@ -158,6 +158,12 @@ All pages with the `menu: true` header set will be added to the Navbar, others w
 
 How to add these pages to the running Aleph container is more of a Docker problem, so you might want to look into how to build a derived image for the `api` service, or just mount a path from the server as a volume inside the `api`.
 
+## How do I manage users and groups?
+
+The options for managing users and groups in Aleph are very limited. This is because many installations delegate those tasks to a separate OAuth single sign-on service, such as  Keycloak \(an example configuration exists in `contrib/keycloak`\).
+
+That's why adding features like password resets, a admin UI for user creation or groups management is not on the roadmap of the OCCRP developer team. However, other developers are [encouraged to implement them and contribute the code](https://github.com/alephdata/ideas/issues/8).
+
 ## Why do entities have two-part IDs?
 
 When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
