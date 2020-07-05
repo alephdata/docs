@@ -45,11 +45,34 @@ Here's a guide for [running Aleph sans docker on Debian w/ systemd](look-ma-no-d
 
 ## How can I upgrade to a new version of Aleph?
 
-Aleph does not perform updates and database migrations automatically. \(Except for the Kubernetes setup, which does it as a job\) Once you have the latest version, you can run the command bellow to upgrade the existing installation \(i.e. apply changes to the database model or the search index format\). In production mode, you may want to perform a backup before running an upgrade.
+Aleph does not perform updates and database migrations automatically. Once you have the latest version, you can run the command bellow to upgrade the existing installation \(i.e. apply changes to the database model or the search index format\).
 
-`host$ docker-compose run --rm shell aleph upgrade`
+Before you upgrade, check the [release notes](../changelog.md) to make sure you understand the latest release and know about new options and features that have been added.
 
-You will have to pull new docker images or check out the latest version using Git in order to fetch the latest product version.
+The procedures for upgrading are different between production and development mode:
+
+In **development mode**, make sure you've pulled the latest version from GitHub. We recommend you check out `develop` if you want to contribute code. Then, run:
+
+```bash
+make build
+make upgrade
+```
+
+In **production mode,** make sure you perform a backup of the main database and the ElasticSearch index before running an upgrade.
+
+Then, make sure you are using the latest `docker-compose.yml` file. You can do this by checking out the source repo, but really you just need that one file \(and your config in `aleph.env`\). Then, run:
+
+```bash
+docker-compose pull --parallel
+# Terminate the existing install (enter downtime!):
+docker-compose down
+docker-compose up -d redis postgres elasticsearch
+# Wait a minute or so while services boot up...
+# Run upgrade:
+docker-compose run --rm shell aleph upgrade
+# Restart prod system:
+docker-compose up -d
+```
 
 ## I get an error about missing tables. How do I fix it?
 
@@ -70,6 +93,18 @@ make worker
 ```
 
 If you're encountering this issue in production mode, try to check the worker log files to understand the issue.
+
+## How can I make imports run faster?
+
+The included `docker-compose` configuration for production mode has no understanding of how powerful your server is. It will run just a single instance of the services involved in data imports, `worker` , `ingest-file` and `convert-document`.
+
+The easiest way to speed up processing is to scale up those services. Make a shell script to start docker-compose with a set of arguments like this:
+
+```bash
+docker-compose up --scale ingest-file=8 --scale convert-document=4 --scale worker=2
+```
+
+The number of `ingest-file` processes could be the number of CPUs in your machine, and `convert-document` needs to be scaled up for imports with many office documents, but never higher than `ingest-file`.
 
 ## ElasticSearch will not start. What's wrong?
 
@@ -163,6 +198,12 @@ How to add these pages to the running Aleph container is more of a Docker proble
 The options for managing users and groups in Aleph are very limited. This is because many installations delegate those tasks to a separate OAuth single sign-on service, such as  Keycloak \(an example configuration exists in `contrib/keycloak`\).
 
 That's why adding features like password resets, a admin UI for user creation or groups management is not on the roadmap of the OCCRP developer team. However, other developers are [encouraged to implement them and contribute the code](https://github.com/alephdata/ideas/issues/8).
+
+## Can I run Aleph on Kubernetes?
+
+That's where it's most at home. We don't yet provide an official helm chart \(help wanted!\), but if you hit one of the OCCRP staff up on Slack, we might be able to share \(parts of\) our manifests. 
+
+We aggressively use auto-scaling both on the cluster and pod level, which helps to combine fast imports with limited operational cost. 
 
 ## Why do entities have two-part IDs?
 
