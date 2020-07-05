@@ -205,6 +205,19 @@ That's where it's most at home. We don't yet provide an official helm chart \(he
 
 We aggressively use auto-scaling both on the cluster and pod level, which helps to combine fast imports with limited operational cost. 
 
+## How can I connect to the database directly?
+
+If you want to manipulate the SQL database directly \(e.g. to edit a user, create or delete a group\), you can connect to the PostgreSQL database.
+
+In development mode, the database is exposed on the host at `127.0.0.1:15432`. \(User, password and database name are all `aleph`\). You can also connect from the shell container:
+
+```bash
+make shell 
+psql $ALEPH_DATABASE_URI
+```
+
+The same can be done if you run an instance of the `shell` container in production mode.
+
 ## Why do entities have two-part IDs?
 
 When looking at an Aleph URL, you may notice that every entity ID has two parts, separated by a dot \(`.`\), for example:`deadbeef.3cd336a9859bdf2be917f561430f2a83e5da292b`. The first part in this is the actual entity ID, while the second part is a signature \(HMAC\) assigned by the server when indexing the data.
@@ -214,4 +227,23 @@ The background for this is a security mitigation. There are various places in Al
 To avoid this, each entity ID is assigned a namespace ID suffix for the collection it is submitted to. This way, multiple collections can have entities with the same ID without overwriting each other's data.
 
 When using the Aleph API, you can submit either form: a version of the entity with its signature, or without, via the `_bulk` API. The signature will be fixed up automatically.
+
+## Why don't you use a graph database?
+
+The **benefit** of storing Aleph as a graph would be the possibility of running path queries and quick pattern matching \("Show me all the companies owned by people who have the same name as a politician"\).
+
+The **downsides** are:
+
+* While some graph databases have Lucene built in, that doesn't replace ElasticSearch, because simple search is a killer use case and needs to be really good and offer advanced features like facets, text normalisation and index sharding.
+* User access to Aleph must always go through security checks, and we haven't really found a graph DB that would handle the security model of Aleph without generating incredibly complex \(and slow\) queries.
+* There's a lot of data in some Aleph instances. It's not clear how many graph databases can respond to queries against billions of entities within an HTTP response cycle.
+* Our data is usually not well integrated, so the graph is less dense than you might think, unless we fully pre-compute all possible entity duplicates as graph links.
+
+All of this said, we'd really love to hear about any experiments regarding this. Inside OCCRP we sometimes materialise partial Aleph graphs into Neo4J and let analysts browse them via Linkurious. We're hoping to look into dgraph as a possible backend at some point.
+
+{% hint style="info" %}
+We have well-defined graph semantics for FollowTheMoney data and you can export any data \(including documents like emails\) in Aleph [into various graph formats](../ftm.md#exporting-data-to-a-network-graph) \(RDF, Neo4J, and GEXF for Gephi\).
+{% endhint %}
+
+## 
 
