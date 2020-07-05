@@ -168,6 +168,8 @@ If your servers firewall configuration allows it, you can now also open `http://
 
 ### Upgrading
 
+See the [relevant section in the Technical FAQ](technical-faq/#how-can-i-upgrade-to-a-new-version-of-aleph).
+
 ## Configuration
 
 The main configuration file of Aleph is `aleph.env`, which is loaded by docker-compose and can modify many aspects of system behaviour. A template for the configuration with details regarding many of the options is available in the `aleph.env.tmpl` file.
