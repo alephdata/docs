@@ -230,16 +230,16 @@ When using the Aleph API, you can submit either form: a version of the entity wi
 
 ## Why don't you use a graph database?
 
-The **benefit** of storing Aleph as a graph would be the possibility of running path queries and quick pattern matching \("Show me all the companies owned by people who have the same name as a politician"\).
+The **benefit** of storing Aleph as a graph would be running path queries and quick pattern matching \("Show me all the companies owned by people who have the same name as a politician"\).
 
 The **downsides** are:
 
-* While some graph databases have Lucene built in, that doesn't replace ElasticSearch, because simple search is a killer use case and needs to be really good and offer advanced features like facets, text normalisation and index sharding.
-* User access to Aleph must always go through security checks, and we haven't really found a graph DB that would handle the security model of Aleph without generating incredibly complex \(and slow\) queries.
+* User-controlled access to Aleph must always go through security checks, and we haven't really found a graph DB that would handle the security model of Aleph without generating incredibly complex \(and slow\) queries.
+* While some graph databases have Lucene built in, that doesn't replace ElasticSearch. Simple search is a killer use case and needs to be really good and offer advanced features like facets, text normalisation and index sharding.
 * There's a lot of data in some Aleph instances. It's not clear how many graph databases can respond to queries against billions of entities within an HTTP response cycle.
 * Our data is usually not well integrated, so the graph is less dense than you might think, unless we fully pre-compute all possible entity duplicates as graph links.
 
-All of this said, we'd really love to hear about any experiments regarding this. Inside OCCRP we sometimes materialise partial Aleph graphs into Neo4J and let analysts browse them via Linkurious. We're hoping to look into dgraph as a possible backend at some point.
+All of this said, we'd really love to hear about any experiments regarding this. In OCCRP we sometimes materialise partial Aleph graphs into Neo4J and let analysts browse them via Linkurious. We're hoping to look into dgraph as a possible backend at some point.
 
 {% hint style="info" %}
 We have well-defined graph semantics for FollowTheMoney data and you can export any data \(including documents like emails\) in Aleph [into various graph formats](../ftm.md#exporting-data-to-a-network-graph) \(RDF, Neo4J, and GEXF for Gephi\).
