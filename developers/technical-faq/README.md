@@ -43,7 +43,7 @@ Aleph's document ingest services requires a large number of command-line utiliti
 
 Here's a guide for [running Aleph sans docker on Debian w/ systemd](look-ma-no-docker.md).
 
-## How can I upgrade to a new version of Aleph?
+## How do I upgrade to a new version of Aleph?
 
 Aleph does not perform updates and database migrations automatically. Once you have the latest version, you can run the command bellow to upgrade the existing installation \(i.e. apply changes to the database model or the search index format\).
 
