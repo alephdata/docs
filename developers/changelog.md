@@ -6,6 +6,14 @@ description: >-
 
 # Changelog
 
+### 3.8.5
+
+* Introduce EntitySets, as user-curated sets of ... entities! All diagrams are now entitysets, as will be timelines and bookmarks. 
+
+### 3.8.3
+
+* Refactor queue and processing code for the Aleph worker. 
+
 ### 3.8.1
 
 * "Expand node" support in network diagrams pulls relevant connections from the backend and shows them to the user while browsing a network diagram.
