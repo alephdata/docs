@@ -35,6 +35,28 @@ Once extracted, these tags are added as properties to the [Follow the Money](../
 
 We're extremely happy to consider pull requests that add further types of linguistic and pattern-based extraction.
 
+## How do I add support for a new language to Aleph?
+
+There are two aspects to adding support for a new language to Aleph: translating the user interface, and adapting the processing pipeline.
+
+To add a new **language for the Aleph user interface** \("localisation"\), register a user account on [`transifex.com`](https://www.transifex.com/aleph/)and apply to become a member of the Aleph organisation. Start a new translation and translate all strings in the various Aleph components \(`followthemoney`, `aleph-ui`, `aleph-api` and `react-ftm`\).
+
+If you wish to try out the translation on a local developer install of Aleph, please make sure you have the Transifex [command-line client installed](https://docs.transifex.com/client/introduction) and configured. Then run the following sequence of commands:
+
+```bash
+make translate
+cd ui/
+npm run translate
+cd ..
+make translate
+```
+
+In terms of **adapting the processing pipeline**, go through the following items:
+
+* Check that the hard-coded language list in FollowTheMoney includes the three-letter code for your language \(module `followthemoney.types.language`\). If the language you are adding has multiple language codes, you may want to add a synonym mapping to the `languagecodes` Python library.
+* Check that the `ingest-file` service in its `Dockerfile` installs a Tesseract model for your language, if one is [available in Ubuntu](https://packages.ubuntu.com/search?keywords=tesseract-ocr).
+* Check if a [spaCy model is available](https://spacy.io/usage/models) for named entity extraction, and add it to the `Dockerfile` in `ingest-file`. Also make sure to adapt the `INGESTORS_NER_MODELS` environment variable in that file.
+
 ## Can I run Aleph without using Docker?
 
 Can Britain leave the European Union? Yes, it's possible; but complicated and will probably not make your life better in the way that you're expecting.
