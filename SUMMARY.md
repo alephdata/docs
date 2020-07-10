@@ -26,6 +26,7 @@
 * [Mixed document/entity graphs](developers/mixed-graphs.md)
 * [Aleph API](https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json)
 * [Technical FAQ](developers/technical-faq/README.md)
+  * [Adding text processors](developers/technical-faq/adding-text-processors.md)
   * [Design premises](developers/technical-faq/design-premises.md)
   * [Look Ma, No Docker](developers/technical-faq/look-ma-no-docker.md)
 * [Changelog](developers/changelog.md)
