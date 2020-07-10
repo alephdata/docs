@@ -28,7 +28,15 @@ In order to enable the service, you need to add it to the `docker-compose.dev.ym
 To run the example service, you will need to create a service account JSON key with permission to use the Google Cloud Translation API, and configure both the project ID and the path for the service account file.
 {% endhint %}
 
- During development, you can restart the container like this:
+Once you have added the service to the compose configuration, you can include the stage in the pipeline by adding the following variable to the `aleph.env` configuration file:
+
+```text
+ALEPH_INGEST_PIPELINE=analyze:translate
+```
+
+You may need to restart the compose environment in order for the environment changes to take effect.
+
+During development, you can restart the container like this:
 
 ```text
 docker-compose -f docker-compose.dev.yml up \
