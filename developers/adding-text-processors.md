@@ -10,7 +10,7 @@ Some deployments of Aleph may wish to implement additional processing stages for
 
 ## Conceptual overview
 
-All processing in Aleph is coordinated via a set of queues kept in redis, an in-memory data store. When a document is processed, the instruction to handle it is passed through a sequence of independent services, e.g. the `ingestors` \(which extracts text from a file\), the `analyze` stage \(which performs NER and language detection\) and finally the `index` stage \(which adds the document to Aleph's search index\).
+All processing in Aleph is coordinated via a set of queues kept in redis, an in-memory data store. When a document is processed, the instruction to handle it is posted on that queue, which is read by multiple independent services. Each service can subscribe to one or many `stages` in order to receive tasks, e.g. the `ingest` stage \(which extracts text from a file\), the `analyze` stage \(which performs NER and language detection\) and finally the `index` stage \(which adds the document to Aleph's search index\).
 
 A new stage can be added to this pipeline at runtime, either by extending the code of the aleph worker service, the ingest-file service, or by adding a new service that stands on its own. The last option is the cleanest, and can be based on `servicelayer`, the Python package that implements the queue and worker code.
 
