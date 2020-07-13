@@ -6,6 +6,13 @@ description: >-
 
 # Changelog
 
+### 3.8.6
+
+* Date histogram on search results.
+* Added example code for how to [add text processors](adding-text-processors.md) to Aleph.
+* Re-worked collection stats caching to avoid super slow requests when no cache is present.
+* Tons of bug fixes.
+
 ### 3.8.5
 
 * Introduce EntitySets, as user-curated sets of ... entities! All diagrams are now entitysets, as will be timelines and bookmarks. 
