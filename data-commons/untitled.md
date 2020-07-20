@@ -15,5 +15,7 @@ Sanctions lists, databases of politicians and criminal figures can be a good way
 
 {% page-ref page="sanctions.md" %}
 
+## ICIJ OffshoreLeaks
 
+The International Consortium of Investigative Journalists has published data from its major investigations, including the Offshore Leaks \(2013\), Panama Papers \(2016\) and Paradise Papers \(2017\). We've written a set of importers that convert this data to FollowTheMoney format, available here: [https://github.com/alephdata/offshoreleaks](https://github.com/alephdata/offshoreleaks) 
 
