@@ -53,7 +53,7 @@ description: >-
 
 ### 3.5.0
 
-* Run VIS2 / [Network diagrams](../guide/vis-desktop.md) on Aleph as a testing feature.
+* Run VIS2 / [Network diagrams](../guide/building-out-your-investigation/network-diagrams.md) on Aleph as a testing feature.
 
 ### 3.4.9
 

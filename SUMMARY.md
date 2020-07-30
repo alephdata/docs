@@ -7,10 +7,16 @@
 ## User documentation <a id="guide"></a>
 
 * [Getting started](guide/getting-started.md)
+* [The building blocks of Aleph](guide/the-basics.md)
 * [Search guide](guide/search.md)
-* [Adding your own data](guide/loading-data.md)
-* [Network Diagrams](guide/vis-desktop.md)
-* [Cross-referencing](guide/cross-referencing.md)
+* [Building out your investigation](guide/building-out-your-investigation/README.md)
+  * [Creating a personal dataset](guide/building-out-your-investigation/creating-a-personal-dataset.md)
+  * [Uploading documents](guide/building-out-your-investigation/uploading-documents.md)
+  * [Drawing network diagrams](guide/building-out-your-investigation/network-diagrams.md)
+  * [Using the table editor](guide/building-out-your-investigation/using-the-table-editor.md)
+  * [Generating multiple entities from a list](guide/building-out-your-investigation/generating-multiple-entities-from-a-list.md)
+  * [Cross-referencing](guide/building-out-your-investigation/cross-referencing.md)
+* [Aleph Data Desktop](guide/aleph-data-desktop.md)
 * [OpenRefine Reconciliation](guide/reconciliation.md)
 * [Frequently Asked Questions](guide/frequently-asked-questions.md)
 

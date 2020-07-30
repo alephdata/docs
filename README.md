@@ -12,11 +12,15 @@ Aleph is a powerful tool for people who follow the money. It helps investigators
 
 ## Aleph for users
 
-If you're a reporter or other user of Aleph, you can find out **how to search Aleph**, sketch out networks in VIS, upload your own data or link Aleph with other tools.
+If you're a reporter or other user of Aleph, you can find out **how to search Aleph**, **sketch out networks of people and assets**, **upload your own data**, or **link Aleph with other tools**.
 
 {% page-ref page="guide/getting-started.md" %}
 
-{% page-ref page="guide/vis-desktop.md" %}
+{% page-ref page="guide/search.md" %}
+
+{% page-ref page="guide/building-out-your-investigation/" %}
+
+
 
 ## Aleph for developers and admins
 
