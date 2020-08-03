@@ -6,6 +6,15 @@ description: >-
 
 # Changelog
 
+### 3.8.9
+
+* Move the linkages API \("god entities" / record linkage\) to use entity sets instead of its own database model.
+* Remove soft-deletion for some model types \(permissions, entities, alerts, mappings\).
+
+{% hint style="danger" %}
+Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single version. If you want to upgrade from an Aleph older than 3.2, we recommend you move via 3.8.0, upgrade to that version, before migrating across this version.
+{% endhint %}
+
 ### 3.8.6
 
 * Date histogram facet and filtering tool on search results.
