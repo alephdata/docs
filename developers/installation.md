@@ -166,6 +166,10 @@ curl http://localhost:8080/api/2/statistics
 
 If your servers firewall configuration allows it, you can now also open `http://localhost:8080` in your browser and use the web interface to navigate the application.
 
+{% hint style="warning" %}
+Be careful with the ports exposed from your Docker system on public ports. Docker is known to override some firewall rules so make sure you double-check that you're only exposing the intended ports on your productions system.
+{% endhint %}
+
 ### Upgrading
 
 See the [relevant section in the Technical FAQ](technical-faq/#how-can-i-upgrade-to-a-new-version-of-aleph).
