@@ -56,5 +56,49 @@ If you do not want to find a precise keyword, but merely specify that two words 
 
 ![](../../.gitbook/assets/proximity_search.png)
 
+### Including and Excluding Combinations of Keywords
 
+You can tell Aleph to find matches to multiple keywords in a variety of ways or combinations, otherwise known as a **composite search**. 
+
+To tell Aleph that a keyword must exist in all resulting matches, use a + operator. Similarly, to tell Aleph that a keyword must not exist in any of the resulting matches, use - operator.
+
+```text
++Trump -Aliyev
+```
+
+This translates to: Give me all matches in which each match must include the keyword Trump and must definitely not include the keyword Aliyev.
+
+You can take these combinations a step further using the AND operator or the OR operator. 
+
+```text
+Trump AND Aliyev
+```
+
+This translates to: Give me all matches in which each match must contain both the keywords Trump and Aliyev, but don't return any matches that only contains just one of those keywords.
+
+```text
+Trump OR Aliyev
+```
+
+This translates to: Give me all matches in which each match may contain the keywords Trump  or Aliyev or both.
+
+You can build on these searches even further like so:
+
+```text
++Aliyev AND (Obama OR Trump) -Georgia
+```
+
+This translates to: Give me all matches in which each match must contain the keyword Aliyev and must contain either the keyword Obama or the keyword Trump, but must not contain the keyword Georgia.
+
+### Putting It All Together
+
+You can combine any of the methods supported by Aleph in many combinations to create some very explicit search rules. The complexity, of course, depends on your needs. 
+
+```text
+"Ilham Aliyev"~2 AND (Obama OR Trump) -Georgia
+```
+
+### For Dorks
+
+Aleph uses the search engine ElasticSearch in the backend, and many of the operators will work in the search form, but are more advanced. To check out what else is possible, [see ElasticSearch's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax).
 
