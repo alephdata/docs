@@ -10,7 +10,7 @@ Aleph is more than just a place to search and explore **source documents**. It a
 
 ## Documents
 
-With Aleph, you can [**search**](search.md), [**upload**](building-out-your-investigation/uploading-documents.md)**, organize**, and **share** many different types of documents that would otherwise be difficult to explore. Aleph provides support for extracting meaningful information from PDFs, Excel files, CSVs, email archives, web sites, and other document formats to make source material easier to browse and analyze no matter in which form it comes.
+With Aleph, you can [**search**](search/), [**upload**](building-out-your-investigation/uploading-documents.md)**, organize**, and **share** many different types of documents that would otherwise be difficult to explore. Aleph provides support for extracting meaningful information from PDFs, Excel files, CSVs, email archives, web sites, and other document formats to make source material easier to browse and analyze no matter in which form it comes.
 
 While documents often provide the evidentiary backbone of an investigation, Aleph is built to explore complicated relationships that are often difficult to glean from documents alone - this is where structured entities come in.
 
@@ -56,5 +56,5 @@ Read more about managing access [here](building-out-your-investigation/creating-
 
 
 
-**Now that you've gotten acquainted with some of the core concepts of Aleph, it's time to dive in. Read on to learn more about** [**searching in Aleph**](search.md) **and** [**building out your investigation**](building-out-your-investigation/)**.**
+**Now that you've gotten acquainted with some of the core concepts of Aleph, it's time to dive in. Read on to learn more about** [**searching in Aleph**](search/) **and** [**building out your investigation**](building-out-your-investigation/)**.**
 

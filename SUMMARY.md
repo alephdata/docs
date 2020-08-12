@@ -8,7 +8,9 @@
 
 * [Getting started](guide/getting-started.md)
 * [The building blocks of Aleph](guide/the-basics.md)
-* [Search guide](guide/search.md)
+* [Searching your data](guide/search/README.md)
+  * [Anatomy of a Search](guide/search/anatomy-of-a-search.md)
+  * [Advanced Search Methods](guide/search/advanced-search-methods.md)
 * [Building out your investigation](guide/building-out-your-investigation/README.md)
   * [Creating a personal dataset](guide/building-out-your-investigation/creating-a-personal-dataset.md)
   * [Uploading documents](guide/building-out-your-investigation/uploading-documents.md)

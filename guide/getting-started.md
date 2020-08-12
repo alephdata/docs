@@ -8,7 +8,7 @@ description: >-
 
 Aleph contains an ever-growing collection of datasets relevant for finding connections among people, companies, and other assets relevant to investigative journalists. Learn how to search through this vast corpus of data by following the steps outlined here:
 
-{% page-ref page="search.md" %}
+{% page-ref page="search/" %}
 
 With Aleph, organizations can put all kinds of data - from a procurement dataset to a leaked trove of emails - into a single place. This documentation helps people who want to upload, share, and manage data on Aleph.
 

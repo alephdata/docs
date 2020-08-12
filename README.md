@@ -16,7 +16,7 @@ If you're a reporter or other user of Aleph, you can find out **how to search Al
 
 {% page-ref page="guide/getting-started.md" %}
 
-{% page-ref page="guide/search.md" %}
+{% page-ref page="guide/search/" %}
 
 {% page-ref page="guide/building-out-your-investigation/" %}
 
