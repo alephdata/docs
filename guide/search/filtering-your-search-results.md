@@ -20,7 +20,7 @@ You can also filter the search results by a date range. In the top, right-hand c
 
 ![](../../.gitbook/assets/annotated_histogram_filter.png.png)
 
-The histogram does two things. Firstly, it gives you a visual of distribution of your data by dates. This can be useful to just get a sense of the spread or _shape_ of your data. Secondly, the histogram itself is a filter and you can filter the documents by dates by clicking dragging your mouse cursor over the histogram, thereby selecting the dates you want to include in your search results.
+The histogram does two things. Firstly, it gives you a visual distribution of your data by dates. This can be useful to just get a sense of the spread or _shape_ of your data. Secondly, the histogram itself is a filter and you can filter the documents by dates by clicking dragging your mouse cursor over the histogram, thereby selecting the dates you want to include in your search results.
 
 ![](../../.gitbook/assets/annotated_histogram_filter_selected_cropped.png)
 
