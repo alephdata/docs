@@ -15,5 +15,7 @@ Aleph stores vast numbers of [documents](https://docs.alephdata.org/guide/the-ba
 
 {% page-ref page="advanced-search-methods.md" %}
 
+{% page-ref page="filtering-your-search-results.md" %}
+
 
 
