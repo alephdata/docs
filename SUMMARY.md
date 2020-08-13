@@ -9,6 +9,7 @@
 * [Getting started](guide/getting-started.md)
 * [The building blocks of Aleph](guide/the-basics.md)
 * [Searching your data](guide/search/README.md)
+  * [Filtering Your Search Results](guide/search/filtering-your-search-results.md)
   * [Anatomy of a Search](guide/search/anatomy-of-a-search.md)
   * [Advanced Search Methods](guide/search/advanced-search-methods.md)
 * [Building out your investigation](guide/building-out-your-investigation/README.md)
