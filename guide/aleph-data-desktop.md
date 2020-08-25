@@ -8,7 +8,7 @@ Follow the steps below to download Aleph Data Desktop and to learn how to move d
 
 ## Download the Desktop App
 
-Aleph Data Desktop is available for download for ****[**Microsoft Windows**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph-Data-Desktop.exe)**,** [**Apple MacOS X**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph-Data-Desktop.dmg) ****and common [**Linux distributions**](https://github.com/alephdata/visdesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
+Aleph Data Desktop is available for download for ****[**Microsoft Windows**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe)**,** [**Apple MacOS X**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg) ****and common [**Linux distributions**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
 
 If you are interested, you are also welcome to explore and contribute to [the source code](https://github.com/alephdata/visdesktop) of the application. 
 
