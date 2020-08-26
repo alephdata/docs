@@ -7,9 +7,13 @@ description: >-
 
 # Get in touch
 
-As an open source community, we welcome anyone who wants to use and improve Aleph. Participants are required to **be excellent to each other**. 
+As an open source community, we welcome anyone who wants to use and improve Aleph. Participants are required to **be excellent to each other**.
 
-* Most discussion takes place on the **Aleph Slack**. [Sign up for an account](http://slack.alephdata.org) and when you come in, please share a quick introduction :\) 
+{% hint style="info" %}
+While the Aleph source code is openly available and licensed, the community support for the system is subject to some criteria. [Read more...](https://github.com/alephdata/aleph/blob/main/SUPPORT.md)
+{% endhint %}
+
+* Most discussion and support takes place on the **Aleph Slack**. Please follow the steps lined out in the [Aleph Support Policy](https://github.com/alephdata/aleph/blob/main/SUPPORT.md) to receive an invitation for the community.
 * If you notice a **defect with the software**, head on over to [GitHub to file an issue report](https://github.com/alephdata/aleph/issues). Remember to include information about what you were trying to accomplish, and what specific operating system you are using.
 * For questions related to the instance of aleph operated by the [Organized Crime and Corruption Reporting Project](https://data.occrp.org) \(OCCRP\), contact the **data team at data@occrp.org**. Our data team provides assistance to individuals and groups engaged in public interest journalism. We do not currently offer commercial support and consultancy related to Aleph.
 * **If you are a whistleblower** and wish to share confidential information with the press, this community of software developers is not the ideal place to do so. [Contact a journalistic organisation](https://www.occrp.org/en/become-a-whistleblower/) instead.
