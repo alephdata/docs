@@ -20,7 +20,3 @@ Yes. Loads. [It's nerdy](../developers/technical-faq/#how-does-aleph-extract-nam
 
 Yes. Press the '?' key to see all available hotkeys for the current context.
 
-```text
-
-```
-
