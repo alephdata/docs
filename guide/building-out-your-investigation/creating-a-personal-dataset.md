@@ -1,7 +1,7 @@
 ---
 description: >-
   The start of any investigation in Aleph is a Personal dataset. Read below to
-  find out how to create, manage, and share a
+  find out how to create, manage, and share a workspace for your investigation.
 ---
 
 # Creating a personal dataset
