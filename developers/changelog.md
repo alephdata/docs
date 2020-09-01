@@ -6,6 +6,12 @@ description: >-
 
 # Changelog
 
+### 3.9.0
+
+* UI for managing lists of entities within a dataset. This lets you make sub-sets of a dataset, e.g. "The Family", "Lawyers" or "Core companies".
+* Ability to cross-reference a collection of documents against structured data collections using `Mention` schema stubs. Requires dataset reingest before it takes effect.
+* New internationalisation mechanism for the React bits, using JSON-formatted translation files.
+
 ### 3.8.9
 
 * Move the linkages API \("god entities" / record linkage\) to use entity sets instead of its own database model.
