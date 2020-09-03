@@ -267,5 +267,13 @@ All of this said, we'd really love to hear about any experiments regarding this.
 We have well-defined graph semantics for FollowTheMoney data and you can export any data \(including documents like emails\) in Aleph [into various graph formats](../ftm.md#exporting-data-to-a-network-graph) \(RDF, Neo4J, and GEXF for Gephi\).
 {% endhint %}
 
-## 
+## The document converter service keeps crashing on startup, what's wrong?
+
+You can find out specifically what went wrong with the document converter service by consulting the logs for that container:
+
+```bash
+docker-compose -f docker-compose.dev.yml logs convert-document
+```
+
+If `LibreOffice` keeps crashing on startup with `Fatal exception: Signal 11`, [AppArmor](https://help.ubuntu.com/community/AppArmor) can be one possible cause.  `AppArmor` running on the host machine could be blocking `LibreOffice` from starting up. Try disabling the `AppArmor` profiles related to `LibreOffice` by following these instructions: [https://askubuntu.com/a/1214363](https://askubuntu.com/a/1214363)
 
