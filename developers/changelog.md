@@ -6,6 +6,13 @@ description: >-
 
 # Changelog
 
+### 3.9.1
+
+* Data exports feature to let users make offline data exports for searches and cross-reference
+* New home page, based on the stupid CMS we introduced for the about section. 
+* Ability to map entities into lists via the UI and alephclient.
+* Tons of bug fixes in UI and backend.
+
 ### 3.9.0
 
 * UI for managing lists of entities within a dataset. This lets you make sub-sets of a dataset, e.g. "The Family", "Lawyers" or "Core companies".
