@@ -16,7 +16,7 @@ A new stage can be added to this pipeline at runtime, either by extending the co
 
 ## Developing the service
 
-An example implementation of a `servicelayer`-based processing service is available in the Aleph repository at `services/translate`. The code should be short enough to study in full, especially the worker module.
+An example implementation of a `servicelayer`-based processing service is available in the Aleph repository at [`alephdata/translate-service`](https://github.com/alephdata/translate-service). The code should be short enough to study in full, especially the worker module.
 
 {% hint style="info" %}
 The translation service that is provided is a tech demo. Don't use it in production.
