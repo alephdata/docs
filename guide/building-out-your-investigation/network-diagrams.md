@@ -52,7 +52,7 @@ Below some of the common questions we've received about network diagrams. If you
 
 [Visual Investigative Scenarios](https://vis.occrp.org/) \(VIS\) is an application developed by OCCRP, [RISE Project](https://www.riseproject.ro/) and [QuickData](http://www.quickdata.ro/) that is the inspiration for network diagrams. While it's been a beloved tool to some reporters, it has also become slow and cumbersome. We're unable to add new features and ensure its continued safety.
 
-That's why we are planning to phase out the old version of VIS once Data Desktop has become stable and battle-tested. Our goal is to export all existing VIS diagrams so that they can be opened in Data Desktop, so that people can continue to work with their data. It's unlikely this transition will happen before 202.
+That's why we are planning to phase out the old version of VIS once Data Desktop has become stable and battle-tested. Our goal is to export all existing VIS diagrams so that they can be opened in Data Desktop, so that people can continue to work with their data. It's unlikely this transition will happen before 2021.
 
 ### How much data can I add to a network diagram?
 
