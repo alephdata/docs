@@ -221,6 +221,21 @@ The options for managing users and groups in Aleph are very limited. This is bec
 
 That's why adding features like password resets, a admin UI for user creation or groups management is not on the roadmap of the OCCRP developer team. However, other developers are [encouraged to implement them and contribute the code](https://github.com/alephdata/ideas/issues/8).
 
+## How can I make an admin user?
+
+This depends on how you create users more generally: when you're using Aleph's login system, you can do this on the command-line via the `aleph createuser` command, by adding the `--admin` option.
+
+If you are using OAuth or have already created a user, then you can make an admin user directly via SQL in the database:
+
+```text
+make shell 
+psql $ALEPH_DATABASE_URI
+
+UPDATE role SET is_admin = true WHERE email = 'my@email.com';
+```
+
+You may also need to run `aleph update` afterwards to refresh some cached information.
+
 ## Can I run Aleph on Kubernetes?
 
 That's where it's most at home. We don't yet provide an official helm chart \(help wanted!\), but if you hit one of the OCCRP staff up on Slack, we might be able to share \(parts of\) our manifests. 
