@@ -12,6 +12,12 @@ It's either a company, organisation or person. The term **legal entities** are u
 
 Aleph is often used to search public data, such as companies registries or procurement datasets. Some of these datasets mention directors or suppliers but do not specify whether the given entity is a person, company or even a public body. Since this distinction is sometimes hard to derive from a name alone, we use **legal entity** as a stand-in.
 
+#### How can I make a dataset public?
+
+For quality control purposes, normal users on Aleph cannot make their personal datasets public. Publishing is reserved for system administrators.
+
+With an admin account \(see [the Technical FAQ on how to set one up](../developers/technical-faq/#how-can-i-make-an-admin-user)\), you can open up the dataset settings, and select a different dataset category in that screen. As soon as you select a category other than "Personal dataset", additional options for provenance become visible. The "Share" dialog will also now list an option to make the dataset public.
+
 ## Does Aleph do entity extraction?
 
 Yes. Loads. [It's nerdy](../developers/technical-faq/#how-does-aleph-extract-named-entities-from-text).
