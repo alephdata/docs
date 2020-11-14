@@ -6,6 +6,41 @@ description: >-
 
 # Changelog
 
+### 3.9.5
+
+{% hint style="warning" %}
+In this version, the **OAuth configuration was changed in potentially breaking ways**. Please read the instructions below for how to adapt your deployment.
+{% endhint %}
+
+Aleph 3.9.5 uses OpenID Connect to largely automate the configuration of delegated login. Previous versions of Aleph configured an OAuth2 client explicitly, which also required coding custom handlers for each OAuth provider. The new system also addresses a number of potential security issues.
+
+Unfortunately, the transition requires some incompatible changes:
+
+* You now need to configure a `ALEPH_OAUTH_METADATA_URL` which points to an endpoint used by OIDC to self-configure. Examples of valid metadata URLs for services like Google, Azure, Amazing Cognito and Keycloak can be found in the file `aleph.env.tmpl`.
+  * The existing options `ALEPH_OAUTH_HANDLER`, `ALEPH_OAUTH_SCOPE`, `ALEPH_OAUTH_BASE_URL`, `ALEPH_OAUTH_TOKEN_URL` and `ALEPH_OAUTH_AUTHORIZE_URL` are no longer needed.
+* The database IDs generated for users and **groups will be different**. For users, the ID should be re-written the first time a user logs in after the upgrade. Groups, on the other hand, may require a SQL intervention to adapt their IDs. For example, with a Keycloak provider, the change would be:`UPDATE role SET foreign_id = REPLACE(foreign_id, 'kc:', 'group:') WHERE type = 'group';`
+
+Beyond these breaking changes, some other differences are notable:
+
+* Logging out of Aleph will now also log a user out of the OAuth provider, where supported \(e.g. Keycloak, Azure\).
+* If a user is blocked or deleted while using the site, their session will be disabled by the worker backend within an hour. \(This can be forced by running `aleph update`\)
+
+Changes unrelated to OAuth:
+
+* EntitySets no longer contain an `entities` array of all their members. Use the sub-resource `/entitysets/x/entities` instead.
+* Multiple bug fixes in UI related to i18n.
+
+### 3.9.4
+
+* Move file ingestor service `ingest-file` to its own repository to decouple versioning and CI/CD.
+
+### 3.9.3
+
+* Show transliterated names of non-latin entities in the user interface.
+* Refactor query serialisation, remove in-database query log.
+* Fix out of memory errors in cross-reference
+* Extensive bug fixes in mapping UI
+
 ### 3.9.1
 
 * Data exports feature to let users make offline data exports for searches and cross-reference
