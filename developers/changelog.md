@@ -12,7 +12,7 @@ description: >-
 In this version, the **OAuth configuration was changed in potentially breaking ways**. Please read the instructions below for how to adapt your deployment.
 {% endhint %}
 
-Aleph 3.9.5 uses OpenID Connect to largely automate the configuration of delegated login. Previous versions of Aleph configured an OAuth2 client explicitly, which also required coding custom handlers for each OAuth provider. The new system also addresses a number of potential security issues.
+Aleph 3.9.5 uses [OpenID Connect](https://openid.net/connect/) to largely automate the configuration of delegated login. Previous versions of Aleph configured an OAuth2 client explicitly, which also required coding custom handlers for each OAuth provider. The new system also addresses a number of potential security issues.
 
 Unfortunately, the transition requires some incompatible changes:
 
