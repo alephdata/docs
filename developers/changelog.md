@@ -16,8 +16,10 @@ Aleph 3.9.5 uses [OpenID Connect](https://openid.net/connect/) to largely automa
 
 Unfortunately, the transition requires some incompatible changes:
 
-* You now need to configure a `ALEPH_OAUTH_METADATA_URL` which points to an endpoint used by OIDC to self-configure. Examples of valid metadata URLs for services like Google, Azure, Amazing Cognito and Keycloak can be found in the file `aleph.env.tmpl`.
-  * The existing options `ALEPH_OAUTH_HANDLER`, `ALEPH_OAUTH_SCOPE`, `ALEPH_OAUTH_BASE_URL`, `ALEPH_OAUTH_TOKEN_URL` and `ALEPH_OAUTH_AUTHORIZE_URL` are no longer needed.
+* You now need to configure a `ALEPH_OAUTH_METADATA_URL` to set an endpoint used by OIDC to self-configure.
+  * Examples of valid metadata URLs for services like Google, Azure, Amazing Cognito and Keycloak can be found in the file `aleph.env.tmpl`.
+  * The existing options `ALEPH_OAUTH_BASE_URL`, `ALEPH_OAUTH_TOKEN_URL` and `ALEPH_OAUTH_AUTHORIZE_URL` are no longer needed.
+  * `ALEPH_OAUTH_HANDLER` and `ALEPH_OAUTH_SCOPE` are now optional.
 * The database IDs generated for users and **groups will be different**. For users, the ID should be re-written the first time a user logs in after the upgrade. Groups, on the other hand, may require a SQL intervention to adapt their IDs. For example, with a Keycloak provider, the change would be:`UPDATE role SET foreign_id = REPLACE(foreign_id, 'kc:', 'group:') WHERE type = 'group';`
 
 Beyond these breaking changes, some other differences are notable:
