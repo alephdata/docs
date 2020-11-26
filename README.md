@@ -34,7 +34,7 @@ The Aleph platform also includes a limited set of open data that are pre-process
 
 ## About the name
 
-Aleph is named after a short story written by the Argentinian author Jorge Luis Borges, [The Aleph](http://www.phinnweb.org/links/literature/borges/aleph.html). It tells of a magical place the encapsulates all other places:
+Aleph is named after a short story written by the Argentinian author Jorge Luis Borges, [The Aleph](http://www.phinnweb.org/links/literature/borges/aleph.html). It tells of a magical place that encapsulates all other places:
 
 _Truth cannot penetrate a closed mind. If all places in the universe are in the Aleph, then all stars, all lamps, all sources of light are in it, too._
 
