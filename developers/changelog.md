@@ -6,6 +6,23 @@ description: >-
 
 # Changelog
 
+### 3.9.8
+
+* Re-name personal datasets to "Investigations" in the UI
+* Introduce user interfaces for profiles, an interactive way to de-duplicate data. Fix various bugs in profile logic in the backend.
+* Get rid of the global scoped search, show separate search bars closer to the subject of the search in the user interface.
+* Introduce structured logging of JSON objects in Stackdriver.
+* Polish data loading in the user interface and de-bug various features.
+
+### 3.9.7
+
+* Work on Arabic/RTL i18n, nested directionality.
+
+### 3.9.6
+
+* Debug OIDC logout
+* Pairwise judgement API to replace xref decisions API.
+
 ### 3.9.5
 
 {% hint style="warning" %}
