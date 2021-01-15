@@ -6,6 +6,13 @@ description: >-
 
 # Changelog
 
+### 3.9.9
+
+* Re-design the Investigation UI for a UX that involves guiding the user through some common actions. 
+* Refactor much of the state handling in the React app.
+* Bug fixes on ingestors.
+* Allow entities in one collection to reference those in another. 
+
 ### 3.9.8
 
 * Re-name personal datasets to "Investigations" in the UI
