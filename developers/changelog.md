@@ -6,6 +6,11 @@ description: >-
 
 # Changelog
 
+### 3.9.10
+
+* Inline the helm chart into the Aleph repository, it's now shipped with the main application. This requires updating your helm configuration if you've been using the previous charts.
+* Loads of bug fixes for small UI issues.
+
 ### 3.9.9
 
 * Re-design the Investigation UI for a UX that involves guiding the user through some common actions. 
