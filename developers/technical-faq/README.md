@@ -238,9 +238,7 @@ You may also need to run `aleph update` afterwards to refresh some cached inform
 
 ## Can I run Aleph on Kubernetes?
 
-That's where it's most at home. We don't yet provide an official helm chart \(help wanted!\), but if you hit one of the OCCRP staff up on Slack, we might be able to share \(parts of\) our manifests. 
-
-We aggressively use auto-scaling both on the cluster and pod level, which helps to combine fast imports with limited operational cost. 
+That's where it's most at home! We recommend you use the [helm chart](https://github.com/alephdata/aleph/tree/main/helm) to deploy Aleph. It will allow you to override the key settings for your site, while providing a coherent deployment. We use auto-scaling both on the cluster and pod level, which helps to combine fast imports with limited operational cost. 
 
 ## How can I connect to the database directly?
 

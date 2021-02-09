@@ -6,9 +6,7 @@ description: Below you will find the installation steps on how to install Aleph.
 
 ## Prerequisites
 
-Aleph requires multiple services to operate. It uses Docker containers to make it easier for development and deployments.
-
-Before we continue, you will need to have Docker and `docker-compose` installed. Please refer to their manual to learn how to set up [Docker](https://docs.docker.com/engine/installation/) and [docker-compose](https://docs.docker.com/compose/install/).
+Aleph requires multiple services to operate. It uses Docker containers to make it easier for development and deployments. Before we continue, you will need to have Docker and `docker-compose` installed. Please refer to their manual to learn how to set up [Docker](https://docs.docker.com/engine/installation/) and [docker-compose](https://docs.docker.com/compose/install/).
 
 ## Developer setup
 
@@ -115,13 +113,14 @@ To build the image you can run `make build`, which will build the `alephdata/ale
 ## Production deployment
 
 {% hint style="info" %}
-This section details how to set up Aleph in production mode. If you plan to change the source code or quickly test the software, you may wish to use the [Developer setup](installation.md#developer-setup) instead.
+This section details how to **set up Aleph in production mode**. If you plan to change the source code or quickly test the software, you may wish to use the [Developer setup](installation.md#developer-setup) instead.
 {% endhint %}
 
 Aleph is distributed as a set of Docker containers, which can be run on any server that meets the following criteria:
 
 * 8GB \(or more\) of RAM. While the software will start with much less, we advise providing ample main memory for ideal performance.
 * A working install of [Docker](https://www.docker.com/) and `docker-compose`. See [the FAQ page](technical-faq/#can-you-run-aleph-without-using-docker) for information on not using Docker.
+* A domain name or IP address which can be used at the root via HTTPS \(i.e. Aleph doesn't support running at a sub-path like `/aleph`\). You are welcome to contribute fixes for this scenario.
 * An internet connection to download and install the package.
 
 To begin a production deployment:
