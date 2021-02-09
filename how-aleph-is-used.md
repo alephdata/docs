@@ -25,7 +25,7 @@ Our goal with all this has been to make an open, modular and extensible toolkit 
 Most of the organisations that have adopted Aleph do so for in-house use. Some public instances exist:
 
 * Organized Crime and Corruption Reporting Project[ \(OCCRP\) Aleph](https://aleph.occrp.org)
-* Balkans Investigative Reporting Network \(BIRN\) - Research Desk
+* Balkans Investigative Reporting Network \(BIRN\) - [Research Desk](https://source.bird.tools/)
 * DDoSecrets [Hunter Memorial Library](https://hunter.ddosecrets.com/)
 * Code for Africa [gazeti.africa](https://gazeti.africa/)
 
