@@ -8,11 +8,11 @@ description: >-
 
 Aleph is an open source toolkit for investigative data analysis. It allows generating, searching and analysing large graphs of heterogeneous data, including public records, structured databases and leaked evidence. The system can integrate data from both unstructured data formats \(like PDF, Email, and other file types\) and structured data such as CSV files, or SQL databases. Data that's been loaded can be securely searched, cross-referenced with other datasets and exported to other systems.
 
-At the core of Aleph's capabilities is [**Follow the Money**](followthemoney.md) \(FtM\), a shared data model the encapsulates core concepts such as `People`, `Companies`, `Documents` or `Contracts`. Such data can be generated from tabular inputs, or via the `ingest-file` system that extracts data from dozens of input formats \(including Word, Powerpoint, PDF, Access, E-Mail, ZIP Archives and so on\).
+At the core of Aleph's capabilities is [**Follow the Money**](followthemoney/) \(FtM\), a shared data model the encapsulates core concepts such as `People`, `Companies`, `Documents` or `Contracts`. Such data can be generated from tabular inputs, or via the `ingest-file` system that extracts data from dozens of input formats \(including Word, Powerpoint, PDF, Access, E-Mail, ZIP Archives and so on\).
 
 ### The basics
 
-{% page-ref page="followthemoney.md" %}
+{% page-ref page="followthemoney/" %}
 
 {% page-ref page="installation.md" %}
 

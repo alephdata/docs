@@ -16,7 +16,7 @@ While documents often provide the evidentiary backbone of an investigation, Alep
 
 ## Entities
 
-Aleph provides an ever-growing [vocabulary](../developers/followthemoney.md) for describing and modeling the people, companies, assets, and relationships that are often at the center of your investigations.
+Aleph provides an ever-growing [vocabulary](../developers/followthemoney/) for describing and modeling the people, companies, assets, and relationships that are often at the center of your investigations.
 
 ![](../.gitbook/assets/screen-shot-2020-07-30-at-12.30.31.png)
 

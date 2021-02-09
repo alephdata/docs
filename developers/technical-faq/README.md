@@ -31,7 +31,7 @@ Aleph performs named entity recognition \(NER\) immediately before indexing data
 
 Currently text processing begins with language classification using [fasttext](https://fasttext.cc/), and then feeds into [spaCy](https://spacy.io) for NER. While names of people and companies are tagged directly, locations are checked against to the [GeoNames](https://www.geonames.org/) database. This is used to tag countries to individual documents. Additionally, a number of regular expressions are used to perform rule-based extraction of phone numbers, email addresses, IBANs and IPs.
 
-Once extracted, these tags are added as properties to the [Follow the Money](../followthemoney.md) entity of the `Document` that they have been extracted from. They can be found in the following fields: `detectedLanguage`, `namesMentioned` , `country`, `ipMentioned`, `emailMentioned`, `phoneMentioned` and `ibanMentioned`.
+Once extracted, these tags are added as properties to the [Follow the Money](../followthemoney/) entity of the `Document` that they have been extracted from. They can be found in the following fields: `detectedLanguage`, `namesMentioned` , `country`, `ipMentioned`, `emailMentioned`, `phoneMentioned` and `ibanMentioned`.
 
 We're extremely happy to consider pull requests that add further types of linguistic and pattern-based extraction.
 
@@ -277,7 +277,7 @@ The **downsides** are:
 All of this said, we'd really love to hear about any experiments regarding this. In OCCRP we sometimes materialise partial Aleph graphs into Neo4J and let analysts browse them via Linkurious. We're hoping to look into dgraph as a possible backend at some point.
 
 {% hint style="info" %}
-We have well-defined graph semantics for FollowTheMoney data and you can export any data \(including documents like emails\) in Aleph [into various graph formats](../ftm.md#exporting-data-to-a-network-graph) \(RDF, Neo4J, and GEXF for Gephi\).
+We have well-defined graph semantics for FollowTheMoney data and you can export any data \(including documents like emails\) in Aleph [into various graph formats](../followthemoney/ftm.md#exporting-data-to-a-network-graph) \(RDF, Neo4J, and GEXF for Gephi\).
 {% endhint %}
 
 ## The document converter service keeps crashing on startup, what's wrong?

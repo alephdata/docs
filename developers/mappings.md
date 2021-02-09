@@ -22,7 +22,7 @@ In order to map data to a Follow the Money model, you will need the following: a
 
 **Source data** can be either a CSV \(comma-separated values\) file using the UTF-8 character encoding, or a valid [connection string](https://docs.sqlalchemy.org/en/13/core/engines.html#database-urls) to connect to a SQL database. Using SQL as a source also lets you perform JOINs within the database while mapping data.
 
-In order to **execute a mapping**, you need either [a running instance of the Aleph server](installation.md), or you need to install the [ftm command-line](ftm.md) utility. Using the command-line tool is recommended for playing around with a mapping while you are refining it. When using the server to map data, you must make sure that the source data is located at a place that is accessible to the Aleph `worker`, such as an HTTP URL for a CSV file or a database that Aleph can connect with.
+In order to **execute a mapping**, you need either [a running instance of the Aleph server](installation.md), or you need to install the [ftm command-line](followthemoney/ftm.md) utility. Using the command-line tool is recommended for playing around with a mapping while you are refining it. When using the server to map data, you must make sure that the source data is located at a place that is accessible to the Aleph `worker`, such as an HTTP URL for a CSV file or a database that Aleph can connect with.
 
 To write a **mapping file**, you will first need to identify:
 
@@ -55,7 +55,7 @@ gb_parliament_57:
 The mapping file specifies a dataset name \(`gb_parliament_57`\) and uses a single query to pull data from a CSV file \(the dataset is from the excellent EveryPolitician project\). The query generates a `Person` entity, which maps the CSV's `id` column to a key, and the CSV's `name`column to the FtM property `name`
 
 {% hint style="info" %}
-Try saving this file to your computer and executing it with the [ftm command-line tool](ftm.md): `ftm map brexitonians.yml`.
+Try saving this file to your computer and executing it with the [ftm command-line tool](followthemoney/ftm.md): `ftm map brexitonians.yml`.
 {% endhint %}
 
 Aleph will now have a dataset called `gb_parliament_57` , which is a list of MP names. To use FtM language – the data has been mapped to a  `Person` entity with a single property \( `name`\).
@@ -64,7 +64,7 @@ Aleph will now have a dataset called `gb_parliament_57` , which is a list of MP 
 
 However, the source CSV file has far more detail on each MP,  from e-mail addresses to political party affiliation. To include this data in  `gb_parliament_57` , we need to map each CSV column to the respective property as defined in the FtM schema. ****The properties vary based on the type of entity \(a `Person` will have different properties from a `Company`\). 
 
-To find out what properties exist for a particular schema, you can [check out the YAML-based schema definitions](https://github.com/alephdata/followthemoney/tree/master/followthemoney/schema) on GitHub or [the diagrams here](followthemoney.md).  \(As seen in the diagram,  FtM schemata have a hierarchical structure. Entities can be assigned all the properties of their parent entities. For instance, `Person` is a child of  `LegalEntity`, which is a child of `Thing` . As such, a  `Person` can be assigned all of the properties of a `LegalEntity` and `Thing`.\)
+To find out what properties exist for a particular schema, you can [check out the YAML-based schema definitions](https://github.com/alephdata/followthemoney/tree/master/followthemoney/schema) on GitHub or [the diagrams here](followthemoney/).  \(As seen in the diagram,  FtM schemata have a hierarchical structure. Entities can be assigned all the properties of their parent entities. For instance, `Person` is a child of  `LegalEntity`, which is a child of `Thing` . As such, a  `Person` can be assigned all of the properties of a `LegalEntity` and `Thing`.\)
 
 Here's an updated mapping file, which maps additional columns from the CSV file to properties in the `Person` schemata \(`email`, `nationality`, and `alias`\). 
 
@@ -117,7 +117,7 @@ gb_parliament_57:
 ```
 {% endcode %}
 
-When run this will create twice as many entities as before: the MPs, and parties. Note how each party is generated multiple times \(once for each of its members\). When you're using the command-line, you will need to perform [entity aggregation](ftm.md#aggregating-entities-using-balkhash) to merge these duplicates. Running the mapping inside of the Aleph server will do this automatically.
+When run this will create twice as many entities as before: the MPs, and parties. Note how each party is generated multiple times \(once for each of its members\). When you're using the command-line, you will need to perform [entity aggregation](followthemoney/ftm.md#aggregating-entities-using-balkhash) to merge these duplicates. Running the mapping inside of the Aleph server will do this automatically.
 
 ### Creating relationships between entities
 
@@ -156,7 +156,7 @@ gb_parliament_57:
 ```
 {% endcode %}
 
-When loaded to Aleph, this mapping would now show browsable entities for the member and each party, and list the memberships on each of their profile pages. You can also export this data [to a more conventional node-graph data model](ftm.md#exporting-data-to-a-network-graph) for use in Neo4J or Gephi.
+When loaded to Aleph, this mapping would now show browsable entities for the member and each party, and list the memberships on each of their profile pages. You can also export this data [to a more conventional node-graph data model](followthemoney/ftm.md#exporting-data-to-a-network-graph) for use in Neo4J or Gephi.
 
 ## **A more realistic complex mapping**
 

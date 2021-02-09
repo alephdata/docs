@@ -7,7 +7,7 @@ description: >-
 
 # Data commons
 
-The data below is available in [Follow the Money](followthemoney.md) format, suitable for processing using [ftm](ftm.md) and [alephclient](alephclient.md) and direct import into Aleph.
+The data below is available in [Follow the Money](followthemoney/) format, suitable for processing using [ftm](followthemoney/ftm.md) and [alephclient](alephclient.md) and direct import into Aleph.
 
 ## OpenSanctions
 

@@ -2,7 +2,7 @@
 
 ## Structuring your data
 
-When **importing a list of companies, people or similar data objects**, it is helpful to convert your raw data into [structured entities](../../developers/followthemoney.md) that Aleph can use to classify those entities for searching, cross-referencing, and many other operations.
+When **importing a list of companies, people or similar data objects**, it is helpful to convert your raw data into [structured entities](../../developers/followthemoney/) that Aleph can use to classify those entities for searching, cross-referencing, and many other operations.
 
 {% hint style="info" %}
 For small and mid-size datasets, follow the instructions below to map your data into structured entities using the Aleph mapping editor. To map very large data straight from a SQL database, or to map complicated relationships, you will have to [create a mapping file](../../developers/mappings.md) instead.

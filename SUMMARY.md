@@ -27,9 +27,10 @@
 
 * [Introduction for developers](developers/intro.md)
 * [Installing Aleph](developers/installation.md)
-* [Follow the Money](developers/followthemoney.md)
+* [Follow the Money](developers/followthemoney/README.md)
+  * [Command-Line](developers/followthemoney/ftm.md)
+  * [Technical Reference](https://followthemoney.readthedocs.io/en/latest/index.html)
 * [Crawling data with Memorious](developers/memorious.md)
-* [followthemoney Command-Line](developers/ftm.md)
 * [alephclient Command-Line](developers/alephclient.md)
 * [Mixed document/entity graphs](developers/mixed-graphs.md)
 * [Importing structured data](developers/mappings.md)

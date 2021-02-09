@@ -39,7 +39,7 @@ Aleph is an open source project, we're very excited for contributions from peopl
 
 * If you are a **native speaker of a language** that isn't supported by the Aleph user interface, join the [Transifex project](https://www.transifex.com/aleph/) and help us provide the software in that language.
 * If you're a **coder** \(Python, JavaScript/React.js\), jump on our issue tracker to see open issues. Work that could be a good entry point for a new contributor is marked [**help-wanted**](https://github.com/alephdata/aleph/labels/help-wanted).
-* If you're an **open data enthusiast or data scraper**, you can convert data from a public source to our [FollowTheMoney data format](developers/followthemoney.md) and share the result with [the community](get-in-touch.md). Consider contributing a [memorious](developers/memorious.md) scraper to the Aleph [data commons](developers/untitled.md)!
+* If you're an **open data enthusiast or data scraper**, you can convert data from a public source to our [FollowTheMoney data format](developers/followthemoney/) and share the result with [the community](get-in-touch.md). Consider contributing a [memorious](developers/memorious.md) scraper to the Aleph [data commons](developers/untitled.md)!
 * Any **graphic designers or visual artists** could help us immensely, in particular by improving the set of icons available inside the application. Please [get in touch](get-in-touch.md)!
 
 ### Who has funded the development?

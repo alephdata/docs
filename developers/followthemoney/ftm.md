@@ -4,11 +4,11 @@ description: >-
   data.
 ---
 
-# followthemoney Command-Line
+# Command-Line
 
-**ftm** is a command-line tool that is part of the Python implementation of the [Follow the Money](followthemoney.md) data model. It can be used to generate, process and export streams of entities in a line-based JSON format. Typical uses would include:
+**ftm** is a command-line tool that is part of the Python implementation of the [Follow the Money](./) data model. It can be used to generate, process and export streams of entities in a line-based JSON format. Typical uses would include:
 
-* Generating FtM entities by applying an [entity mapping to structured data tables](mappings.md) \(CSV, SQL\). These entities can then be loaded into an instance of Aleph using the [alephclient](alephclient.md) command.
+* Generating FtM entities by applying an [entity mapping to structured data tables](../mappings.md) \(CSV, SQL\). These entities can then be loaded into an instance of Aleph using the [alephclient](../alephclient.md) command.
 * Converting an existing stream of FtM entities \(e.g. from the Aleph API\) into another format, such as CSV, Excel, Gephi GEXF or Neo4J's Cypher language.
 * Converting data in complex formats, such as the Open Contracting Data Standard, into FtM entities.
 * _Work in Progress:_ Enriching FtM entities from other data sources, such as OCCRP Aleph, OpenCorporates or Wikidata.
@@ -51,7 +51,7 @@ pip install pyicu
 
 ## Executing a data mapping
 
-Probably the most common task for ftm is to generate FtM entities from some structured data source. This is done using a YAML-formatted mapping file, [described here](mappings.md). With such a YAML file in hand, you can generate FtM entities like this:
+Probably the most common task for ftm is to generate FtM entities from some structured data source. This is done using a YAML-formatted mapping file, [described here](../mappings.md). With such a YAML file in hand, you can generate FtM entities like this:
 
 ```bash
 curl -o md_companies.yml https://raw.githubusercontent.com/alephdata/aleph/master/mappings/md_companies.yml
@@ -60,7 +60,7 @@ ftm map md_companies.yml
 
 This will yield a line-based JSON stream of every company in Moldova, their directors and principal shareholders.
 
-![Generating Moldovan company data as Follow the Money entities.](../.gitbook/assets/screenshot-2019-08-29-at-23.24.51.png)
+![Generating Moldovan company data as Follow the Money entities.](../../.gitbook/assets/screenshot-2019-08-29-at-23.24.51.png)
 
 You might note, however, that this actually generates multiple entity fragments for each company \(i.e. multiple entities with the same ID\). This is due to the way the md\_companies mapping is written: each query section generates a partial company record. In order to mitigate this, you will need to perform entity aggregation:
 
@@ -92,7 +92,7 @@ cat us_ofac.ijson | ftm validate | ftm export-excel -o OFAC.xlsx
 
 Since writing the binary data of an Excel file to standard output is awkward, it is mandatory to include a file name with the `-o` option.
 
-![The US sanctions list, as exported via export-excel.](../.gitbook/assets/screenshot-2019-09-01-at-20.26.02.png)
+![The US sanctions list, as exported via export-excel.](../../.gitbook/assets/screenshot-2019-09-01-at-20.26.02.png)
 
 {% hint style="warning" %}
 When exporting to Excel format, it's easy to generate a workbook larger than what Microsoft Excel and similar office programs can actually open. Only export small and mid-size datasets.
@@ -117,7 +117,7 @@ Follow the Money sees every unit of information as an entity with a set of prope
 
 * Some entity schemata, such as `Directorship`, `Ownership`, `Family` or `Payment`, contain annotations that define how they can be transformed into an edge with a source and target.
 * Entities also naturally reference others. For example, an `Email` has an `emitters` property that refers to a `LegalEntity`, the sender. The `emitters` property connects the two entities and can also be turned into an edge.
-* Finally, some [types of properties](followthemoney.md#property-types) \(e.g. `email`, `iban`, `names`\) can be formed into nodes, with edges formed towards each node that derives from an entity with that property value. For example, an `address` node for "40 Wall Street" would show links to all the companies registered there, or a node representing the name "Frank Smith" would connect all the documents mentioning that name.
+* Finally, some [types of properties](./#property-types) \(e.g. `email`, `iban`, `names`\) can be formed into nodes, with edges formed towards each node that derives from an entity with that property value. For example, an `address` node for "40 Wall Street" would show links to all the companies registered there, or a node representing the name "Frank Smith" would connect all the documents mentioning that name.
 
 It rarely makes sense to turn all property types into nodes, so the set of types that need to be [reified](https://en.wikipedia.org/wiki/Reification_%28computer_science%29) can be passed as options into the graph exporter.
 
@@ -132,7 +132,7 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm export-cypher | cypher-shell -u user -p password
 ```
 
-![Each entity type is turned either into a node label, or a relationship type.](../.gitbook/assets/screenshot-2019-09-01-at-21.45.28.png)
+![Each entity type is turned either into a node label, or a relationship type.](../../.gitbook/assets/screenshot-2019-09-01-at-21.45.28.png)
 
 By default, this will only make explicit edges based on entity to entity relationships. If you want to reify specific property types, use the `-e` option:
 
@@ -184,7 +184,7 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm validate | ftm export-cypher -e iban -o ofac.gexf
 ```
 
-![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links \(i.e. In-Degree\).](../.gitbook/assets/screenshot-2019-09-01-at-22.03.51.png)
+![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links \(i.e. In-Degree\).](../../.gitbook/assets/screenshot-2019-09-01-at-22.03.51.png)
 
 ## Exporting entities to RDF/Linked Data
 
@@ -220,7 +220,7 @@ Depending on how large the OCDS dataset is, you may want to use `followthemoney-
 
 ## Aggregating entities using ftm-store
 
-While the method of streaming Follow the Money entities is very convenient, there are situations where not all information about an entity is known at the time at which it is generated. For example, think of a [mapping](mappings.md) that loads company names from one CSV file, while the corresponding addresses are in a second, separate CSV table. In such cases, it is easier to generate two entities with the same ID and to merge them later.
+While the method of streaming Follow the Money entities is very convenient, there are situations where not all information about an entity is known at the time at which it is generated. For example, think of a [mapping](../mappings.md) that loads company names from one CSV file, while the corresponding addresses are in a second, separate CSV table. In such cases, it is easier to generate two entities with the same ID and to merge them later.
 
 Merging such entity fragments requires sorting all the entities in the given dataset by their ID in order to aggregate their properties. For small datasets, this can be done in application memory using the `ftm aggregate`command. 
 

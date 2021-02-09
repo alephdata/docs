@@ -6,7 +6,7 @@ description: >-
 
 # Drawing network diagrams
 
-**Network diagrams** let you illustrate webs of people, companies and other entities involved in an investigation in a visual diagram of actors and connections. It utilizes the same [types of nodes and connections](../../developers/followthemoney.md) as the rest of Aleph and runs both within the Aleph interface and on your desktop computer.
+**Network diagrams** let you illustrate webs of people, companies and other entities involved in an investigation in a visual diagram of actors and connections. It utilizes the same [types of nodes and connections](../../developers/followthemoney/) as the rest of Aleph and runs both within the Aleph interface and on your desktop computer.
 
 ![](../../.gitbook/assets/screenshot-2019-08-29-at-11.09.30.png)
 

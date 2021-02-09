@@ -46,7 +46,7 @@ alephclient crawldir --language rus --foreign-id russian_leak /Users/sunu/data/r
 
 ## Writing a stream of entities to a collection
 
-Using the `write-entities` command, users can load JSON-formatted entities formatted in the `followthemoney` structure into an aleph collection. This can be used in conjunction with the [command-line tools for generating such data](ftm.md) provided by `followthemoney`. Data that is loaded this way should be aggregated before being written to the API, for example using the `ftm aggregate` command-line utility, or the `followthemoney-store` database layer.
+Using the `write-entities` command, users can load JSON-formatted entities formatted in the `followthemoney` structure into an aleph collection. This can be used in conjunction with the [command-line tools for generating such data](followthemoney/ftm.md) provided by `followthemoney`. Data that is loaded this way should be aggregated before being written to the API, for example using the `ftm aggregate` command-line utility, or the `followthemoney-store` database layer.
 
 A typical use might look this:
 
@@ -63,7 +63,7 @@ The command `stream-entities` is the inverse of `write-entities`. It will stream
 alephclient stream-entities -f us_ofac >us_ofac.json
 ```
 
-With the [Follow the Money tools](ftm.md) installed, you can build more complex command like such:
+With the [Follow the Money tools](followthemoney/ftm.md) installed, you can build more complex command like such:
 
 ```bash
 alephclient stream-entities -f us_ofac | ftm validate | ftm export-excel -o OFAC.xlsx

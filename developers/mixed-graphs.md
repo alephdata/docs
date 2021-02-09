@@ -6,7 +6,7 @@ Probably the most powerful feature of Aleph is the ability to import both struct
 
 There are two distinct pathways for loading data into Aleph: either via document ingest for data in PDF, E-Mail or other document formats, or via [data mappings](mappings.md) for semantic data, such as companies and people.
 
-While both processes produce entities in [FollowTheMoney](followthemoney.md) format, there is one crucial difference: for ingested documents, the entity ID is set by Aleph, while for structured entities, you define an ID yourself. At the same time, the entity ID is needed to link to it from other entities.
+While both processes produce entities in [FollowTheMoney](followthemoney/) format, there is one crucial difference: for ingested documents, the entity ID is set by Aleph, while for structured entities, you define an ID yourself. At the same time, the entity ID is needed to link to it from other entities.
 
 Therefore, in order to make structured data entities link to ingested documents, you must first upload the documents to Aleph so that it assigns them an ID. Then you can use that entity ID in other parts of the FollowTheMoney entity graph.
 
@@ -58,7 +58,7 @@ If you visit your Aleph instance, you will see the documents being imported. Eve
 
 ### Step 3: Making FollowTheMoney entities in Python
 
-Once we have received an ID for the document, we can start generating FollowTheMoney entities that link to it. In this scenario, we will not - as usual - be using a [data mapping](mappings.md) to create entities. Instead we'll use the [followthemoney](ftm.md) Python library.
+Once we have received an ID for the document, we can start generating FollowTheMoney entities that link to it. In this scenario, we will not - as usual - be using a [data mapping](mappings.md) to create entities. Instead we'll use the [followthemoney](followthemoney/ftm.md) Python library.
 
 Using the library, we can use the `followthemoney` model definition to generate a so-called entity proxy, an object that can be used to construct an entity.
 
