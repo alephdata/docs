@@ -12,11 +12,11 @@ The goal of the Aleph project is to provide powerful technology to investigative
 
 We decided to build Aleph to solve the following principal needs:
 
-* Easy data search for both structured and unstructured information \(ie. documents and databases\).
-* Cross-referencing between different datasets \("Who are all the politicians in my country that are mentioned in this leak?"\)
-* Access control and data compartmentalisation, but also flexible sharing within cross-border teams.
-* Continuous crawling of hundreds of public data sources as background material for research.
+* Easy **data search for both structured and unstructured information** \(ie. documents and databases\).
+* **Cross-referencing** between different datasets \("Who are all the politicians in my country that are mentioned in this leak?"\)
+* **Access control** and data compartmentalisation, but also flexible sharing within cross-border teams.
 * Visual exploration of investigative analysis through network diagrams, timelines and other investigative tools.
+* Continuous crawling of hundreds of public data sources as background material for research.
 
 Our goal with all this has been to make an open, modular and extensible toolkit that can be operated at scale and in production.
 
