@@ -4,7 +4,7 @@ description: >-
   a data mapping.
 ---
 
-# Importing structured data as entities
+# Importing structured data
 
 Aleph is commonly used to import data tables \(like a companies registry, list of persons of interest, or a set of government contracts\) that a user wants to search and browse. 
 

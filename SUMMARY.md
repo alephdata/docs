@@ -32,7 +32,7 @@
 * [followthemoney Command-Line](developers/ftm.md)
 * [alephclient Command-Line](developers/alephclient.md)
 * [Mixed document/entity graphs](developers/mixed-graphs.md)
-* [Importing structured data as entities](developers/mappings.md)
+* [Importing structured data](developers/mappings.md)
 * [Adding text processors](developers/adding-text-processors.md)
 * [Aleph API](https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json)
 * [Technical FAQ](developers/technical-faq/README.md)
