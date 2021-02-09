@@ -44,5 +44,4 @@
 ## Data commons
 
 * [Bulk data excerpts](data-commons/untitled.md)
-* [OpenSanctions](data-commons/sanctions.md)
 

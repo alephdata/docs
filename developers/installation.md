@@ -91,7 +91,7 @@ If you want to quickly get some sample data in your Aleph instance you can use `
 aleph crawldir /aleph/contrib/testdata
 ```
 
-To also get a sample of \(non-document\) entity data, consider loading [sanctions lists](../data-commons/sanctions.md).
+To also get a sample of \(non-document\) entity data, consider loading [sanctions lists]().
 
 ### Running Tests
 

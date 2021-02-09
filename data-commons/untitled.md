@@ -13,7 +13,9 @@ The data below is available in [Follow the Money](../developers/followthemoney.m
 
 Sanctions lists, databases of politicians and criminal figures can be a good way to find leads within other data, using [cross-referencing](../guide/building-out-your-investigation/cross-referencing.md). That's why we operate a series of crawlers that generate up-to-date resources.
 
-{% page-ref page="sanctions.md" %}
+{% hint style="warning" %}
+OpenSanctions is currently being updated. Please check [OpenSanctions.org](http://opensanctions.org) for links to the sanctions FtM data.
+{% endhint %}
 
 ## ICIJ OffshoreLeaks
 
