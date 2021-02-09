@@ -5,9 +5,9 @@ description: >-
   archive.
 ---
 
-# Bulk data excerpts
+# Data commons
 
-The data below is available in [Follow the Money](../developers/followthemoney.md) format, suitable for processing using [ftm](../developers/ftm.md) and [alephclient](../developers/alephclient.md) and direct import into Aleph.
+The data below is available in [Follow the Money](followthemoney.md) format, suitable for processing using [ftm](ftm.md) and [alephclient](alephclient.md) and direct import into Aleph.
 
 ## OpenSanctions
 

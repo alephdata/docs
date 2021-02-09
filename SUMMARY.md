@@ -40,8 +40,5 @@
   * [Look Ma, No Docker](developers/technical-faq/look-ma-no-docker.md)
 * [Changelog](developers/changelog.md)
 * [Developer tools](developers/developer-tools.md)
-
-## Data commons
-
-* [Bulk data excerpts](data-commons/untitled.md)
+* [Data commons](developers/untitled.md)
 

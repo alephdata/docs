@@ -30,7 +30,7 @@ From a technical perspective, Aleph is a whole **suite of open source tools**. B
 
 The Aleph platform also includes a limited set of open data that are pre-processed to be easily loaded into the site. This includes **OpenSanctions**, a set of crawlers for international lists of sanctions, criminal warrants and of politically exposed people.
 
-{% page-ref page="data-commons/untitled.md" %}
+{% page-ref page="developers/untitled.md" %}
 
 ## About the name
 
