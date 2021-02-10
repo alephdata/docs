@@ -8,7 +8,7 @@ description: >-
 
 Aleph is a powerful tool for people who follow the money. It helps investigators to **securely access and search large amounts of data** - no matter whether they are a government database or a leaked email archive.
 
-![](.gitbook/assets/screenshot-2019-09-03-at-08.57.04.png)
+{% embed url="https://www.youtube.com/watch?v=nqUByNDPqnE" caption="An introduction to OCCRP Aleph, the OCCRP instance of the software." %}
 
 ## Aleph for users
 
@@ -27,10 +27,6 @@ If you're a reporter or other user of Aleph, you can find out **how to search Al
 From a technical perspective, Aleph is a whole **suite of open source tools**. Besides running and configuring the Aleph server, the documentation also covers separate tools that are used to process data flexibly, interact with Aleph, or export data to another format.
 
 {% page-ref page="developers/intro.md" %}
-
-The Aleph platform also includes a limited set of open data that are pre-processed to be easily loaded into the site. This includes **OpenSanctions**, a set of crawlers for international lists of sanctions, criminal warrants and of politically exposed people.
-
-{% page-ref page="developers/datacommons.md" %}
 
 ## About the name
 

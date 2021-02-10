@@ -4,7 +4,7 @@ description: >-
   focussed around the Aleph API server and document processing framework.
 ---
 
-# Introduction for developers
+# Technical introduction
 
 Aleph is an open source toolkit for investigative data analysis. It allows generating, searching and analysing large graphs of heterogeneous data, including public records, structured databases and leaked evidence. The system can integrate data from both unstructured data formats \(like PDF, Email, and other file types\) and structured data such as CSV files, or SQL databases. Data that's been loaded can be securely searched, cross-referenced with other datasets and exported to other systems.
 

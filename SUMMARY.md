@@ -25,7 +25,7 @@
 
 ## Developers and operators <a id="developers"></a>
 
-* [Introduction for developers](developers/intro.md)
+* [Technical introduction](developers/intro.md)
 * [Installing Aleph](developers/installation.md)
 * [Follow the Money](developers/followthemoney/README.md)
   * [Command-Line](developers/followthemoney/ftm.md)
@@ -36,6 +36,7 @@
 * [Importing structured data](developers/mappings.md)
 * [Adding text processors](developers/adding-text-processors.md)
 * [Aleph API](https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json)
+* [Untitled](developers/untitled-1.md)
 * [Technical FAQ](developers/technical-faq/README.md)
   * [Design premises](developers/technical-faq/design-premises.md)
   * [Look Ma, No Docker](developers/technical-faq/look-ma-no-docker.md)
