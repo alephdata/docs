@@ -29,7 +29,9 @@ Intervals are business interests, court cases, sanctions and transactions \(and 
 
 ### Browsing the schema
 
-If you wish to browse the Follow the Money data interactively, we recommend using the RDF-based ontology version that is generated [here](https://alephdata.github.io/followthemoney/ns/ftm.xml). It can be used to drive interactive data explorers in multiple formats, including:
+**To explore the Follow the Money schema hierarchy in detail, check the** [**FollowTheMoney reference documentation**](https://followthemoney.readthedocs.io/en/latest/model.html)**.**
+
+You can also use the RDF-based ontology version that is generated [here](https://alephdata.github.io/followthemoney/ns/ftm.xml). It can be used to drive interactive data explorers in multiple formats, including:
 
 * The [LODE documentation browser](http://150.146.207.114/lode/extract?url=https%3A%2F%2Falephdata.github.io%2Ffollowthemoney%2Fns%2Fftm.xml&owlapi=true&imported=true&lang=en) \(great for reading\)
 * A [network visualisation of the ontology](http://www.visualdataweb.de/webvowl/#iri=https://alephdata.github.io/followthemoney/ns/ftm.xml) provided by WebVOWL.
