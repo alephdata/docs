@@ -1,53 +1,54 @@
-# Anatomy of a Search
+---
+description: >-
+  The guide below explains how to carry out a basic search, create email alerts
+  for terms of interest, and how to view and export your results.
+---
 
-### The Search Bar
+# Executing a basic search
 
-Aleph's search bar is located at the top of the web page and is comprised of several distinct features:
+## The Aleph Search Bar
 
-* the search context
-* the search form
-* the create alert button
-* the help button
+Aleph's site-wide search bar is located at the top of any page on the site. This search bar allows you to search all of the documents and entities [**you have access to**](../the-basics.md#groups) in Aleph. It is comprised of several distinct features:
 
-![](../../.gitbook/assets/annotated_search_bars.png)
-
-#### The Search Context
-
-The search context indicates what the scope of the search will be. There are three main scopes:
-
-1. **OCCRP Aleph:** This scope will search all the datasets in Aleph and return the results. 
-2. **Dataset:** This scope, indicated by the name of the dataset you are searching, is limited to only that dataset and no other datasets.
-3. **Document:** This scope, indicated by the name of the document, is limited to the text inside only that document, and no other document in the dataset.
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-09.23.56%20%281%29.png)
 
 #### The Search Form
 
-The search form is where you enter keywords and use search operators to expand or constrain the results of your search.
+The **search form** is where you enter keywords and other terms of interest in order to execute your search.
 
 #### Create Alert Button
 
-The create alert button enables you to create a saved alert based on the keywords and operators in the search form. Once saved, you will receive email notifications as well as see alerts in the notification tab when new data is added to Aleph that meet the requirements of your search.
+The **create alert button** enables you to create a saved alert based on the keywords and operators in the search form. Once saved, you will receive email notifications as well as see alerts in the notification tab when new data is added to Aleph that meet the requirements of your search.
 
-#### Help Button
+#### Advanced Search Button
 
-The help button displays a popup explaining the various operators/methods you can use in the search form to either expand or constrain your search.
+The **advanced search button** displays a popup form which allows you to apply various [**advanced operators and methods**](advanced-search-methods.md) to your search, like fuzzy matching, spelling variations, and proximity searches.
 
-![Search Help Popup](../../.gitbook/assets/annotated_alert_popup.png)
+## Viewing your results
 
-### Highlighting Keywords in Search Results
+When you execute a search, the results of your search are listed below the search bar. As you scroll, more of the results will be displayed, until you reach the end of the list. The **result count** lets you know how many results in total were found matching your term. 
 
-When you type keywords in the search form, the set of results of the search are listed below, including the text containing those keywords highlighted in yellow. This allows you to eyeball the results and understand why they were returned based on your keywords. They can also help you decide if you need to either expand or narrow down your search.
+![Search results containing PDF documents mentioning the queried keyword](../../.gitbook/assets/screen-shot-2021-02-11-at-09.42.34%20%281%29.png)
 
-![](../../.gitbook/assets/search_results_highlighting.png)
+With each result, **yellow highlighted text** indicates the context in which your search term was found. This allows you to eyeball the results and understand why they were returned based on your keywords. This can also help you decide if you need to either expand or narrow down your search.
+
+### Previewing a result
+
+**Clicking on a search result** opens a preview of the document or entity in question, allowing you to briefly assess whether it is worth a more in-depth look. You can quickly preview many results by using the **up and down arrow keys** to scroll between entries.
+
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-09.45.53%20%282%29.png)
+
+In the preview, clicking the **Expand** button will take you to the main page for that entity or document, while the **Download** button \(for documents and other downloadable content\) allows you to save a copy to your local machine. The **X** button closes the preview, returning you to the main results view.
 
 ### The Facets \(Filters\)
 
-Aleph's search results page includes a list of filters to further narrow down your search results. These filters are located in the left-hand sidebar of the page.
+Aleph's search results page includes a list of filters to further narrow down your search results. These filters are located in the left-hand sidebar of the page. Learn more about filtering your results [**here**](filtering-your-search-results.md)**.**
 
-![](../../.gitbook/assets/annotated_aleph_search_facets.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-10.03.11.png)
 
-### Export Button
+## Exporting your results
 
-Aleph enables you to download the results of your search as a spreadsheet. Just click on the export button in the top-right of the window to download the search results. Aleph limits the number of search results you can download to 10,000 results.
+Aleph enables you to download the results of your search as a spreadsheet. Just **click on the export button** in the top-right of the window to download the results. Aleph limits the number of search results you can download to a **maximum of 10,000 results**.
 
-![](../../.gitbook/assets/export_search_results_cropped.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-10.03.11%20%281%29.png)
 

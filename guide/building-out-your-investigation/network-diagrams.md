@@ -10,15 +10,15 @@ description: >-
 
 ![](../../.gitbook/assets/screenshot-2019-08-29-at-11.09.30.png)
 
-It is important to note that all entities and relationships that you add to your diagram will be automatically added to the personal dataset in which the diagram is contained.
+It is important to note that all entities and relationships that you add to your diagram will be automatically added to the investigation in which the diagram is contained.
 
 ## Creating Diagrams in Aleph
 
 ### Creating your first diagram
 
-Network diagrams can be created within any [Personal Dataset ](https://docs.alephdata.org/guide/loading-data#personal-datasets)you have access to in Aleph. To get started, click the "**Network diagrams**" button on any Personal Dataset page, and then the "**New diagram**" button.
+Network diagrams can be created within any [**investigation**](creating-an-investigation.md) you have access to in Aleph. To get started, click the "**Network diagrams**" button in the sidebar on any investigation page, and then the "**New diagram**" button.
 
-![](../../.gitbook/assets/screen-shot-2020-03-16-at-14.29.26.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.10.19.png)
 
 You will now be able to map people, companies, and the relationships between them, which will be saved within your Aleph account, and only be visible to you and whomever you choose to share the diagram with.
 
@@ -32,13 +32,13 @@ Once you have created multiple entities in your diagram, you can connect them by
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-14.58.28.png)
 
-Any entities and relationships you create within a diagram will automatically be added to the Personal Dataset in which your diagram was created.  This allows you to cross-reference the lists of people, companies, and other entities you have created in your diagrams with data from across the rest of Aleph.
+Any entities and relationships you create within a diagram will automatically be added to the investigation in which your diagram was created.  This allows you to cross-reference the lists of people, companies, and other entities you have created in your diagrams with data from across the rest of Aleph.
 
 ### Sharing diagrams
 
-Once you have created a diagram, you can allow others to view or edit it by allowing them access to the Personal Dataset in which it is contained.
+Once you have created a diagram, you can allow others to view or edit it by allowing them access to the investigation in which it is contained.
 
-You can also export your diagram to be saved as a file on your computer by clicking the "Export" button in the top right corner of the diagram editor. Once the diagram has been exported as a file, it can be edited using the Desktop application or shared with others as with any other file on your computer.
+You can also export your diagram to be saved as a file on your computer by clicking the **"Export"** button in the top right corner of the diagram editor. Once the diagram has been exported as a file, it can be edited using the [**Desktop application**](../aleph-data-desktop.md) or shared with others as with any other file on your computer.
 
 ## Download the Desktop App
 
@@ -46,7 +46,7 @@ All of the sketching functionality of network diagrams within Aleph is also avai
 
 ## Frequently Asked Questions
 
-Below some of the common questions we've received about network diagrams. If you have another question or want to suggest an improvement, please [get in touch](../../get-in-touch.md).
+Below are some of the common questions we've received about network diagrams. If you have another question or want to suggest an improvement, please [get in touch](../../get-in-touch.md).
 
 ### How does this relate to OCCRP VIS?
 
@@ -70,9 +70,11 @@ Yes. In main the toolbar, you have an option to export an SVG graphic to a file.
 
 Please be conscious, however, that network diagrams are mainly intended to be investigative sketches. Their complexity can easily exceed the complexity we should force our readers to deal with. Be nice to the mortals.
 
-### Can I import a spreadsheet of names and companies?
+### Can I import a spreadsheet of names and companies into a diagram?
 
-That'd be cool, right! We'll try to get it added soon.
+Yes! Follow the instructions for [generating multiple entities from a spreadsheet](generating-multiple-entities-from-a-list.md). In step 4 of the entity mapping process, select the desired destination diagram, and they will be automatically added to your diagram.
+
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.16.17%20%281%29.png)
 
 
 

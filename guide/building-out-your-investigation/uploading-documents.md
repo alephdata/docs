@@ -6,7 +6,7 @@ description: >-
 
 # Uploading documents
 
-The most common type of data to import into a personal dataset in Aleph is files, such as **PDFs**, **E-Mail archives**, or **Word documents**. Uploading these [documents](../the-basics.md#documents) to Aleph allows you to keep track of evidence gathered over the course of an investigation and to share it as needed with your colleagues. 
+The most common type of data to import into an investigation in Aleph is files, such as **PDFs**, **E-Mail archives**, or **Word documents**. Uploading these [documents](../the-basics.md#documents) to Aleph allows you to keep track of evidence gathered over the course of an investigation and to share it as needed with your colleagues. 
 
 Most importantly, uploading files to Aleph makes it easier to search their contents, even if text is hidden in images or other unstructured formats. 
 
@@ -42,12 +42,14 @@ Aleph **preserves the folder structure** and hierarchy of uploaded documents, an
 
 ## Getting started
 
-To upload a set of documents, you must first have a [Personal dataset ](creating-a-personal-dataset.md)into which to import them. Once you have a personal dataset ready to go, then proceed with the following:
+To upload a set of documents, you must first have an [investigation](creating-an-investigation.md) into which to import them. Once you have an investigation ready to go, then proceed with the following:
 
-1. From the homepage of your personal dataset, click the **Documents** tab. 
+1. From the homepage of your investigation, click the **Documents** button in the sidebar. 
 2. Then click the **Upload** button to select files or folders from your computer. \(Alternatively, **drag** files/folders you would like to upload anywhere onto the screen to start the upload process.\)
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.12.01.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.03.28.png)
+
+
 
 3. Decide whether you would like to upload documents with their **folder structure intact**, or as a simple list of files.
 
@@ -57,13 +59,15 @@ To upload a set of documents, you must first have a [Personal dataset ](creating
 
 ![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.37.52%20%281%29.png)
 
-5. It will take a little while to process your uploaded files. In the meantime, you can check the status of the upload by hovering over the name of your Personal Dataset at the top of the screen.
+5. It will take a little while to process your uploaded files. In the meantime, you can check the status of the upload by hovering over the name of your investigation at the top of the screen.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.41.03.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.07.37.png)
 
-6. When the upload is finished, you should now see your files in the **Documents** section of the Personal dataset.
+6. When the upload is finished, you should now see your files in the **Documents** section of the investigation.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.42.50.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.06.18.png)
+
+
 
 ## Advanced notes on uploads
 

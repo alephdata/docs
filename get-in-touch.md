@@ -15,7 +15,7 @@ While the Aleph source code is openly available and licensed, the community supp
 
 * Most discussion and support takes place on the **Aleph Slack**. Please follow the steps lined out in the [Aleph Support Policy](https://github.com/alephdata/aleph/blob/main/SUPPORT.md) to receive an invitation for the community.
 * If you notice a **defect with the software**, head on over to [GitHub to file an issue report](https://github.com/alephdata/aleph/issues). Remember to include information about what you were trying to accomplish, and what specific operating system you are using.
-* For questions related to the instance of aleph operated by the [Organized Crime and Corruption Reporting Project](https://data.occrp.org) \(OCCRP\), contact the **data team at data@occrp.org**. Our data team provides assistance to individuals and groups engaged in public interest journalism. We do not currently offer commercial support and consultancy related to Aleph.
+* For questions related to the instance of Aleph operated by the [Organized Crime and Corruption Reporting Project](https://data.occrp.org) \(OCCRP\), contact the **data team at data@occrp.org**. Our data team provides assistance to individuals and groups engaged in public interest journalism. We do not currently offer commercial support and consultancy related to Aleph.
 * **If you are a whistleblower** and wish to share confidential information with the press, this community of software developers is not the ideal place to do so. [Contact a journalistic organisation](https://www.occrp.org/en/become-a-whistleblower/) instead.
 
 ![](.gitbook/assets/giphy.gif)

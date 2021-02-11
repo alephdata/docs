@@ -43,10 +43,10 @@ If you have Aleph Data Desktop downloaded, clicking this file should automatical
 There might be occasions where is useful to import a diagram you have been working on in the desktop application into Aleph. 
 
 1. Save your diagram file
-2. In an Aleph Personal dataset, go to the **"Network diagrams"** tab
+2. In an Aleph investigation, go to the **"Network diagrams"** tab
 3. Then click the **"Import diagram"** button
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-13.29.28.png)
+![](../.gitbook/assets/screen-shot-2021-02-11-at-13.23.04.png)
 
     4. **Drag** your diagram file into the window, or click to select it from your computer's file system.
 
@@ -54,5 +54,5 @@ There might be occasions where is useful to import a diagram you have been worki
 
     5. Modify the title and description as you wish. Then click **"Create"**
 
-    ****6. Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the Personal dataset into which it was added.
+    ****6. Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the investigation into which it was added.
 

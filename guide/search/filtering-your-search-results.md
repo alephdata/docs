@@ -1,30 +1,37 @@
-# Filtering Your Search Results
+---
+description: >-
+  With so much data to sift through, Aleph gives you many options for filtering
+  your search to only the content types, datasets, countries, and so on that you
+  are most interested in.
+---
 
-Once you have honed your search using the [advanced search methods](advanced-search-methods.md), you can further filter the search results by a number of built in filters including by country, type of data your are interested in \(document, company entity, web page, image, video, etc.\) , filetype, specific datasets, email addresses, phone numbers, bank accounts, names, language, and more.
+# Filtering your search results
+
+Once you have honed your search using the [**advanced search methods**](advanced-search-methods.md) described earlier, you can further filter the search results by a number of built in filters.  
+
+Aleph provides built-in options to filter your search results by **country**, **type of data** your are interested in \(document, company entity, web page, image, video, etc.\), **filetype**, **specific datasets**, **email addresses**, **phone numbers**, **bank accounts**, **names**, **language**, and more.
 
 ![](../../.gitbook/assets/annotated_facet_search.png)
 
-Each filter type provides a list of checkboxes that will allow you to select exactly what you need to see. In addition, the checkbox options are sorted from most prevalent to least with the quantity of occurances beside it. This number can be quite useful, as it shows the most common options, giving you an indicator of where to start filtering to narrow down your search.
+Each filter type provides a list of checkboxes that allow you to select exactly what you most want to see. In addition, the checkbox options are **sorted from most prevalent to least** with the quantity of occurrences beside it. This number can be quite useful, as it shows the most common options first, giving you an indicator of where to start filtering to narrow down your search.
 
-When you select a filter by clicking in the checkbox, a button appears above the search results indicating that the results are being filtered by that option. If you want to remove the filter, it is easy enough to click on the "X" in the button to remove it or click on the "Clear All" button to remove all the filters.
+When you **select a filter value by clicking** in the checkbox, a button appears above the search results indicating that the results are being filtered by that option. 
+
+If you want to remove the filter, it is easy enough to **click on the "X" in the button to remove it** or click on the "Clear All" button to remove all of the filters at once.
 
 ![](../../.gitbook/assets/annotated_facet_buttons.png.png)
 
+NOTE: While most filters allow you to select multiple options at once to view options that fit either one or both of the selected filter criteria, **the "Types" filter currently only supports selecting a single content type** at a time.
 
+## Filtering By Date
 
-### Filtering By Date
+Clicking the **Date distribution** button allows you to browse a chronological view of your results. This visual distribution can be useful to get a sense of the spread or _shape_ of your data. 
 
-You can also filter the search results by a date range. In the top, right-hand corner of the search page, click on the date range button.
+The displayed chart organizes your results according to any date type properties that a given result may have. This could include, for example, a Person's birth date, or a Company's incorporation date.
 
-![](../../.gitbook/assets/annotated_date_filter.png.png)
+To filter your results by year, simply **click one of the bars** in the chart or **click and drag across** the bar chart to select a range of years.
 
-![](../../.gitbook/assets/annotated_histogram_filter.png.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-10.08.38.png)
 
-The histogram does two things. Firstly, it gives you a visual distribution of your data by dates. This can be useful to just get a sense of the spread or _shape_ of your data. Secondly, the histogram itself is a filter and you can filter the documents by dates by clicking dragging your mouse cursor over the histogram, thereby selecting the dates you want to include in your search results.
-
-![](../../.gitbook/assets/annotated_histogram_filter_selected_cropped.png)
-
-Just like the other filters, when you filter the data by a date range, filter buttons appear at the top of the histogram, enabling you to see what filters exist and remove them if you no longer need them.
-
-
+Just like the other filters, when you filter the data by a date range, filter buttons appear at the top of the bar chart, enabling you to see what filters are currently being applied and remove them if you no longer need them.
 

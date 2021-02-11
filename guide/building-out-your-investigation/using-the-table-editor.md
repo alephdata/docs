@@ -1,14 +1,22 @@
-# Using the table editor
+---
+description: >-
+  Aleph provides an easy-to-use spreadsheet interface for creating, editing,
+  linking, and deleting structured entities within an investigation.
+---
 
-The **Table Editor** provides an easy-to-use interface for **creating**, **editing**, **linking**, and **deleting** entities within a Personal Dataset.
+# Creating and editing individual entities
 
-To access the Table Editor, click the **"Entities"** tab on any Personal Dataset page.
+While entities can be added to an investigation in bulk by [creating network diagrams](network-diagrams.md) or via [generation from an uploaded spreadsheet](generating-multiple-entities-from-a-list.md), it is also possible create and edit entities individually.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.44.55.png)
+To get started, **click one of the entity types** in the sidebar on any investigation page, or select **"Add a new entity type".**
 
-You will see a table containing all of the entities that have been created within that Personal Dataset, **one entity per row**. **Properties** for each entity are displayed in the corresponding columns.
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.45.25.png)
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.49.38.png)
+
+
+You will see a table containing all of the entities of that type that have been created within that investigation, **one entity per row**. **Properties** for each entity are displayed in the corresponding columns.
+
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.50.06.png)
 
 The table shows only entities of a single type at a time. Use the tabs on the left side to toggle between viewing different types and the **"Add new entity type"** button to add additional types.
 
@@ -39,8 +47,6 @@ As mentioned above, each column in the table corresponds to a property of the en
 
 By default, the table editor displays the most commonly-used properties of an entity type \(i.e. Name, Nationality, and Birth date for a Person\), as well as any properties that contain values. 
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.15.13.png)
-
 But each entity type has many more additional properties that can be added to the table.
 
 To add an additional property:
@@ -49,11 +55,11 @@ To add an additional property:
 2. Click the **"Add a property"** button.
 3. Then select a property from the list.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.05.25.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.51.33.png)
 
 You will now see the column for your property added to the table. **Click** in a cell to start adding values.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.08.29.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.52.34.png)
 
 ### Different property editing types
 
@@ -78,23 +84,23 @@ To add a relationship between two entities:
 1. Select an entity to link by **clicking the checkbox** next to it in the table.
 2. Then click the **"Create link"** button
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.40.57.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.53.50.png)
 
 3. In the window that appears, select a **target** and a **relationship type** to complete the link. Then click the **"Create"** button.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.47.06.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.59.29.png)
 
 4. You'll notice that a new relationship type \(in the case below, a Family relationship\) has been added to the list of entity types on the left of the table editor. **Click** that relationship type to view the relationship link that you created.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.54.20.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.57.32.png)
 
-    5. You can now add additional details to the link that you created int he same way that you would edit any other entity in the table. This is especially useful for indicating the things like the amount of a shareholding ownership between a Person and a Company entity, or the beginning and end date of a directorship.
+    5. You can now add additional details to the link that you created in the same way that you would edit any other entity in the table. This is especially useful for indicating the things like the amount of a shareholding ownership between a Person and a Company entity, or the beginning and end date of a directorship.
 
 ## Deleting entities
 
-To delete one or more entities from the Personal dataset, **click the checkbox** next to each entity you would like to delete. Then click the **"Delete"** button at the top of the table.
+To delete one or more entities from the investigation, **click the checkbox** next to each entity you would like to delete. Then click the **"Delete"** button at the top of the table.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-12.08.46.png)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-14.01.22.png)
 
 
 

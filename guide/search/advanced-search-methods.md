@@ -1,8 +1,23 @@
-# Advanced Search Methods
+---
+description: >-
+  Beyond a simple keyword search, Aleph supports many more complex search
+  operations to find matches based on spelling variations, proximity to other
+  terms, and much more.
+---
 
-You can use a variety of advanced search methods to either expand your search or constrain it, narrowing the number of results Aleph returns. 
+# Advanced search
 
-By default, Aleph tries to find matches based off your keywords pretty broadly, returning matches that include all your keywords at the top, but Aleph doesn't exclude matches that include only one of your keywords. It just pushes down in the order of search results. 
+To view the advanced options available in Aleph, **click the** **advanced search button** next to the search bar. A pop-up will appear explaining each of the available operations.
+
+![The advanced search pop-up facilitates many different advanced search methods  ](../../.gitbook/assets/screen-shot-2021-02-11-at-10.32.31.png)
+
+Each of the options in the pop-up allows you to enter a term or terms. Once you have entered a term, clicking **Search** executes a search with your updated advanced option. You will notice that each time you enter a new advanced option, the keywords in the main search bar will change, indicating the option you've selected.
+
+We will go through each of the advanced search operations in more detail below.
+
+### Finding an exact phrase or name
+
+By default, Aleph tries to find matches based off your keywords pretty broadly, returning matches that include all of your keywords first, followed by matches that might only include one of your keywords.
 
 For example, if you type the keywords:
 
@@ -10,11 +25,7 @@ For example, if you type the keywords:
 Ilham Aliyev
 ```
 
-Aleph will return all matches that have the workd Ilham and Aliyev, and then matches that have either Ilham or Aliyev in them. This might be too broad for your needs.
-
-However, you can explicitly tell Aleph to be more exact in how it determines matches. 
-
-### Finding an exact phrase or name
+Aleph will return all matches that have the words "Ilham" and "Aliyev," followed by matches that have either "Ilham" or "Aliyev" but not both, in them. Depending on your needs, this might not be ideal.
 
 If you want Aleph to only return matches that have exactly "Ilham Aliyev", then you should put quotations around those two keywords.
 

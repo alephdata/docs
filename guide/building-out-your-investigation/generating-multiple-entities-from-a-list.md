@@ -1,4 +1,10 @@
-# Generating multiple entities from a list
+---
+description: >-
+  Follow the steps below to extract structured entities from an uploaded
+  spreadsheet within an investigation.
+---
+
+# Generating multiple entities from a spreadsheet or CSV
 
 ## Structuring your data
 
@@ -10,7 +16,7 @@ For small and mid-size datasets, follow the instructions below to map your data 
 
 ### Using the Aleph mapping editor
 
-1. Follow the "Importing documents and files" steps above to **import your .csv, .xls, or .xlsx data file** to a personal dataset.
+1. Follow the "Importing documents and files" steps above to **import your .csv, .xls, or .xlsx data file** to an investigation.
 
 2. Once the data file has finished uploading, browse to one of the tables you have uploaded. C**lick the "Generate Entities" tab** to open the mapping editor.
 
@@ -38,9 +44,15 @@ Keys are usually ID numbers, email addresses, telephone numbers, or other proper
 
 ![](../../.gitbook/assets/screenshot-2019-12-02-at-15.57.57.png)
 
-8.  **Verify and submit your mapping**
+8.  **Select an optional destination for the entities that are created**. By selecting a diagram or list here, the entities that are generated from your spreadsheet will be automatically added to that diagram or list, in addition to the investigation of which they are a part.
+
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.16.17.png)
+
+**9. Verify and submit your mapping**
 
 {% hint style="info" %}
 When a mapping is submitted, Aleph will automatically generate structured entities based on the instructions you have provided it. It is important to note that **any** **future edits you make to the mapping will re-generate these entities.**  Additionally, deleting the mapping will delete any entities generated from it. 
 {% endhint %}
+
+10. **After the entity generation process has finished, you should see your entities in the** [**entities view**](using-the-table-editor.md) **of your investigation.**
 
