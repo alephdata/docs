@@ -29,7 +29,7 @@ Intervals are business interests, court cases, sanctions and transactions \(and 
 
 ![Intervals are temporary in nature, and often define a relationship between two or more things, e.g. a membership in an organisation, or a family association.](https://docs.google.com/drawings/d/e/2PACX-1vR9vlUEfPC_zuymx0HMI2IHpViJC-c0BQI5zTlvJKFxP-z50McU5N6LPaXWMH2EHN6Nr1WJC-t561OR/pub?w=2526&amp;h=1006)
 
-### Browsing the schema
+## Browsing the schema
 
 To explore the Follow the Money schema hierarchy in detail, check the [FollowTheMoney schema defintions](https://followthemoney.readthedocs.io/en/latest/model.html).
 
