@@ -9,7 +9,7 @@ description: >-
 ### 3.10.0
 
 * Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections \(re-\)indexed after this release.
-* Improved scoring in cross-references based on a regression model derived from user judgements.
+* Improved scoring in cross-references based on a regression model derived from user judgements. Also tuned the way Aleph compares properties in the "Mentions" tab of documents etc.
 * For Outlook email files \(.msg\), the RTF variant of the body will now be indexed in the form of an attachment to the message, titled `body.rtf`
 
 ### 3.9.10
