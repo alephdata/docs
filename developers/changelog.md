@@ -6,6 +6,12 @@ description: >-
 
 # Changelog
 
+### 3.10.0
+
+* Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections \(re-\)indexed after this release.
+* Improved scoring in cross-references based on a regression model derived from user judgements.
+* For Outlook email files \(.msg\), the RTF variant of the body will now be indexed in the form of an attachment to the message, titled `body.rtf`
+
 ### 3.9.10
 
 * Inline the helm chart into the Aleph repository, it's now shipped with the main application. This requires updating your helm configuration if you've been using the previous charts.
