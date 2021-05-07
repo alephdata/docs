@@ -6,6 +6,11 @@ description: >-
 
 # Changelog
 
+### 3.10.1
+
+* **TESTING:** New timeline editor for investigations, allows users to create and browse events.
+* Bug fixes and dependency upgrades.
+
 ### 3.10.0
 
 * Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections \(re-\)indexed after this release.
