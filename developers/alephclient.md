@@ -21,7 +21,7 @@ alephclient --help
 
 `alephclient` needs to know the url of an Aleph instance that it will connect to. For privileged operations, it will also need to know the user's API key. The API key can be found in the users profile page on the Aleph web application.
 
-Both settings can be provided by setting the environment variables `ALEPHCLIENT_HOST` and `ALEPHCLIENT_API_KEY` respectively; or by passing them in with `--api-host` and `--api-key` options directly for the command. The examples below will assume you have set up the environment variables:
+Both settings can be provided by setting the environment variables `ALEPHCLIENT_HOST` and `ALEPHCLIENT_API_KEY` respectively; or by passing them in with `--host` and `--api-key` options directly for the command. The examples below will assume you have set up the environment variables:
 
 ```bash
 export ALEPHCLIENT_HOST=https://data.occrp.org/
