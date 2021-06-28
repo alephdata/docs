@@ -6,6 +6,22 @@ description: >-
 
 # Changelog
 
+## 3.10.5
+
+* Stability and UX improvement in processing of mentions in large PDF files
+* Dependency upgrades
+* Logging improvement in ingest-file for better debugging of configuration issues
+
+## 3.10.4
+
+* Dependency upgrades
+
+### 3.10.2
+
+* Build support for arm64 so that Aleph can run on the new M1 Macbooks
+* New article viewer UI to show FtM Article entities
+* Dependency upgrades
+
 ### 3.10.1
 
 * **TESTING:** New timeline editor for investigations, allows users to create and browse events.
