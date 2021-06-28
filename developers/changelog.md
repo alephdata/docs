@@ -6,13 +6,13 @@ description: >-
 
 # Changelog
 
-## 3.10.5
+### 3.10.5
 
 * Stability and UX improvement in processing of mentions in large PDF files
 * Dependency upgrades
 * Logging improvement in ingest-file for better debugging of configuration issues
 
-## 3.10.4
+### 3.10.4
 
 * Dependency upgrades
 
