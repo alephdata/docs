@@ -104,6 +104,26 @@ make ingest-test
 
 This will create a new database and run all the tests.
 
+### Debugging
+
+If you're looking to debug changes that you've made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger (debugpy) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.
+
+The API is exposed via the standard 5678 port whereas the worker service is exposed via 5679.
+
+Additionally you may wish to configure the debugger to wait for a client to attach. If this is the case you'll need to edit the docker-compose.dev.yml file adding the following as the command for the API:
+
+```yaml
+command: python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client -m flask run -h 0.0.0.0 -p 5000 --with-threads --reload --debugger
+```
+
+If you'd prefer to use the pdb debugger then the first step is to add the following to the api section of the docker-compose.dev.yml:
+
+```yaml
+stdin_open: true
+tty: true
+```
+
+Once this is done, rebuild your docker containers, and once these are running and you've set a breakpoint() in your code running docker attach aleph_api_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
 ### Building from a clean state
 
 You can also build the Aleph images locally. This could be useful while working on the Dockerfile changes and new dependency upgrades.
