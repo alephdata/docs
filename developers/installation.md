@@ -116,6 +116,12 @@ Additionally you may wish to configure the debugger to wait for a client to atta
 command: python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client -m flask run -h 0.0.0.0 -p 5000 --with-threads --reload --debugger
 ```
 
+Or in the case of the worker, from the Makefile:
+
+```bash
+worker: services
+	$(COMPOSE) run -p 127.0.0.1:5679:5679 --rm app python3 -m debugpy --listen 0.0.0.0:5679 --wait-for-client /usr/local/bin/aleph worker
+```
 If you'd prefer to use the pdb debugger then the first step is to add the following to the api section of the docker-compose.dev.yml:
 
 ```yaml
@@ -123,7 +129,7 @@ stdin_open: true
 tty: true
 ```
 
-Once this is done, rebuild your docker containers, and once these are running and you've set a breakpoint() in your code running docker attach aleph_api_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
+Once this is done, restart your docker containers and set a breakpoint() in your code. Now, running docker attach aleph_api_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
 ### Building from a clean state
 
 You can also build the Aleph images locally. This could be useful while working on the Dockerfile changes and new dependency upgrades.
