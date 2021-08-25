@@ -6,6 +6,13 @@ description: >-
 
 # Changelog
 
+### 3.11.0
+
+* Allows users to configure custom facets for entity search screens - supports both type group facets (names, file types, addresses, etc.) as well as property facets.
+* Allows users to configure the columns in the search results screen
+* Adds NER support for Norwegian, Dutch and Danish languages
+* Dependency upgrades and bug fixes
+
 ### 3.10.5
 
 * Stability and UX improvement in processing of mentions in large PDF files
