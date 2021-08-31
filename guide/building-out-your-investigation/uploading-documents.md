@@ -57,7 +57,7 @@ To upload a set of documents, you must first have an [investigation](creating-an
 
 4. Confirm the files you would like to upload, then click the **Upload** button to start the process.
 
-![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.37.52%20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2020-07-22-at-10.37.52%20%281%29%20%281%29.png)
 
 5. It will take a little while to process your uploaded files. In the meantime, you can check the status of the upload by hovering over the name of your investigation at the top of the screen.
 

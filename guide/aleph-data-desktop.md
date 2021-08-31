@@ -8,9 +8,9 @@ Follow the steps below to download Aleph Data Desktop and to learn how to move d
 
 ## Download the Desktop App
 
-Aleph Data Desktop is available for download for ****[**Microsoft Windows**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe)**,** [**Apple MacOS X**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg) ****and common [**Linux distributions**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
+Aleph Data Desktop is available for download for **\*\*\[**Microsoft Windows**\]\(**[https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe)**\)**, **\[**Apple MacOS X**\]\(**[https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg)**\) \*\***and common [**Linux distributions**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
 
-If you are interested, you are also welcome to explore and contribute to [the source code](https://github.com/alephdata/visdesktop) of the application. 
+If you are interested, you are also welcome to explore and contribute to [the source code](https://github.com/alephdata/visdesktop) of the application.
 
 ## Using Aleph Data Desktop
 
@@ -40,7 +40,7 @@ If you have Aleph Data Desktop downloaded, clicking this file should automatical
 
 ## Importing network diagrams into Aleph from Aleph Data Desktop
 
-There might be occasions where is useful to import a diagram you have been working on in the desktop application into Aleph. 
+There might be occasions where is useful to import a diagram you have been working on in the desktop application into Aleph.
 
 1. Save your diagram file
 2. In an Aleph investigation, go to the **"Network diagrams"** tab
@@ -48,11 +48,11 @@ There might be occasions where is useful to import a diagram you have been worki
 
 ![](../.gitbook/assets/screen-shot-2021-02-11-at-13.23.04.png)
 
-    4. **Drag** your diagram file into the window, or click to select it from your computer's file system.
+1. **Drag** your diagram file into the window, or click to select it from your computer's file system.
 
 ![](../.gitbook/assets/screen-shot-2020-07-22-at-13.39.32.png)
 
-    5. Modify the title and description as you wish. Then click **"Create"**
+1. Modify the title and description as you wish. Then click **"Create"**
 
-    ****6. Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the investigation into which it was added.
+   _\*\*_6. Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the investigation into which it was added.
 

@@ -6,53 +6,53 @@ description: >-
 
 # Changelog
 
-### 3.11.0
+## 3.11.0
 
-* Allows users to configure custom facets for entity search screens - supports both type group facets (names, file types, addresses, etc.) as well as property facets.
+* Allows users to configure custom facets for entity search screens - supports both type group facets \(names, file types, addresses, etc.\) as well as property facets.
 * Allows users to configure the columns in the search results screen
 * Adds NER support for Norwegian, Dutch and Danish languages
 * Dependency upgrades and bug fixes
 
-### 3.10.5
+## 3.10.5
 
 * Stability and UX improvement in processing of mentions in large PDF files
 * Dependency upgrades
 * Logging improvement in ingest-file for better debugging of configuration issues
 
-### 3.10.4
+## 3.10.4
 
 * Dependency upgrades
 
-### 3.10.2
+## 3.10.2
 
 * Build support for arm64 so that Aleph can run on the new M1 Macbooks
 * New article viewer UI to show FtM Article entities
 * Dependency upgrades
 
-### 3.10.1
+## 3.10.1
 
 * **TESTING:** New timeline editor for investigations, allows users to create and browse events.
 * Bug fixes and dependency upgrades.
 
-### 3.10.0
+## 3.10.0
 
 * Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections \(re-\)indexed after this release.
 * Improved scoring in cross-references based on a regression model derived from user judgements. Also tuned the way Aleph compares properties in the "Mentions" tab of documents etc.
 * For Outlook email files \(.msg\), the RTF variant of the body will now be indexed in the form of an attachment to the message, titled `body.rtf`
 
-### 3.9.10
+## 3.9.10
 
 * Inline the helm chart into the Aleph repository, it's now shipped with the main application. This requires updating your helm configuration if you've been using the previous charts.
 * Loads of bug fixes for small UI issues.
 
-### 3.9.9
+## 3.9.9
 
 * Re-design the Investigation UI for a UX that involves guiding the user through some common actions. 
 * Refactor much of the state handling in the React app.
 * Bug fixes on ingestors.
 * Allow entities in one collection to reference those in another. 
 
-### 3.9.8
+## 3.9.8
 
 * Re-name personal datasets to "Investigations" in the UI
 * Introduce user interfaces for profiles, an interactive way to de-duplicate data. Fix various bugs in profile logic in the backend.
@@ -60,16 +60,16 @@ description: >-
 * Introduce structured logging of JSON objects in Stackdriver.
 * Polish data loading in the user interface and de-bug various features.
 
-### 3.9.7
+## 3.9.7
 
 * Work on Arabic/RTL i18n, nested directionality.
 
-### 3.9.6
+## 3.9.6
 
 * Debug OIDC logout
 * Pairwise judgement API to replace xref decisions API.
 
-### 3.9.5
+## 3.9.5
 
 {% hint style="warning" %}
 In this version, the **OAuth configuration was changed in potentially breaking ways**. Please read the instructions below for how to adapt your deployment.
@@ -95,31 +95,31 @@ Changes unrelated to OAuth:
 * EntitySets no longer contain an `entities` array of all their members. Use the sub-resource `/entitysets/x/entities` instead.
 * Multiple bug fixes in UI related to i18n.
 
-### 3.9.4
+## 3.9.4
 
 * Move file ingestor service `ingest-file` to its own repository to decouple versioning and CI/CD.
 
-### 3.9.3
+## 3.9.3
 
 * Show transliterated names of non-latin entities in the user interface.
 * Refactor query serialisation, remove in-database query log.
 * Fix out of memory errors in cross-reference
 * Extensive bug fixes in mapping UI
 
-### 3.9.1
+## 3.9.1
 
 * Data exports feature to let users make offline data exports for searches and cross-reference
 * New home page, based on the stupid CMS we introduced for the about section. 
 * Ability to map entities into lists via the UI and alephclient.
 * Tons of bug fixes in UI and backend.
 
-### 3.9.0
+## 3.9.0
 
 * UI for managing lists of entities within a dataset. This lets you make sub-sets of a dataset, e.g. "The Family", "Lawyers" or "Core companies".
 * Ability to cross-reference a collection of documents against structured data collections using `Mention` schema stubs. Requires dataset reingest before it takes effect.
 * New internationalisation mechanism for the React bits, using JSON-formatted translation files.
 
-### 3.8.9
+## 3.8.9
 
 * Move the linkages API \("god entities" / record linkage\) to use entity sets instead of its own database model.
 * Remove soft-deletion for some model types \(permissions, entities, alerts, mappings\).
@@ -128,72 +128,72 @@ Changes unrelated to OAuth:
 Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single version. If you want to upgrade from an Aleph older than 3.2, we recommend you move via 3.8.0, upgrade to that version, before migrating across this version.
 {% endhint %}
 
-### 3.8.6
+## 3.8.6
 
 * Date histogram facet and filtering tool on search results.
 * Added example code for how to [add text processors](adding-text-processors.md) to Aleph.
 * Re-worked collection stats caching to avoid super slow requests when no cache is present.
 * Tons of bug fixes.
 
-### 3.8.5
+## 3.8.5
 
 * Introduce EntitySets, as user-curated sets of ... entities! All diagrams are now entitysets, as will be timelines and bookmarks. 
 
-### 3.8.3
+## 3.8.3
 
 * Refactor queue and processing code for the Aleph worker. 
 
-### 3.8.1
+## 3.8.1
 
 * "Expand node" support in network diagrams pulls relevant connections from the backend and shows them to the user while browsing a network diagram.
 * Correctly handle the use of multi-threading when using Google Cloud Storage Python client libraries.
 
-### 3.8.0
+## 3.8.0
 
 * We've re-worked the way entities are aggregated before they are being loaded into the search index. This was required because Aleph is become more interactive and needs to handle non-bulk operations better. It also improves metadata handling, like which user uploaded a document, or when an entity was last updated. Aleph will now always keep a full record of the entities in the SQL database, whichever way they are submitted. To this end, we've migrated from `balkhash` to `followthemoney-store` \(i.e. balkhash 2.0\). This will start to apply to existing collections when they are re-ingested or re-indexed.
 * Aleph has two new APIs for doing a collection `reingest` and `reindex`. The existing `process` collection API is gone. `alephclient` now supports running `reingest`, `reindex`, and `delete` on a collection.
 * Operators can expedite the rollout of the new backend by running `aleph reingest-casefiles` and `aleph reindex-casefiles` to re-process all existing personal datasets.
 * Numerous UI fixes make the table editor and network diagrams much more smooth.
 
-### 3.7.2
+## 3.7.2
 
 * We've introduced a table editor in the user interface for manually editing entities in personal datasets.
 
-### 3.7.0
+## 3.7.0
 
 * A graph expand API for entities returns all entities adjacent to an entity for network-based exploration of the data.
 
-### 3.6.4
+## 3.6.4
 
 * **Linkages**, a new data model. A linkage is essentially an annotation on an entity saying it is the same as some other entities \(in other datasets\). This would, for example, let you group together all mentions of a politician into a single profile. Linkages are currently created via the Xref UI, which now has a ‘review mode’.
 * In the future, profiles \(ie. the composite of many linkages\) will start showing up in the UI in different places, to introduce an increasingly stronger notion of data integration. Because linkages are based on a reporter’s judgement, they belong to either a\) them, or b\) a group of users — so they are always a bit contextualised, not fully public.
 * Our hope is also that the data collected via linkages will provide training material for a machine learning-based approach to cross-referencing.
 
-### 3.6.3
+## 3.6.3
 
 * Users who employ OAuth may need to change their settings to define a `ALEPH_OAUTH_HANDLER` in their `aleph.env` . By default, the following handlers are supported: `google`, `keycloak`, `azure`.
 
-### 3.5.0
+## 3.5.0
 
 * Run VIS2 / [Network diagrams](../guide/building-out-your-investigation/network-diagrams.md) on Aleph as a testing feature.
 
-### 3.4.9
+## 3.4.9
 
 * Two SECURITY ISSUES in the software: one that would let an attacker enumerate registered users, and the other could be exploited for XSS with a forged document. They were discovered by two friendly hackers from blbec.online who kindly reported them to us.
 
-### 3.4.0
+## 3.4.0
 
 * The **mapping UI**. Prototyped by [@Felix Ebert](https://alephdata.slack.com/team/UE32DAC4S), [@Kirk](https://alephdata.slack.com/team/UL1AWH89X) and [@sunu](https://alephdata.slack.com/team/UE1EFLX5K) have done great work on this. The idea is that for a simple CSV file you can just upload it, and use the UI to map it into entities that you can cross-reference. It’s really simple to use and useful.
 * `synonames`. This is an extension to our install of ElasticSearch that allows us to expand names into cultural transliterations. So for example doing a search for `Christoph` will now also search `Кристоф`, even though they aren’t literally the same names. This should increase recall for cross-cultural queries. The whole thing was a project from [@Aparna](https://alephdata.slack.com/team/UML9VA9K5), generating these aliases from Wikidata entries.
 * These changes come alongside a lot of UI and backend polishing, so things should be much more smooth all around.
 
-### 3.0.0
+## 3.0.0
 
 The goal of `aleph` 3.0.0 is to harmonise the handling of data inside the index. Instead of having different formats and mappings for documents, entities, table rows and document pages, there is now just one type of index object: an entity.
 
 This means that document-based data is now completely 'translated' to the `followthemoney` ontology used by `aleph` \(meaning that in theory, each page of a document and each row of a table is now a node in the object graph of the `aleph` platform\).
 
-#### Upgrading
+### Upgrading
 
 In order to accomplish this, a complete re-index is required in all cases. The recommended path of migrating from a 2.x.x installation is this set of commands in an aleph container shell \(`make shell`\):
 
@@ -208,7 +208,7 @@ aleph repair --entities
 
 Be advised that any data loaded via the entity mapping mechanism will need to be re-loaded after this. It is also worth noting that at OCCRP, we have now started generating mapped data via the `followthemoney` command-line tool, and are using `alephclient` to bulk-load the resulting stream of entities into the system. This has proven to be significantly quicker than the built-in mapping process.
 
-#### Other changes
+### Other changes
 
 * Settings `ALEPH_REDIS_URL` and `ALEPH_REDIS_EXPIRE` are now `REDIS_URL` and
 

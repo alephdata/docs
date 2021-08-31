@@ -38,7 +38,7 @@ The `crawldir` command crawls through a given directory recursively and uploads 
 alephclient crawldir --foreign-id wikileaks-cable /Users/sunu/data/cable
 ```
 
-When Aleph imports data, it performs optical character recognition \(OCR\) on images contained in the material. This works better when Aleph already has an idea of the language the documents might use. This can be specified with the `--language` option, which expects a 3-letter ISO 639 language code. It can be specified multiple times, for when the directory contains files in more than one language. 
+When Aleph imports data, it performs optical character recognition \(OCR\) on images contained in the material. This works better when Aleph already has an idea of the language the documents might use. This can be specified with the `--language` option, which expects a 3-letter ISO 639 language code. It can be specified multiple times, for when the directory contains files in more than one language.
 
 ```bash
 alephclient crawldir --language rus --foreign-id russian_leak /Users/sunu/data/russian_leak
@@ -73,7 +73,7 @@ alephclient stream-entities -f us_ofac | ftm validate | ftm export-excel -o OFAC
 Streaming very large collections from an Aleph instance is a resource-consuming activity on the server side. Please only stream collections with more than 100,000 entities after making sure that the server administrators are OK with it.
 {% endhint %}
 
-## **Executing an entity mapping on the server** 
+## **Executing an entity mapping on the server**
 
 The `bulkload` command executes an [entity mapping](mappings.md) within the Aleph system. Its only argument is a YAML mapping file:
 

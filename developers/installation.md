@@ -81,7 +81,7 @@ aleph createuser --name="Alice" \
 
 If you pass an email address in the `ALEPH_ADMINS` environment variable \(in your [configuration](installation.md#system-configuration)\) it will automatically be made into an admin.
 
-After running `createuser`, the newly created user's API key is printed, which you can use in the `Authorization` HTTP header of requests to the [API](). If you pass a password, you can use this email address and password to log into the web interface.
+After running `createuser`, the newly created user's API key is printed, which you can use in the `Authorization` HTTP header of requests to the [API](installation.md). If you pass a password, you can use this email address and password to log into the web interface.
 
 ### Loading Sample Data
 
@@ -91,7 +91,7 @@ If you want to quickly get some sample data in your Aleph instance you can use `
 aleph crawldir /aleph/contrib/testdata
 ```
 
-To also get a sample of \(non-document\) entity data, consider loading [sanctions lists]().
+To also get a sample of \(non-document\) entity data, consider loading [sanctions lists](installation.md).
 
 ### Running Tests
 
@@ -106,7 +106,7 @@ This will create a new database and run all the tests.
 
 ### Debugging
 
-If you're looking to debug changes that you've made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger (debugpy) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.
+If you're looking to debug changes that you've made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger \(debugpy\) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.
 
 The API is exposed via the standard 5678 port whereas the worker service is exposed via 5679.
 
@@ -120,8 +120,9 @@ Or in the case of the worker, from the Makefile:
 
 ```bash
 worker: services
-	$(COMPOSE) run -p 127.0.0.1:5679:5679 --rm app python3 -m debugpy --listen 0.0.0.0:5679 --wait-for-client /usr/local/bin/aleph worker
+    $(COMPOSE) run -p 127.0.0.1:5679:5679 --rm app python3 -m debugpy --listen 0.0.0.0:5679 --wait-for-client /usr/local/bin/aleph worker
 ```
+
 If you'd prefer to use the pdb debugger then the first step is to add the following to the api section of the docker-compose.dev.yml:
 
 ```yaml
@@ -129,7 +130,8 @@ stdin_open: true
 tty: true
 ```
 
-Once this is done, restart your docker containers and set a breakpoint() in your code. Now, running docker attach aleph_api_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
+Once this is done, restart your docker containers and set a breakpoint\(\) in your code. Now, running docker attach aleph\_api\_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
+
 ### Building from a clean state
 
 You can also build the Aleph images locally. This could be useful while working on the Dockerfile changes and new dependency upgrades.
@@ -226,7 +228,7 @@ Save the client ID and the client secret as `ALEPH_OAUTH_*` values.
 
 #### Using Microsoft Azure
 
-Create a new app over at [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com/), make a note of the KEY and secret you generate there. Callback URL should be as follows: https:///api/2/sessions/callback . Then add the following to aleph.env, remember to update KEY and SECRET with your values.
+Create a new app over at [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com/), make a note of the KEY and secret you generate there. Callback URL should be as follows: [https:///api/2/sessions/callback](https:///api/2/sessions/callback) . Then add the following to aleph.env, remember to update KEY and SECRET with your values.
 
 ```text
 ALEPH_OAUTH=true
