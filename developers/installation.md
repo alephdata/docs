@@ -201,6 +201,46 @@ Be careful with the ports exposed from your Docker system on public ports. Docke
 
 See the [relevant section in the Technical FAQ](technical-faq/#how-can-i-upgrade-to-a-new-version-of-aleph).
 
+### Backing up and restoring data
+
+Aleph stores persistent data in 3 different systems:
+
+1. Blob storage: This is where Aleph stores the uploaded files as blobs.
+2. SQL Database: Aleph has a couple of different use cases for a SQL database.
+        * A database to store application data like users, sessions, collection metadata etc. This database is the one defined by `ALEPH_DATABASE_URI` setting.
+        * A database to store FtM entities. This database is defined by `FTM_STORE_URI`.
+    These two databases can use the same SQL database instance or can use separate instance for each use case.
+3. ElasticSearch: ElasticSearch powers Aleph's search and stores the contents of all processed documents and entities.
+
+To have a functional Aleph instance, we need all 3 of these components to be operational without data loss and have a restoration plan if we any of these components experience data corruption, data loss or any other failure.
+
+For blob storage, Aleph can use cloud storage services like Google Cloud Storage, AWS S3 which provide automatic backups and availability guarantees. In case you're using the local file system for storage, the docker volume can be mapped to a host directory, and the host directory can be backed up in usual ways. (for example, running `rsync` in a cron job to copy the directory to a backup server.)
+
+For SQL database, Aleph uses PostgreSQL. PostgreSQL can be backed up and restored through `pg_dump`, `pg_restore` and similar utilities. 
+
+For example, here's how you can dump the database:
+
+```
+docker-compose exec postgres pg_dumpall -c -U postgres > dump_`date +%Y-%m-%d"_"%H:%M:%S`.sql
+```
+
+and then restore from the dump:
+
+```
+cat dump_2021-11-03_18:03:54.sql | docker-compose exec -T postgres psql -U aleph -d aleph
+```
+
+The commands will be slightly different depending on your specific set up. If you're running a separate database instance for FtM-Store, you should backup both the Aleph application database and the FtM-Store database. The data dump creation command should be put in a cron job to automate snapshot creation and those snapshots should be copied to a separate backup server.
+
+The ElasticSearch index can be regenerated from the FtM-Store database. So, the backup of that database can serve as the backup of your ElasticsSearch index too.
+
+Note: This works only for Aleph versions greater than 3.8.0.
+
+Here's how you can recreate the ElasticSearch index from the FtM-Store database:
+
+1. Run `docker-compose run --rm shell aleph upgrade` to recreate the indices in Elasticsearch
+2. Once that finishes running, run `docker-compose run --rm shell aleph reindex-full` to write data into Elasticsearch indices from the FtM-Store PostgreSQL database.This will take some time to run depending on how much data you have.
+
 ## Configuration
 
 The main configuration file of Aleph is `aleph.env`, which is loaded by docker-compose and can modify many aspects of system behaviour. A template for the configuration with details regarding many of the options is available in the `aleph.env.tmpl` file.
