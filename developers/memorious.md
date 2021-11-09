@@ -7,7 +7,7 @@ description: >-
 
 # Crawling data with Memorious
 
-Memorious \(named after [Funes the Memorious](https://en.wikipedia.org/wiki/Funes_the_Memorious)\) is a light-weight distributed web scraping toolkit. It can:
+Memorious (named after [Funes the Memorious](https://en.wikipedia.org/wiki/Funes\_the\_Memorious)) is a light-weight distributed web scraping toolkit. It can:
 
 * Maintain an overview of a fleet of crawlers
 * Scrape and store both structured and unstructured data from the web
@@ -22,11 +22,11 @@ Memorious \(named after [Funes the Memorious](https://en.wikipedia.org/wiki/Fune
 
 Memorious has a neat user interface to monitor the status of your crawler fleet at a glance. The interface also lets you start, stop and inspect crawlers with ease.
 
-![](../.gitbook/assets/memorious-ui.png)
+![](<../.gitbook/assets/memorious-ui (1).png>)
 
 ## How it works
 
-Memorious crawlers consist of a YAML configuration file and some \(optional\) Python functions to define crawler operations. Some built-in utility operations already come packaged with Memorious. For example, frequent operations like making HTTP requests, writing data into a database - can be done using built-in operations provided by Memorious. Memorious can also provide handy utilities to load the scraped data to Aleph for further processing.
+Memorious crawlers consist of a YAML configuration file and some (optional) Python functions to define crawler operations. Some built-in utility operations already come packaged with Memorious. For example, frequent operations like making HTTP requests, writing data into a database - can be done using built-in operations provided by Memorious. Memorious can also provide handy utilities to load the scraped data to Aleph for further processing.
 
 A really simple crawler configuration in Memorious might look like this:
 
@@ -84,4 +84,3 @@ To learn more about Memorious, you can:
 * Visit the documentation available at [https://memorious.readthedocs.io](https://memorious.readthedocs.io)
 * Explore and contribute to [the source code](https://github.com/alephdata/visdesktop)
 * Adapt the [example project ](https://github.com/alephdata/memorious/tree/master/example)which includes some test crawlers and docker configuration.
-

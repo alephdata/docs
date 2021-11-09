@@ -117,11 +117,11 @@ When visiting the Aleph UI, you should now be able to see the the person record,
 
 ### Step 5: Convert all the data
 
-Obviously, this basic example needs to expand in order to convert the full data schema from **Persona de Interes into FollowTheMoney** entities. 
+Obviously, this basic example needs to expand in order to convert the full data schema from **Persona de Interes into FollowTheMoney** entities.
 
-![](../.gitbook/assets/13d3b67dea7b2e1ce4e009bf70c2c819.jpg)
+![](<../.gitbook/assets/13d3b67dea7b2e1ce4e009bf70c2c819 (1).jpg>)
 
-Please [check out the loading script](https://github.com/alephdata/example-personadeinteres/blob/master/load.py) to see how it approaches entity creation, and mapping properties from the web scrape into FtM schema. 
+Please [check out the loading script](https://github.com/alephdata/example-personadeinteres/blob/master/load.py) to see how it approaches entity creation, and mapping properties from the web scrape into FtM schema.
 
 ### Conclusion
 
@@ -130,8 +130,5 @@ The goal of this tutorial was to show how you can create complex object graphs i
 I hope you'll enjoy experimenting with them to show your data in the most expressive way!
 
 {% hint style="info" %}
-You can explore the [Persona de Interes data live on OCCRP's Aleph](https://aleph.occrp.org/datasets/506). 
+You can explore the [Persona de Interes data live on OCCRP's Aleph](https://aleph.occrp.org/datasets/506).
 {% endhint %}
-
-
-

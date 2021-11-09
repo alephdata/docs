@@ -32,7 +32,7 @@ Once you have created multiple entities in your diagram, you can connect them by
 
 ![](../../.gitbook/assets/screen-shot-2020-03-16-at-14.58.28.png)
 
-Any entities and relationships you create within a diagram will automatically be added to the investigation in which your diagram was created.  This allows you to cross-reference the lists of people, companies, and other entities you have created in your diagrams with data from across the rest of Aleph.
+Any entities and relationships you create within a diagram will automatically be added to the investigation in which your diagram was created. This allows you to cross-reference the lists of people, companies, and other entities you have created in your diagrams with data from across the rest of Aleph.
 
 ### Sharing diagrams
 
@@ -50,13 +50,13 @@ Below are some of the common questions we've received about network diagrams. If
 
 ### How does this relate to OCCRP VIS?
 
-[Visual Investigative Scenarios](https://vis.occrp.org/) \(VIS\) is an application developed by OCCRP, [RISE Project](https://www.riseproject.ro/) and [QuickData](http://www.quickdata.ro/) that is the inspiration for network diagrams. While it's been a beloved tool to some reporters, it has also become slow and cumbersome. We're unable to add new features and ensure its continued safety.
+[Visual Investigative Scenarios](https://vis.occrp.org) (VIS) is an application developed by OCCRP, [RISE Project](https://www.riseproject.ro) and [QuickData](http://www.quickdata.ro) that is the inspiration for network diagrams. While it's been a beloved tool to some reporters, it has also become slow and cumbersome. We're unable to add new features and ensure its continued safety.
 
 That's why we are planning to phase out the old version of VIS once Data Desktop has become stable and battle-tested. Our goal is to export all existing VIS diagrams so that they can be opened in Data Desktop, so that people can continue to work with their data. It's unlikely this transition will happen before 2021.
 
 ### How much data can I add to a network diagram?
 
-The goal of Data Desktop is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar%27s_number).
+The goal of Data Desktop is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar's\_number).
 
 ### Can I make entities into groups?
 
@@ -66,7 +66,7 @@ Yes. Simply select two or more entities, then click the "Group selection" button
 
 ### Can I embed a diagram in an article?
 
-Yes. In main the toolbar, you have an option to export an SVG graphic to a file. This SVG can be opened and "beautified" in a program like Adobe Illustrator or Inkscape \(open source\), and eventually published to the web as an image.
+Yes. In main the toolbar, you have an option to export an SVG graphic to a file. This SVG can be opened and "beautified" in a program like Adobe Illustrator or Inkscape (open source), and eventually published to the web as an image.
 
 Please be conscious, however, that network diagrams are mainly intended to be investigative sketches. Their complexity can easily exceed the complexity we should force our readers to deal with. Be nice to the mortals.
 
@@ -74,7 +74,4 @@ Please be conscious, however, that network diagrams are mainly intended to be in
 
 Yes! Follow the instructions for [generating multiple entities from a spreadsheet](generating-multiple-entities-from-a-list.md). In step 4 of the entity mapping process, select the desired destination diagram, and they will be automatically added to your diagram.
 
-![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.16.17%20%281%29.png)
-
-
-
+![](<../../.gitbook/assets/screen-shot-2021-02-11-at-13.16.17 (1) (1).png>)

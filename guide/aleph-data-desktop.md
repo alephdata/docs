@@ -8,7 +8,7 @@ Follow the steps below to download Aleph Data Desktop and to learn how to move d
 
 ## Download the Desktop App
 
-Aleph Data Desktop is available for download for **\*\*\[**Microsoft Windows**\]\(**[https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe)**\)**, **\[**Apple MacOS X**\]\(**[https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg)**\) \*\***and common [**Linux distributions**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
+Aleph Data Desktop is available for download for [**Microsoft Windows**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.exe), [**Apple MacOS X**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph-Data-Desktop.dmg)**, **and common [**Linux distributions**](https://github.com/alephdata/datadesktop/releases/latest/download/Aleph.Data.Desktop.deb). Updates to the application are released periodically, and most users will be prompted with the option to download the latest release when their current version becomes out-of-date.
 
 If you are interested, you are also welcome to explore and contribute to [the source code](https://github.com/alephdata/visdesktop) of the application.
 
@@ -52,7 +52,6 @@ There might be occasions where is useful to import a diagram you have been worki
 
 ![](../.gitbook/assets/screen-shot-2020-07-22-at-13.39.32.png)
 
-1. Modify the title and description as you wish. Then click **"Create"**
+1.  Modify the title and description as you wish. Then click **"Create"**
 
-   _\*\*_6. Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the investigation into which it was added.
-
+    Your diagram will now be visible and editable within Aleph, and any entities and relationships contained within it will automatically be added to the investigation into which it was added.
