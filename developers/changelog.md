@@ -8,12 +8,16 @@ description: >-
 
 ## 3.12.0 (2022-02-01)
 
-* New followthemoney-compare ML model for xref [#1818](https://github.com/alephdata/aleph/pull/1818)
+* New followthemoney-compare ML model for xref [(#1818)](https://github.com/alephdata/aleph/pull/1818)
 * UI tweaks for timelines. Timelines are no longer behind tester flag; now available to everyone.
 * Users without write-access can see a read-only view of a dataset's source documents hierarchy
-* Fix Google OAuth integration issue [#2062](https://github.com/alephdata/aleph/pull/2062)
-* Upgrade to Elasticsearch 7.16.1 [#2080](https://github.com/alephdata/aleph/pull/2080)
+* Fix Google OAuth integration issue [(#2062)](https://github.com/alephdata/aleph/pull/2062)
+* Upgrade to Elasticsearch 7.16.1 [(#2080)](https://github.com/alephdata/aleph/pull/2080)
 * Dependency upgrades and bug fixes
+* Upgrade ingest-file and convert-document to 3.16.1
+  * Includes bug fix for PST mailbox processing [(ingest-file#197)](https://github.com/alephdata/ingest-file/pull/197)
+  * Support for OCR in Khmer language [(ingest-file#194)](https://github.com/alephdata/ingest-file/pull/194)
+
 ## 3.11.1
 
 * Dependency upgrades and bug fixes
