@@ -6,7 +6,7 @@ description: >-
 
 # Changelog
 
-## 3.12.0 (2022-02-01)
+## 3.12.0 (2022-02-02)
 
 * New followthemoney-compare ML model for xref [(#1818)](https://github.com/alephdata/aleph/pull/1818)
 * UI tweaks for timelines. Timelines are no longer behind tester flag; now available to everyone.
