@@ -8,6 +8,10 @@ description: >-
 
 ## 3.12.0 (2022-02-02)
 
+{% hint style="info" %}
+This release of Aleph introduced a couple of bugs that could make an Aleph instance unusable. Please skip this version in favour of newer Aleph versions.
+{% endhint %}
+
 * New followthemoney-compare ML model for xref [(#1818)](https://github.com/alephdata/aleph/pull/1818)
 * UI tweaks for timelines. Timelines are no longer behind tester flag; now available to everyone.
 * Users without write-access can see a read-only view of a dataset's source documents hierarchy
@@ -52,9 +56,9 @@ description: >-
 
 ## 3.10.0
 
-* Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections \(re-\)indexed after this release.
+* Fixed a bug in the tokenisation of the search index that dropped numbers from being made searchable. This has been fixed, but it only applies to collections (re-)indexed after this release.
 * Improved scoring in cross-references based on a regression model derived from user judgements. Also tuned the way Aleph compares properties in the "Mentions" tab of documents etc.
-* For Outlook email files \(.msg\), the RTF variant of the body will now be indexed in the form of an attachment to the message, titled `body.rtf`
+* For Outlook email files (.msg), the RTF variant of the body will now be indexed in the form of an attachment to the message, titled `body.rtf`
 
 ## 3.9.10
 
@@ -63,10 +67,10 @@ description: >-
 
 ## 3.9.9
 
-* Re-design the Investigation UI for a UX that involves guiding the user through some common actions. 
+* Re-design the Investigation UI for a UX that involves guiding the user through some common actions.
 * Refactor much of the state handling in the React app.
 * Bug fixes on ingestors.
-* Allow entities in one collection to reference those in another. 
+* Allow entities in one collection to reference those in another.
 
 ## 3.9.8
 
@@ -103,8 +107,8 @@ Unfortunately, the transition requires some incompatible changes:
 
 Beyond these breaking changes, some other differences are notable:
 
-* Logging out of Aleph will now also log a user out of the OAuth provider, where supported \(e.g. Keycloak, Azure\).
-* If a user is blocked or deleted while using the site, their session will be disabled by the worker backend within an hour. \(This can be forced by running `aleph update`\)
+* Logging out of Aleph will now also log a user out of the OAuth provider, where supported (e.g. Keycloak, Azure).
+* If a user is blocked or deleted while using the site, their session will be disabled by the worker backend within an hour. (This can be forced by running `aleph update`)
 
 Changes unrelated to OAuth:
 
@@ -125,7 +129,7 @@ Changes unrelated to OAuth:
 ## 3.9.1
 
 * Data exports feature to let users make offline data exports for searches and cross-reference
-* New home page, based on the stupid CMS we introduced for the about section. 
+* New home page, based on the stupid CMS we introduced for the about section.
 * Ability to map entities into lists via the UI and alephclient.
 * Tons of bug fixes in UI and backend.
 
@@ -137,8 +141,8 @@ Changes unrelated to OAuth:
 
 ## 3.8.9
 
-* Move the linkages API \("god entities" / record linkage\) to use entity sets instead of its own database model.
-* Remove soft-deletion for some model types \(permissions, entities, alerts, mappings\).
+* Move the linkages API ("god entities" / record linkage) to use entity sets instead of its own database model.
+* Remove soft-deletion for some model types (permissions, entities, alerts, mappings).
 
 {% hint style="danger" %}
 Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single version. If you want to upgrade from an Aleph older than 3.2, we recommend you move via 3.8.0, upgrade to that version, before migrating across this version.
@@ -153,11 +157,11 @@ Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single vers
 
 ## 3.8.5
 
-* Introduce EntitySets, as user-curated sets of ... entities! All diagrams are now entitysets, as will be timelines and bookmarks. 
+* Introduce EntitySets, as user-curated sets of ... entities! All diagrams are now entitysets, as will be timelines and bookmarks.
 
 ## 3.8.3
 
-* Refactor queue and processing code for the Aleph worker. 
+* Refactor queue and processing code for the Aleph worker.
 
 ## 3.8.1
 
@@ -166,7 +170,7 @@ Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single vers
 
 ## 3.8.0
 
-* We've re-worked the way entities are aggregated before they are being loaded into the search index. This was required because Aleph is become more interactive and needs to handle non-bulk operations better. It also improves metadata handling, like which user uploaded a document, or when an entity was last updated. Aleph will now always keep a full record of the entities in the SQL database, whichever way they are submitted. To this end, we've migrated from `balkhash` to `followthemoney-store` \(i.e. balkhash 2.0\). This will start to apply to existing collections when they are re-ingested or re-indexed.
+* We've re-worked the way entities are aggregated before they are being loaded into the search index. This was required because Aleph is become more interactive and needs to handle non-bulk operations better. It also improves metadata handling, like which user uploaded a document, or when an entity was last updated. Aleph will now always keep a full record of the entities in the SQL database, whichever way they are submitted. To this end, we've migrated from `balkhash` to `followthemoney-store` (i.e. balkhash 2.0). This will start to apply to existing collections when they are re-ingested or re-indexed.
 * Aleph has two new APIs for doing a collection `reingest` and `reindex`. The existing `process` collection API is gone. `alephclient` now supports running `reingest`, `reindex`, and `delete` on a collection.
 * Operators can expedite the rollout of the new backend by running `aleph reingest-casefiles` and `aleph reindex-casefiles` to re-process all existing personal datasets.
 * Numerous UI fixes make the table editor and network diagrams much more smooth.
@@ -181,8 +185,8 @@ Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single vers
 
 ## 3.6.4
 
-* **Linkages**, a new data model. A linkage is essentially an annotation on an entity saying it is the same as some other entities \(in other datasets\). This would, for example, let you group together all mentions of a politician into a single profile. Linkages are currently created via the Xref UI, which now has a ‘review mode’.
-* In the future, profiles \(ie. the composite of many linkages\) will start showing up in the UI in different places, to introduce an increasingly stronger notion of data integration. Because linkages are based on a reporter’s judgement, they belong to either a\) them, or b\) a group of users — so they are always a bit contextualised, not fully public.
+* **Linkages**, a new data model. A linkage is essentially an annotation on an entity saying it is the same as some other entities (in other datasets). This would, for example, let you group together all mentions of a politician into a single profile. Linkages are currently created via the Xref UI, which now has a ‘review mode’.
+* In the future, profiles (ie. the composite of many linkages) will start showing up in the UI in different places, to introduce an increasingly stronger notion of data integration. Because linkages are based on a reporter’s judgement, they belong to either a) them, or b) a group of users — so they are always a bit contextualised, not fully public.
 * Our hope is also that the data collected via linkages will provide training material for a machine learning-based approach to cross-referencing.
 
 ## 3.6.3
@@ -207,11 +211,11 @@ Aleph 3.8.9 combines all database migrations before Aleph 3.2 into a single vers
 
 The goal of `aleph` 3.0.0 is to harmonise the handling of data inside the index. Instead of having different formats and mappings for documents, entities, table rows and document pages, there is now just one type of index object: an entity.
 
-This means that document-based data is now completely 'translated' to the `followthemoney` ontology used by `aleph` \(meaning that in theory, each page of a document and each row of a table is now a node in the object graph of the `aleph` platform\).
+This means that document-based data is now completely 'translated' to the `followthemoney` ontology used by `aleph` (meaning that in theory, each page of a document and each row of a table is now a node in the object graph of the `aleph` platform).
 
 ### Upgrading
 
-In order to accomplish this, a complete re-index is required in all cases. The recommended path of migrating from a 2.x.x installation is this set of commands in an aleph container shell \(`make shell`\):
+In order to accomplish this, a complete re-index is required in all cases. The recommended path of migrating from a 2.x.x installation is this set of commands in an aleph container shell (`make shell`):
 
 ```bash
 # Re-create the indexes:
@@ -226,17 +230,14 @@ Be advised that any data loaded via the entity mapping mechanism will need to be
 
 ### Other changes
 
-* Settings `ALEPH_REDIS_URL` and `ALEPH_REDIS_EXPIRE` are now `REDIS_URL` and
+*   Settings `ALEPH_REDIS_URL` and `ALEPH_REDIS_EXPIRE` are now `REDIS_URL` and
 
-  `REDIS_EXPIRE`.
+    `REDIS_EXPIRE`.
+*   Variable `ALEPH_OCR_VISION_API` is now `OCR_VISION_API`, it will enable use of
 
-* Variable `ALEPH_OCR_VISION_API` is now `OCR_VISION_API`, it will enable use of
+    the Google Vision API for optical character recognition.
+*   The `/api/2/collections/<id>/ingest` API now only accepts a single file, or
 
-  the Google Vision API for optical character recognition.
+    no file (which will create a folder). The response body contains only the ID
 
-* The `/api/2/collections/<id>/ingest` API now only accepts a single file, or
-
-  no file \(which will create a folder\). The response body contains only the ID
-
-  of the generated document. The status code on success is now 201, not 200.
-
+    of the generated document. The status code on success is now 201, not 200.
