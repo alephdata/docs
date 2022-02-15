@@ -6,9 +6,13 @@ description: >-
 
 # Changelog
 
+## 3.12.1 (2022-02-15)
+
+* Fix bugs introduced in 3.12.0 ([2115](https://github.com/alephdata/aleph/pull/2115), [2112](https://github.com/alephdata/aleph/pull/2112))
+
 ## 3.12.0 (2022-02-02)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This release of Aleph introduced a couple of bugs that could make an Aleph instance unusable. Please skip this version in favour of newer Aleph versions.
 {% endhint %}
 
