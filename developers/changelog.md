@@ -8,7 +8,7 @@ description: >-
 
 ## 3.12.1 (2022-02-15)
 
-* Fix bugs introduced in 3.12.0 ([2115](https://github.com/alephdata/aleph/pull/2115), [2112](https://github.com/alephdata/aleph/pull/2112))
+* Fix bugs introduced in 3.12.0 ([#2115](https://github.com/alephdata/aleph/pull/2115), [#2112](https://github.com/alephdata/aleph/pull/2112))
 
 ## 3.12.0 (2022-02-02)
 
