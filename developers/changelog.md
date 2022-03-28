@@ -6,6 +6,19 @@ description: >-
 
 # Changelog
 
+## 3.12.2 (2022-03-28)
+
+* The Aleph UI is now available in French.
+* Fix search handler on Aleph homescreen
+* Upgrade followthemoney to 2.8.5
+* Upgrade followthemoney to 2.8.4 in UI
+* Upgrade alembic to 1.7.7
+* Upgrade urllib to 1.26.9
+* Upgrade sqlalchemy to 1.4.32
+* Upgrade normality to 2.3.1
+* Upgrade servicelayer to 1.19.0
+* Upgrade flask to 2.0.3
+
 ## 3.12.1 (2022-02-15)
 
 * Fix bugs introduced in 3.12.0 ([#2115](https://github.com/alephdata/aleph/pull/2115), [#2112](https://github.com/alephdata/aleph/pull/2112))
