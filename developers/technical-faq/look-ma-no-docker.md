@@ -330,6 +330,7 @@ openssl rand -hex 64
 ```text
 cat <<EOF > ~/aleph/aleph.env
 ALEPH_SECRET_KEY=2503698e0d74f47bd87b41ce0978c3db7567d90544554189b72a06b3ef62b2c887768bba79cf812987397f55145bd903fe6c581302fdefe2c8584ce4a3ba8005
+ALEPH_APP_TITLE=Aleph
 ALEPH_APP_NAME=aleph
 ALEPH_UI_URL=https://source.bird.tools
 ALEPH_URL_SCHEME=https
