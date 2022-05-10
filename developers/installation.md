@@ -250,6 +250,10 @@ The main configuration file of Aleph is `aleph.env`, which is loaded by docker-c
 * You will need to provide a value for the `ALEPH_SECRET_KEY`. A good example of a value is the output of `openssl rand -hex 24`.
 * Aleph needs to know the URL under which the web interface is mounted. Make sure to set the correct public `ALEPH_UI_URL`.
 
+### Pages configuration
+
+Some instance-specific information, e.g. 'About' page, is configured with pages mechanism. You can find default examples in `aleph/pages` directory.
+
 ### OAuth Credentials
 
 Using OAuth for login is optional. Skip this section \(and leave the config commented out\) if you don't want to use it.

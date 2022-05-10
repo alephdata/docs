@@ -334,7 +334,6 @@ ALEPH_APP_TITLE=Aleph
 ALEPH_APP_NAME=aleph
 ALEPH_UI_URL=https://source.bird.tools
 ALEPH_URL_SCHEME=https
-ALEPH_SAMPLE_SEARCHES=Vladimir Putin:TeliaSonera
 ALEPH_ADMINS=christo@cryptodrunks.net
 ALEPH_PASSWORD_LOGIN=true
 ALEPH_OAUTH=false
