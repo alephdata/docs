@@ -6,6 +6,12 @@ description: >-
 
 # Changelog
 
+## 3.12.2 (2022-06-01)
+
+* Fixed issue with Network diagrams where creating a Trip would cause the diagram to break
+* Fixed an issue where we were not concatenating error messages for the same path
+* Numerous library version bumps
+
 ## 3.12.2 (2022-03-28)
 
 * The Aleph UI is now available in French.
