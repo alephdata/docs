@@ -91,7 +91,9 @@ If you want to quickly get some sample data in your Aleph instance you can use `
 aleph crawldir /aleph/contrib/testdata
 ```
 
-To also get a sample of \(non-document\) entity data, consider loading [sanctions lists](installation.md).
+Make sure that a worker is running, otherwise your data won’t be processed. Run `make worker` to start a worker in your development environment. If you can’t see your sample data, make sure that you’re signed in, as your data won’t be public by default. See [Users](installation.md#users) for instructions on how to create new user accounts.
+
+To also get a sample of \(non-document\) entity data, consider loading [sanctions lists](datacommons.md#opensanctions).
 
 ### Running Tests
 
