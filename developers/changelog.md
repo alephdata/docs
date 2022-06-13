@@ -6,6 +6,19 @@ description: >-
 
 # Changelog
 
+## 3.12.4 (2022-06-13)
+
+* The histogram feature used for dates now allows you to zoom in and out to get a better view of the dates that are important to you. Note that histograms aren't yet great with vague dates (January 2021, 1984) so dates with no day or month will default to the first day of the month, year.
+* Update pyjwt requirement from <2.4.0,>=2.0.1 to >=2.0.1,<2.5.0
+* Bump react-ftm
+* Bump followthemoney from 2.9.4 to 2.9.5
+* Bump @formatjs/intl-relativetimeformat from 10.0.1 to 11.0.1
+* Bump followthemoney from 2.9.3 to 2.9.4
+* Bump @alephdata/followthemoney from 2.9.3 to 2.9.4 in /ui
+* Bump alembic from 1.7.7 to 1.8.0 (#2296)
+*  Bump jsonschema from 4.5.1 to 4.6.0 (#2300)
+* Bump sqlalchemy from 1.4.36 to 1.4.37 (#2297)
+
 ## 3.12.3 (2022-06-01)
 
 * Fixed issue with Network diagrams where creating a Trip would cause the diagram to break
