@@ -47,6 +47,7 @@ With the settings in place, you can use `make all` to set everything up and laun
 1. `make build` to build the docker images for the application and relevant services. You can run `make docker-pull` before to pull pre-build release images.
 2. `make upgrade` to run the latest database migrations and create/update the search index.
 3. `make web` to run the web-based API server and the user interface.
+4. In a separate shell, run `make worker` to start a worker. If you do not start a worker, background jobs (for example ingesting new documents) won’t be processed.
 
 Open `http://localhost:8080/` in your browser to visit the web frontend.
 
@@ -82,6 +83,8 @@ aleph createuser --name="Alice" \
 If you pass an email address in the `ALEPH_ADMINS` environment variable \(in your [configuration](installation.md#system-configuration)\) it will automatically be made into an admin.
 
 After running `createuser`, the newly created user's API key is printed, which you can use in the `Authorization` HTTP header of requests to the [API](installation.md). If you pass a password, you can use this email address and password to log into the web interface.
+
+You can also run Aleph in single-user mode by setting `ALEPH_SINGLE_USER` to `true`. When you run Aleph in single-user mode, authentication is disabled and every user is automatically logged in as an admin user.
 
 ### Loading Sample Data
 
