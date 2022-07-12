@@ -39,7 +39,7 @@ Once the code is downloaded, find the file called `aleph.env.tmpl` in the base d
 Also, please execute the following command to allow ElasticSearch to map its memory:
 
 {% hint style="warning" %}
-When running Docker on macOS, Docker uses a virtual machine as the container host. Therefore, you need to run the command inside of the Docker virtual machine. In order to log in to the virtual machine, execute `docker run -it --rm --privileged --pid=host justincormack/nsenter1shell`.
+When running Docker on macOS, Docker uses a virtual machine as the container host. Therefore, you need to run the command inside of the Docker virtual machine. In order to log in to the virtual machine, execute `docker run -it --rm --privileged --pid=host justincormack/nsenter1`.
 {% endhint %}
 
 ```shell
