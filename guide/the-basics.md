@@ -28,7 +28,7 @@ This structured vocabulary allows entities to be more easily searched, filtered,
 
 ## Mentions
 
-When you upload unstructured documents (for example, PDF documents) to Aleph, Aleph tries to extract names, locations, IBAN account numbers, and more from the document contents. While entities contain structured data, mentions are simple text parts Aleph recognized in a document. You can search Aleph for other datasets and documents with matching mentions. For example, if an uploaded document mentions an IBAN, Aleph allows you to search for other datasets and documents that mention the same IBAN.
+When you upload unstructured documents (for example, PDF documents) to Aleph, Aleph tries to extract names, locations, IBAN account numbers, and more from the document contents. Mentions are different from entities in that they're stored as text and do not contain structured data. You can search Aleph for other datasets and documents with matching mentions. For example, if an uploaded document mentions an IBAN, Aleph allows you to search for other datasets and documents that mention the same IBAN.
 
 ## Datasets & Investigations
 
