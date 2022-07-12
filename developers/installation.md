@@ -18,7 +18,7 @@ This section describes how to set up Aleph for software development. Developer m
 
 Developer mode is a docker configuration for Aleph which makes it easy to do software development and debug the tool without having to install its dependencies on your host machine. These are the features of developer mode:
 
-* The code for the backend \(api\) server and the React frontend will automatically reload to reflect any changes you make in your working copy while the application is running.
+* The code for the backend (api) server and the React frontend will automatically reload to reflect any changes you make in your working copy while the application is running.
 * Both backend and frontend will operate in debug mode and give more verbose error messages when a problem occurs.
 * The host machine's file system will be accessible from within Aleph's docker container at `/host`.
 
@@ -38,8 +38,12 @@ Once the code is downloaded, find the file called `aleph.env.tmpl` in the base d
 
 Also, please execute the following command to allow ElasticSearch to map its memory:
 
-```bash
-sudo sysctl -w vm.max_map_count=262144
+{% hint style="warning" %}
+When running Docker on macOS, Docker uses a virtual machine as the container host. Therefore, you need to run the command inside of the Docker virtual machine. In order to log in to the virtual machine, execute `docker run -it --rm --privileged --pid=host justincormack/nsenter1shell`.
+{% endhint %}
+
+```shell
+sysctl -w vm.max_map_count=262144
 ```
 
 With the settings in place, you can use `make all` to set everything up and launch the web service. This is equivalent to the following steps:
@@ -63,7 +67,7 @@ make shell
 aleph --help
 ```
 
-This will enter a docker container where the `aleph` shell command is available \(see [Usage](https://github.com/alephdata/aleph/wiki/Usage) for details\). You can also access the host computers file system at `/host`. This means a file stored at `/tmp/bla.txt` on your computer can be found at `/host/tmp/bla.txt` inside the container.
+This will enter a docker container where the `aleph` shell command is available (see [Usage](https://github.com/alephdata/aleph/wiki/Usage) for details). You can also access the host computers file system at `/host`. This means a file stored at `/tmp/bla.txt` on your computer can be found at `/host/tmp/bla.txt` inside the container.
 
 {% hint style="info" %}
 When you run Aleph in development mode, the default configuration will not run the worker component used to index documents and do other background work. You can start it either via `make worker` or inside an Aleph shell using `aleph worker`.
@@ -80,7 +84,7 @@ aleph createuser --name="Alice" \
                  user@example.com
 ```
 
-If you pass an email address in the `ALEPH_ADMINS` environment variable \(in your [configuration](installation.md#system-configuration)\) it will automatically be made into an admin.
+If you pass an email address in the `ALEPH_ADMINS` environment variable (in your [configuration](installation.md#system-configuration)) it will automatically be made into an admin.
 
 After running `createuser`, the newly created user's API key is printed, which you can use in the `Authorization` HTTP header of requests to the [API](installation.md). If you pass a password, you can use this email address and password to log into the web interface.
 
@@ -96,7 +100,7 @@ aleph crawldir /aleph/contrib/testdata
 
 Make sure that a worker is running, otherwise your data won’t be processed. Run `make worker` to start a worker in your development environment. If you can’t see your sample data, make sure that you’re signed in, as your data won’t be public by default. See [Users](installation.md#users) for instructions on how to create new user accounts.
 
-To also get a sample of \(non-document\) entity data, consider loading [sanctions lists](datacommons.md#opensanctions).
+To also get a sample of (non-document) entity data, consider loading [sanctions lists](datacommons.md#opensanctions).
 
 ### Running Tests
 
@@ -111,7 +115,7 @@ This will create a new database and run all the tests.
 
 ### Debugging
 
-If you're looking to debug changes that you've made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger \(debugpy\) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.
+If you're looking to debug changes that you've made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger (debugpy) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.
 
 The API is exposed via the standard 5678 port whereas the worker service is exposed via 5679.
 
@@ -135,13 +139,13 @@ stdin_open: true
 tty: true
 ```
 
-Once this is done, restart your docker containers and set a breakpoint\(\) in your code. Now, running docker attach aleph\_api\_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
+Once this is done, restart your docker containers and set a breakpoint() in your code. Now, running docker attach aleph\_api\_1 should provide you the ability to view that breakpoint and make use of pdb's other features.
 
 ### Building from a clean state
 
 You can also build the Aleph images locally. This could be useful while working on the Dockerfile changes and new dependency upgrades.
 
-To build the image you can run `make build`, which will build the `alephdata/aleph` image \(this will generate a production ready image\).
+To build the image you can run `make build`, which will build the `alephdata/aleph` image (this will generate a production ready image).
 
 ## Production deployment
 
@@ -151,14 +155,14 @@ This section details how to **set up Aleph in production mode**. If you plan to 
 
 Aleph is distributed as a set of Docker containers, which can be run on any server that meets the following criteria:
 
-* 8GB \(or more\) of RAM. While the software will start with much less, we advise providing ample main memory for ideal performance.
+* 8GB (or more) of RAM. While the software will start with much less, we advise providing ample main memory for ideal performance.
 * A working install of [Docker](https://www.docker.com/) and `docker-compose`. See [the FAQ page](technical-faq/#can-you-run-aleph-without-using-docker) for information on not using Docker.
-* A domain name or IP address which can be used at the root via HTTPS \(i.e. Aleph doesn't support running at a sub-path like `/aleph`\). You are welcome to contribute fixes for this scenario.
+* A domain name or IP address which can be used at the root via HTTPS (i.e. Aleph doesn't support running at a sub-path like `/aleph`). You are welcome to contribute fixes for this scenario.
 * An internet connection to download and install the package.
 
 To begin a production deployment:
 
-* Obtain a copy of Aleph's [docker-compose](https://github.com/alephdata/aleph/blob/master/docker-compose.yml) file and [base configurations](https://github.com/alephdata/aleph/blob/master/aleph.env.tmpl) \(named `aleph.env.tmpl`\).
+* Obtain a copy of Aleph's [docker-compose](https://github.com/alephdata/aleph/blob/master/docker-compose.yml) file and [base configurations](https://github.com/alephdata/aleph/blob/master/aleph.env.tmpl) (named `aleph.env.tmpl`).
 * Make a copy of the configurations file named `aleph.env` and define settings for your production instance. Check the [section on configuration](installation.md#configuration) for more information regarding the available options.
 
 {% hint style="info" %}
@@ -211,17 +215,14 @@ See the [relevant section in the Technical FAQ](technical-faq/#how-can-i-upgrade
 Aleph stores persistent data in 3 different systems:
 
 1. Blob storage: This is where Aleph stores the uploaded files as blobs.
-2. SQL Database: Aleph has a couple of different use cases for a SQL database.
-        * A database to store application data like users, sessions, collection metadata etc. This database is the one defined by `ALEPH_DATABASE_URI` setting.
-        * A database to store FtM entities. This database is defined by `FTM_STORE_URI`.
-    These two databases can use the same SQL database instance or can use separate instance for each use case.
+2. SQL Database: Aleph has a couple of different use cases for a SQL database. \* A database to store application data like users, sessions, collection metadata etc. This database is the one defined by `ALEPH_DATABASE_URI` setting. \* A database to store FtM entities. This database is defined by `FTM_STORE_URI`. These two databases can use the same SQL database instance or can use separate instance for each use case.
 3. ElasticSearch: ElasticSearch powers Aleph's search and stores the contents of all processed documents and entities.
 
 To have a functional Aleph instance, we need all 3 of these components to be operational without data loss and have a restoration plan if we any of these components experience data corruption, data loss or any other failure.
 
 For blob storage, Aleph can use cloud storage services like Google Cloud Storage, AWS S3 which provide automatic backups and availability guarantees. In case you're using the local file system for storage, the docker volume can be mapped to a host directory, and the host directory can be backed up in usual ways. (for example, running `rsync` in a cron job to copy the directory to a backup server.)
 
-For SQL database, Aleph uses PostgreSQL. PostgreSQL can be backed up and restored through `pg_dump`, `pg_restore` and similar utilities. 
+For SQL database, Aleph uses PostgreSQL. PostgreSQL can be backed up and restored through `pg_dump`, `pg_restore` and similar utilities.
 
 For example, here's how you can dump the database:
 
@@ -261,7 +262,7 @@ Some instance-specific information, e.g. 'About' page, is configured with pages 
 
 ### OAuth Credentials
 
-Using OAuth for login is optional. Skip this section \(and leave the config commented out\) if you don't want to use it.
+Using OAuth for login is optional. Skip this section (and leave the config commented out) if you don't want to use it.
 
 Aleph supports a couple of OAuth providers out of the box: Google, Facebook and Microsoft Azure.
 
@@ -269,7 +270,7 @@ Aleph supports a couple of OAuth providers out of the box: Google, Facebook and 
 
 To get the OAuth credentials please visit the [Google Developers Console](https://console.developers.google.com/). There you will need to [create an API key](https://support.google.com/googleapi/answer/6158862). In the **Authorised redirect URIs** section, use this URL:
 
-```text
+```
 http://localhost:8080/api/2/sessions/callback/google
 ```
 
@@ -277,9 +278,9 @@ Save the client ID and the client secret as `ALEPH_OAUTH_*` values.
 
 #### Using Microsoft Azure
 
-Create a new app over at [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com/), make a note of the KEY and secret you generate there. Callback URL should be as follows: [https:///api/2/sessions/callback](https:///api/2/sessions/callback) . Then add the following to aleph.env, remember to update KEY and SECRET with your values.
+Create a new app over at [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com/), make a note of the KEY and secret you generate there. Callback URL should be as follows: [https:///api/2/sessions/callback](https://api/2/sessions/callback) . Then add the following to aleph.env, remember to update KEY and SECRET with your values.
 
-```text
+```
 ALEPH_OAUTH=true
 ALEPH_OAUTH_KEY=***************************
 ALEPH_OAUTH_SECRET=***************************
@@ -294,4 +295,3 @@ ALEPH_OAUTH_TOKEN_METHOD=POST
 ## Troubleshooting
 
 Troubleshooting help can be found in the [Technical FAQ](technical-faq/).
-

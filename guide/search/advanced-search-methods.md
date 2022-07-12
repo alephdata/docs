@@ -9,7 +9,7 @@ description: >-
 
 To view the advanced options available in Aleph, **click the** **advanced search button** next to the search bar. A pop-up will appear explaining each of the available operations.
 
-![The advanced search pop-up facilitates many different advanced search methods](../../.gitbook/assets/screen-shot-2021-02-11-at-10.32.31.png)
+![The advanced search pop-up facilitates many different advanced search methods](<../../.gitbook/assets/Screen Shot 2021-02-11 at 10.32.31.png>)
 
 Each of the options in the pop-up allows you to enter a term or terms. Once you have entered a term, clicking **Search** executes a search with your updated advanced option. You will notice that each time you enter a new advanced option, the keywords in the main search bar will change, indicating the option you've selected.
 
@@ -33,7 +33,7 @@ If you want Aleph to only return matches that have exactly "Ilham Aliyev", then 
 "Ilham Aliyev"
 ```
 
-![](<../../.gitbook/assets/ilham\_aliyev\_exact (1).png>)
+![](../../.gitbook/assets/ilham\_aliyev\_exact.png)
 
 ### Allow for Variations in Spelling
 
@@ -51,7 +51,7 @@ Aliyev~2
 
 What this translates to is: Give me matches that include the keyword Aliyev, but also me matches that include up to any 2 letter variations from the keyword Aliyev. These variations include adding, removing, and changing a letter. This includes Aliyev, of course, but also includes Əliyev, which is just one letter variation different, and Əliyeva, which is two letter variations different from Aliyev.
 
-![](<../../.gitbook/assets/variation\_search (1).png>)
+![](../../.gitbook/assets/variation\_search.png)
 
 {% hint style="info" %}
 Using this operator with too high a number (greater than 3, for example) will cause slow searches and may return too many false results.
@@ -65,7 +65,7 @@ If you do not want to find a precise keyword, but merely specify that two words 
 "Trump Aliyev"~10
 ```
 
-![](<../../.gitbook/assets/proximity\_search (1).png>)
+![](../../.gitbook/assets/proximity\_search.png)
 
 ### Including and Excluding Combinations of Keywords
 

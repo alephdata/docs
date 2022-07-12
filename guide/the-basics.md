@@ -18,11 +18,11 @@ While documents often provide the evidentiary backbone of an investigation, Alep
 
 Aleph provides an ever-growing [**vocabulary**](../developers/followthemoney/) for describing and modeling the **people**, **companies**, **assets**, and **relationships** that are often at the center of your investigations.
 
-![](../.gitbook/assets/screen-shot-2020-07-30-at-12.30.31.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-30 at 12.30.31.png>)
 
 Each entity type contains a fixed set of possible properties to describe relevant details of that entity, and can be linked to other entities via relationships.
 
-![](../.gitbook/assets/screen-shot-2020-07-30-at-12.39.08.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-30 at 12.39.08.png>)
 
 This structured vocabulary allows entities to be more easily searched, filtered, and cross-referenced with other data sources to find relevant co-occurrences and further enrich your investigation.
 
@@ -32,15 +32,15 @@ In Aleph, **datasets** and **investigations** serve as the primary containers fo
 
 ### Source datasets
 
-**Source datasets** reflect the accumulated contents of a single source \(i.e. a company registry, an email leak, a court archive\). They are managed by the data administrators of Aleph and cannot be changed or edited by any other users of the platform. Learn about how to find a specific dataset or datasets pertaining to a specific country ****[**here**](search/searching-for-a-dataset.md).
+**Source datasets** reflect the accumulated contents of a single source (i.e. a company registry, an email leak, a court archive). They are managed by the data administrators of Aleph and cannot be changed or edited by any other users of the platform. Learn about how to find a specific dataset or datasets pertaining to a specific country \*\*\*\*[**here**](search/searching-for-a-dataset.md).
 
-![](../.gitbook/assets/screen-shot-2020-07-30-at-13.02.55.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-30 at 13.02.55.png>)
 
 ### Investigations
 
-**Investigations** are contained workspaces within Aleph where you can upload, edit, and organize ****data related to an investigation or topic of interest - and they can be shared with any other user or access group within Aleph.
+**Investigations** are contained workspaces within Aleph where you can upload, edit, and organize \*\*\*\*data related to an investigation or topic of interest - and they can be shared with any other user or access group within Aleph.
 
-While source datasets cannot be modified, **investigations** allow you to edit their contents by [**uploading documents**](building-out-your-investigation/uploading-documents.md), [**mapping data into structured entities**](building-out-your-investigation/generating-multiple-entities-from-a-list.md), and [**creating your own network diagrams**](building-out-your-investigation/network-diagrams.md). 
+While source datasets cannot be modified, **investigations** allow you to edit their contents by [**uploading documents**](building-out-your-investigation/uploading-documents.md), [**mapping data into structured entities**](building-out-your-investigation/generating-multiple-entities-from-a-list.md), and [**creating your own network diagrams**](building-out-your-investigation/network-diagrams.md).
 
 Read more about how to get started creating and managing an investigation [**here**](building-out-your-investigation/creating-an-investigation.md).
 
@@ -54,7 +54,4 @@ Groups are managed by site administrators, and cannot, therefore, be created or 
 
 Read more about managing access [**here**](building-out-your-investigation/creating-an-investigation.md#managing-access-to-your-personal-dataset).
 
-
-
 **Now that you've gotten acquainted with some of the core concepts of Aleph, it's time to dive in. Read on to learn more about** [**searching in Aleph**](search/) **and** [**building out your own investigation**](building-out-your-investigation/)**.**
-

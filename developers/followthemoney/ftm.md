@@ -8,8 +8,8 @@ description: >-
 
 **ftm** is a command-line tool that is part of the Python implementation of the [Follow the Money](./) data model. It can be used to generate, process and export streams of entities in a line-based JSON format. Typical uses would include:
 
-* Generating FtM entities by applying an [entity mapping to structured data tables](../mappings.md) \(CSV, SQL\). These entities can then be loaded into an instance of Aleph using the [alephclient](../alephclient.md) command.
-* Converting an existing stream of FtM entities \(e.g. from the Aleph API\) into another format, such as CSV, Excel, Gephi GEXF or Neo4J's Cypher language.
+* Generating FtM entities by applying an [entity mapping to structured data tables](../mappings.md) (CSV, SQL). These entities can then be loaded into an instance of Aleph using the [alephclient](../alephclient.md) command.
+* Converting an existing stream of FtM entities (e.g. from the Aleph API) into another format, such as CSV, Excel, Gephi GEXF or Neo4J's Cypher language.
 * Converting data in complex formats, such as the Open Contracting Data Standard, into FtM entities.
 * _Work in Progress:_ Enriching FtM entities from other data sources, such as OCCRP Aleph, OpenCorporates or Wikidata.
 
@@ -24,7 +24,7 @@ ftm --help
 
 ### Optional: Enhanced transliteration support
 
-One of the jobs of followthemoney is to transliterate text from various alphabets into the latin script to support the comparison of names. The normal tool used for this is prone to fail with certain alphabets, e.g. the Azeri language. For that reason, we recommend also installing ICU \(International components for Unicode\).
+One of the jobs of followthemoney is to transliterate text from various alphabets into the latin script to support the comparison of names. The normal tool used for this is prone to fail with certain alphabets, e.g. the Azeri language. For that reason, we recommend also installing ICU (International components for Unicode).
 
 {% tabs %}
 {% tab title="Linux" %}
@@ -60,9 +60,9 @@ ftm map md_companies.yml
 
 This will yield a line-based JSON stream of every company in Moldova, their directors and principal shareholders.
 
-![Generating Moldovan company data as Follow the Money entities.](../../.gitbook/assets/screenshot-2019-08-29-at-23.24.51.png)
+![Generating Moldovan company data as Follow the Money entities.](<../../.gitbook/assets/Screenshot 2019-08-29 at 23.24.51.png>)
 
-You might note, however, that this actually generates multiple entity fragments for each company \(i.e. multiple entities with the same ID\). This is due to the way the md\_companies mapping is written: each query section generates a partial company record. In order to mitigate this, you will need to perform entity aggregation:
+You might note, however, that this actually generates multiple entity fragments for each company (i.e. multiple entities with the same ID). This is due to the way the md\_companies mapping is written: each query section generates a partial company record. In order to mitigate this, you will need to perform entity aggregation:
 
 ```bash
 curl -o md_companies.yml https://raw.githubusercontent.com/alephdata/aleph/master/mappings/md_companies.yml
@@ -81,7 +81,7 @@ cat people_of_interest.csv | ftm map-csv people_of_interest.yml | ftm aggregate
 
 ## Exporting entities to Excel or CSV
 
-Follow the Money data can be exported to tabular formats, such as modern Excel \(XLSX\) files, and comma-separated values \(CSV\). Since each schema of entities has a different set of properties it makes sense to turn each schema into a separate table: `People` go into one, `Directorships` into another.
+Follow the Money data can be exported to tabular formats, such as modern Excel (XLSX) files, and comma-separated values (CSV). Since each schema of entities has a different set of properties it makes sense to turn each schema into a separate table: `People` go into one, `Directorships` into another.
 
 To export to an Excel file, use the `ftm export-excel` command:
 
@@ -92,7 +92,7 @@ cat us_ofac.ijson | ftm validate | ftm export-excel -o OFAC.xlsx
 
 Since writing the binary data of an Excel file to standard output is awkward, it is mandatory to include a file name with the `-o` option.
 
-![The US sanctions list, as exported via export-excel.](../../.gitbook/assets/screenshot-2019-09-01-at-20.26.02.png)
+![The US sanctions list, as exported via export-excel.](<../../.gitbook/assets/Screenshot 2019-09-01 at 20.26.02.png>)
 
 {% hint style="warning" %}
 When exporting to Excel format, it's easy to generate a workbook larger than what Microsoft Excel and similar office programs can actually open. Only export small and mid-size datasets.
@@ -117,13 +117,13 @@ Follow the Money sees every unit of information as an entity with a set of prope
 
 * Some entity schemata, such as `Directorship`, `Ownership`, `Family` or `Payment`, contain annotations that define how they can be transformed into an edge with a source and target.
 * Entities also naturally reference others. For example, an `Email` has an `emitters` property that refers to a `LegalEntity`, the sender. The `emitters` property connects the two entities and can also be turned into an edge.
-* Finally, some [types of properties](./#property-types) \(e.g. `email`, `iban`, `names`\) can be formed into nodes, with edges formed towards each node that derives from an entity with that property value. For example, an `address` node for "40 Wall Street" would show links to all the companies registered there, or a node representing the name "Frank Smith" would connect all the documents mentioning that name.
+* Finally, some [types of properties](./#property-types) (e.g. `email`, `iban`, `names`) can be formed into nodes, with edges formed towards each node that derives from an entity with that property value. For example, an `address` node for "40 Wall Street" would show links to all the companies registered there, or a node representing the name "Frank Smith" would connect all the documents mentioning that name.
 
-It rarely makes sense to turn all property types into nodes, so the set of types that need to be [reified](https://en.wikipedia.org/wiki/Reification_%28computer_science%29) can be passed as options into the graph exporter.
+It rarely makes sense to turn all property types into nodes, so the set of types that need to be [reified](https://en.wikipedia.org/wiki/Reification\_\(computer\_science\)) can be passed as options into the graph exporter.
 
 ### Cypher commands for Neo4J
 
-[Neo4J](https://neo4j.com/) is a popular open source graph database that can be queried and edited [using the Cypher language](https://neo4j.com/docs/cypher-refcard/current/). It can be used as a database backend or queried directly to perform advanced analysis, e.g. to find all paths between two entities. 
+[Neo4J](https://neo4j.com/) is a popular open source graph database that can be queried and edited [using the Cypher language](https://neo4j.com/docs/cypher-refcard/current/). It can be used as a database backend or queried directly to perform advanced analysis, e.g. to find all paths between two entities.
 
 The example below uses Neo4J's `cypher-shell` command to load the US sanctions list into a local instance of the database:
 
@@ -132,7 +132,7 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm export-cypher | cypher-shell -u user -p password
 ```
 
-![Each entity type is turned either into a node label, or a relationship type.](../../.gitbook/assets/screenshot-2019-09-01-at-21.45.28.png)
+![Each entity type is turned either into a node label, or a relationship type.](<../../.gitbook/assets/Screenshot 2019-09-01 at 21.45.28.png>)
 
 By default, this will only make explicit edges based on entity to entity relationships. If you want to reify specific property types, use the `-e` option:
 
@@ -142,7 +142,7 @@ cat us_ofac.ijson | ftm export-cypher -e name -e iban -e entity -e address
 
 When working with file-based datasets, you may want to delete folder hierarchies from the imported data in Neo4J to avoid file co-location biasing path and density analyses:
 
-```text
+```
 # Delete folder hierarchies:
 MATCH ()-[r:ANCESTORS]-() DELETE r;
 MATCH ()-[r:PARENT]-() DELETE r;
@@ -157,7 +157,7 @@ MATCH (n:address) WHERE size((n)--()) <= 1 DETACH DELETE (n);
 
 At any time, you can flush the entire Neo4J and start from scratch:
 
-```text
+```
 MATCH (n) DETACH DELETE n;
 ```
 
@@ -175,7 +175,7 @@ This will generate a set of CSV files in a folder, and include a shell script fi
 
 ### GEXF for Gephi/Sigma.js
 
-[GEXF](https://gephi.org/gexf/format/) \(Graph Exchange XML Format\) is a file format used by the network analysis software [Gephi](https://gephi.org/) and other tools developed in the periphery of the [Media Lab at Sciences Po](http://tools.medialab.sciences-po.fr/). Gephi is particularly suited to do quantitative analysis of graphs with tens of thousands of nodes. It can calculate network metrics like centrality or PageRank, or generate complex visual layouts.
+[GEXF](https://gephi.org/gexf/format/) (Graph Exchange XML Format) is a file format used by the network analysis software [Gephi](https://gephi.org/) and other tools developed in the periphery of the [Media Lab at Sciences Po](http://tools.medialab.sciences-po.fr/). Gephi is particularly suited to do quantitative analysis of graphs with tens of thousands of nodes. It can calculate network metrics like centrality or PageRank, or generate complex visual layouts.
 
 The command line works analogous to the Neo4J export, also accepting the `-e` flag for property types that should be turned into nodes:
 
@@ -184,20 +184,20 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm validate | ftm export-cypher -e iban -o ofac.gexf
 ```
 
-![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links \(i.e. In-Degree\).](../../.gitbook/assets/screenshot-2019-09-01-at-22.03.51.png)
+![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links (i.e. In-Degree).](<../../.gitbook/assets/Screenshot 2019-09-01 at 22.03.51.png>)
 
 ## Exporting entities to RDF/Linked Data
 
-Entity streams of Follow the Money data can also be exported to linked data in the `NTriples` format. 
+Entity streams of Follow the Money data can also be exported to linked data in the `NTriples` format.
 
 ```bash
 curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json
 cat us_ofac.ijson | ftm validate | ftm export-rdf 
 ```
 
-It is unclear to the author why this functionality exists, it was just really easy to implement. For those developers who enjoy working with RDF, it might be worthwhile to point out that the underlying ontology \(Follow the Money\) is also regularly published in [Turtle](https://alephdata.github.io/followthemoney/ns/ftm.ttl) and [RDF/XML](https://alephdata.github.io/followthemoney/ns/ftm.xml) format.
+It is unclear to the author why this functionality exists, it was just really easy to implement. For those developers who enjoy working with RDF, it might be worthwhile to point out that the underlying ontology (Follow the Money) is also regularly published in [Turtle](https://alephdata.github.io/followthemoney/ns/ftm.ttl) and [RDF/XML](https://alephdata.github.io/followthemoney/ns/ftm.xml) format.
 
-By default, the RDF exporter tries to map each entity property to a fully-qualified RDF predicate. Schemas include some mappings to FOAF and similar ontologies. Another concrete use for RDF export, however, is loading data to the dgraph database engine. dgraph prefers simple string predicates over URIs. To achieve this, you can pass the `--unqualified` flag: 
+By default, the RDF exporter tries to map each entity property to a fully-qualified RDF predicate. Schemas include some mappings to FOAF and similar ontologies. Another concrete use for RDF export, however, is loading data to the dgraph database engine. dgraph prefers simple string predicates over URIs. To achieve this, you can pass the `--unqualified` flag:
 
 ```bash
 curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json
@@ -206,7 +206,7 @@ cat us_ofac.ijson | ftm validate | ftm export-rdf --unqualified
 
 ## Importing Open Contracting data
 
-The [Open Contracting Data Standard](https://standard.open-contracting.org/latest/en/) \(OCDS\) is commonly serialised as a series of JSON objects. `ftm` includes a function to transform a stream of OCDS objects into FtMs `Contracts` and `ContractAwards`. This was developed in particular to import data from the DIGIWHIST [OpenTender.eu](https://opentender.eu/all/download) site, so other implementations of OCDS may require extending the importer to accommodate other formats.
+The [Open Contracting Data Standard](https://standard.open-contracting.org/latest/en/) (OCDS) is commonly serialised as a series of JSON objects. `ftm` includes a function to transform a stream of OCDS objects into FtMs `Contracts` and `ContractAwards`. This was developed in particular to import data from the DIGIWHIST [OpenTender.eu](https://opentender.eu/all/download) site, so other implementations of OCDS may require extending the importer to accommodate other formats.
 
 Here's how you can convert all Cyprus government procurement data to Follow the Money objects:
 
@@ -222,7 +222,7 @@ Depending on how large the OCDS dataset is, you may want to use `followthemoney-
 
 While the method of streaming Follow the Money entities is very convenient, there are situations where not all information about an entity is known at the time at which it is generated. For example, think of a [mapping](../mappings.md) that loads company names from one CSV file, while the corresponding addresses are in a second, separate CSV table. In such cases, it is easier to generate two entities with the same ID and to merge them later.
 
-Merging such entity fragments requires sorting all the entities in the given dataset by their ID in order to aggregate their properties. For small datasets, this can be done in application memory using the `ftm aggregate`command. 
+Merging such entity fragments requires sorting all the entities in the given dataset by their ID in order to aggregate their properties. For small datasets, this can be done in application memory using the `ftm aggregate`command.
 
 Once the dataset size approaches the amount of available memory, however, sorting must be performed on disk. This is also true when entity fragments are generated on different nodes in a computing cluster.
 
@@ -253,4 +253,3 @@ ftm store delete -d us_ofac
 {% hint style="warning" %}
 When aggregating entities with large fragments of text, a size limit applies. By default, no entity is allowed to grow larger than 50MB of raw text. Additional text fragments are discarded with a warning.
 {% endhint %}
-
