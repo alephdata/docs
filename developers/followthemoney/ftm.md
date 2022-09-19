@@ -206,14 +206,14 @@ cat us_ofac.ijson | ftm validate | ftm export-rdf --unqualified
 
 ## Importing Open Contracting data
 
-The [Open Contracting Data Standard](https://standard.open-contracting.org/latest/en/) (OCDS) is commonly serialised as a series of JSON objects. `ftm` includes a function to transform a stream of OCDS objects into FtMs `Contracts` and `ContractAwards`. This was developed in particular to import data from the DIGIWHIST [OpenTender.eu](https://opentender.eu/all/download) site, so other implementations of OCDS may require extending the importer to accommodate other formats.
+The [Open Contracting Data Standard](https://standard.open-contracting.org/latest/en/) (OCDS) is commonly serialised as a series of JSON objects. The [`followthemoney-ocds` extension](https://github.com/alephdata/followthemoney-ocds) allows you to transform a stream of OCDS objects into FtMs `Contracts` and `ContractAwards`. This was developed in particular to import data from the DIGIWHIST [OpenTender.eu](https://opentender.eu/all/download) site, so other implementations of OCDS may require extending the importer to accommodate other formats.
 
-Here's how you can convert all Cyprus government procurement data to Follow the Money objects:
+After you have installed the extension, you can convert all Cyprus government procurement data to Follow the Money objects:
 
 ```bash
 curl -o CY_ocds_data.json.tar.gz https://opentender.eu/data/files/CY_ocds_data.json.tar.gz
 tar xvfz CY_ocds_data.json.tar.gz
-cat CY_ocds_data.json | ftm import-ocds | ftm aggregate >cy_contracts.ijson
+cat CY_ocds_data.json | ftm import-ocds | ftm aggregate > cy_contracts.ijson
 ```
 
 Depending on how large the OCDS dataset is, you may want to use `followthemoney-store` instead of `ftm aggregate`.
