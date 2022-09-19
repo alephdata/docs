@@ -6,11 +6,7 @@ description: >-
 
 # Drawing network diagrams
 
-**Network diagrams** let you illustrate webs of people, companies and other entities involved in an investigation in a visual diagram of actors and connections. It utilizes the same [types of nodes and connections](../../developers/followthemoney/) as the rest of Aleph and runs both within the Aleph interface and on your desktop computer.
-
-![](<../../.gitbook/assets/Screenshot 2019-08-29 at 11.09.30.png>)
-
-It is important to note that all entities and relationships that you add to your diagram will be automatically added to the investigation in which the diagram is contained.
+**Network diagrams** let you illustrate webs of people, companies and other entities involved in an investigation in a visual diagram of actors and connections. It utilizes the same [types of nodes and connections](../../developers/followthemoney/) as the rest of Aleph. It is important to note that all entities and relationships that you add to your diagram will be automatically added to the investigation in which the diagram is contained.
 
 ## Creating Diagrams in Aleph
 
@@ -38,11 +34,7 @@ Any entities and relationships you create within a diagram will automatically be
 
 Once you have created a diagram, you can allow others to view or edit it by allowing them access to the investigation in which it is contained.
 
-You can also export your diagram to be saved as a file on your computer by clicking the **"Export"** button in the top right corner of the diagram editor. Once the diagram has been exported as a file, it can be edited using the [**Desktop application**](../aleph-data-desktop.md) or shared with others as with any other file on your computer.
-
-## Download the Desktop App
-
-All of the sketching functionality of network diagrams within Aleph is also available within a standalone desktop application called Aleph Data Desktop. Read more about downloading the app [here](../aleph-data-desktop.md).
+You can also export your diagram to be saved as a file on your computer by clicking the **"Export"** button in the top right corner of the diagram editor. Once the diagram has been exported as a file, it can be shared with others as with any other file on your computer.
 
 ## Frequently Asked Questions
 
@@ -56,7 +48,7 @@ That's why we are planning to phase out the old version of VIS once Data Desktop
 
 ### How much data can I add to a network diagram?
 
-The goal of Data Desktop is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar's\_number).
+The goal of network diagrams in Aleph is to support investigative mind mapping, not big data analysis. While you may be able to add several hundred companies and people to a chart, the ideal size of a chart is somewhere around to 50-[150 entities](https://en.wikipedia.org/wiki/Dunbar's\_number).
 
 ### Can I make entities into groups?
 
@@ -74,4 +66,4 @@ Please be conscious, however, that network diagrams are mainly intended to be in
 
 Yes! Follow the instructions for [generating multiple entities from a spreadsheet](generating-multiple-entities-from-a-list.md). In step 4 of the entity mapping process, select the desired destination diagram, and they will be automatically added to your diagram.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17 (2).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17.png>)

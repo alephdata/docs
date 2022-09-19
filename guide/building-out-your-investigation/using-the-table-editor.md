@@ -22,7 +22,7 @@ The table shows only entities of a single type at a time. Use the tabs on the le
 
 To create a new entity in the Entity Table, either **click the "Add new" button** at the top of the table...
 
-![](<../../.gitbook/assets/Screen Shot 2020-07-21 at 15.42.20 (1) (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2020-07-21 at 15.42.20 (1).png>)
 
 ... or simply **start typing** in once of the cells of the bottom row of the table.
 

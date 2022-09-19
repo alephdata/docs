@@ -45,7 +45,7 @@ Keys are usually ID numbers, email addresses, telephone numbers, or other proper
 
 1. **Select an optional destination for the entities that are created**. By selecting a diagram or list here, the entities that are generated from your spreadsheet will be automatically added to that diagram or list, in addition to the investigation of which they are a part.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17 (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17 (2).png>)
 
 **9. Verify and submit your mapping**
 

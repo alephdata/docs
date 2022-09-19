@@ -1,5 +1,9 @@
 # Aleph Data Desktop
 
+{% hint style="warning" %}
+**September 2022:** Aleph Data Desktop has been deprecated and will not receive any further updates. All of Data Desktop’s features are also available within Aleph. Please refer to the Aleph documentation to find out [how to create network diagrams in Aleph](building-out-your-investigation/network-diagrams.md) and [how to import diagrams created in Data Desktop](aleph-data-desktop.md#importing-network-diagrams-into-aleph-from-aleph-data-desktop).
+{% endhint %}
+
 [Creating network diagrams ](building-out-your-investigation/network-diagrams.md)within Aleph allows you to map networks of people and influence directly alongside the rich ecosystem of data and processing tools that Aleph provides. Access control ensures that the investigation files that you create are accessible only to collaborators with which you explicitly share them.
 
 Even with these protections, there might arise a scenario where you want to **work on an investigation file offline**, within the private confines of your own device. For this reason, we have released an application called Aleph Data Desktop.
