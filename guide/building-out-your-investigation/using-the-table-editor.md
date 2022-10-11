@@ -10,11 +10,11 @@ While entities can be added to an investigation in bulk by [creating network dia
 
 To get started, **click one of the entity types** in the sidebar on any investigation page, or select **"Add a new entity type".**
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.45.25.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.45.25.png)
 
 You will see a table containing all of the entities of that type that have been created within that investigation, **one entity per row**. **Properties** for each entity are displayed in the corresponding columns.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.50.06.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.50.06.png)
 
 The table shows only entities of a single type at a time. Use the tabs on the left side to toggle between viewing different types and the **"Add new entity type"** button to add additional types.
 
@@ -26,7 +26,7 @@ To create a new entity in the Entity Table, either **click the "Add new" button*
 
 ... or simply **start typing** in once of the cells of the bottom row of the table.
 
-![](<../../.gitbook/assets/Screen Shot 2020-07-21 at 15.42.09 (1).png>)
+![](../../.gitbook/assets/screen-shot-2020-07-21-at-15.42.09.png)
 
 Then click **"Enter"** to submit the value for the property cell in which you have typed. A new entity will **automatically be created** with the property value you have entered.
 
@@ -53,11 +53,11 @@ To add an additional property:
 2. Click the **"Add a property"** button.
 3. Then select a property from the list.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.51.33.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.51.33.png)
 
 You will now see the column for your property added to the table. **Click** in a cell to start adding values.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.52.34.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.52.34.png)
 
 ### Different property editing types
 
@@ -65,13 +65,13 @@ Properties come in a few different varieties. Most properties, like a person's n
 
 When you click to edit a cell, the table editor will display a slightly different editing input, depending upon the type of the property value you are editing. Featured below are a few examples:
 
-![](<../../.gitbook/assets/Screen Shot 2020-07-22 at 11.24.29.png>)
+![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.24.29.png)
 
 ### Adding Multiple Values to a Cell
 
 Most entity properties allow for multiple values, if needed. To add multiple values to a cell, click the **plus (+)** button when editing. Then type an additional value, and press **Enter** to submit.
 
-![](<../../.gitbook/assets/Screen Shot 2020-07-22 at 11.35.33.png>)
+![](../../.gitbook/assets/screen-shot-2020-07-22-at-11.35.33.png)
 
 ## Linking entities
 
@@ -82,15 +82,15 @@ To add a relationship between two entities:
 1. Select an entity to link by **clicking the checkbox** next to it in the table.
 2. Then click the **"Create link"** button
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.53.50.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.53.50.png)
 
 1. In the window that appears, select a **target** and a **relationship type** to complete the link. Then click the **"Create"** button.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.59.29.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.59.29.png)
 
 1. You'll notice that a new relationship type (in the case below, a Family relationship) has been added to the list of entity types on the left of the table editor. **Click** that relationship type to view the relationship link that you created.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.57.32.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.57.32.png)
 
 ```
 5. You can now add additional details to the link that you created in the same way that you would edit any other entity in the table. This is especially useful for indicating the things like the amount of a shareholding ownership between a Person and a Company entity, or the beginning and end date of a directorship.
@@ -100,4 +100,4 @@ To add a relationship between two entities:
 
 To delete one or more entities from the investigation, **click the checkbox** next to each entity you would like to delete. Then click the **"Delete"** button at the top of the table.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 14.01.22.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-14.01.22.png)

@@ -18,11 +18,11 @@ While documents often provide the evidentiary backbone of an investigation, Alep
 
 Aleph provides an ever-growing [**vocabulary**](../developers/followthemoney/) for describing and modeling the **people**, **companies**, **assets**, and **relationships** that are often at the center of your investigations.
 
-![](<../.gitbook/assets/Screen Shot 2020-07-30 at 12.30.31.png>)
+![](../.gitbook/assets/screen-shot-2020-07-30-at-12.30.31.png)
 
 Each entity type contains a fixed set of possible properties to describe relevant details of that entity, and can be linked to other entities via relationships.
 
-![](<../.gitbook/assets/Screen Shot 2020-07-30 at 12.39.08.png>)
+![](../.gitbook/assets/screen-shot-2020-07-30-at-12.39.08.png)
 
 This structured vocabulary allows entities to be more easily searched, filtered, and cross-referenced with other data sources to find relevant co-occurrences and further enrich your investigation.
 
@@ -34,7 +34,7 @@ In Aleph, **datasets** and **investigations** serve as the primary containers fo
 
 **Source datasets** reflect the accumulated contents of a single source (i.e. a company registry, an email leak, a court archive). They are managed by the data administrators of Aleph and cannot be changed or edited by any other users of the platform. Learn about how to find a specific dataset or datasets pertaining to a specific country \*\*\*\*[**here**](search/searching-for-a-dataset.md).
 
-![](<../.gitbook/assets/Screen Shot 2020-07-30 at 13.02.55.png>)
+![](../.gitbook/assets/screen-shot-2020-07-30-at-13.02.55.png)
 
 ### Investigations
 

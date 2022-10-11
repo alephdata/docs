@@ -260,6 +260,56 @@ The main configuration file of Aleph is `aleph.env`, which is loaded by docker-c
 
 Some instance-specific information, e.g. 'About' page, is configured with pages mechanism. You can find default examples in `aleph/pages` directory.
 
+### App-wide message banner
+
+You can enable an app-wide message banner displayed at the top of every page for anonymous and authenticated users. This can be useful if you want to inform Aleph about scheduled maintenance, degraded performance, or newly available datasets.
+
+![Use the message banner to inform users about scheduled maintenance.](<../.gitbook/assets/Screenshot 2022-08-03 at 18.46.23.png>)
+
+There are two ways to configure the contents of the message banner.
+
+#### Define a static message
+
+The easiest way to enable the message banner is to set the `ALEPH_APP_BANNER` environment variable. For example, the following configuration will display the message “Planned downtime this Sunday”:
+
+```
+ALEPH_APP_BANNER="Planned downtime this Sunday"
+```
+
+#### Configure a JSON endpoint to load messages dynamically
+
+Alternatively, you can also configure a JSON endpoint. Aleph will then load messages from that endpoint. Configuring a JSON endpoint allows you to update messages without changing the configuration or restarting your Aleph instance.
+
+As long as the JSON data conforms to the simple schema described below, you can use any method that fits your requirements to generate it. You could manually create a JSON file and upload it to a web server or generate it automatically based on a monitoring tool you use.
+
+We have also created a custom GitHub Action that creates such JSON data based on GitHub Issues and deploys it for free to GitHub Pages. Head over to [the repository on GitHub](https://github.com/alephdata/status-page-action) to learn how to set it up for yourself.
+
+In order to enable loading messages via a JSON endpoint, set the value of the `ALEPH_APP_MESSAGES_URL` environment variable:
+
+```
+ALEPH_APP_MESSAGES_URL="https://example.org/messages.json"
+```
+
+The JSON response returned by the endpoint should conform to the following schema:
+
+```
+[
+  {
+    "id": "1",
+    "createdAt": "2022-07-01T08:30:00.000Z",
+    "updatedAt": "2022-07-01T08:30:00.000Z",
+    "displayUntil": "2022-07-10T10:00.000Z",
+    "level": "info",
+    "title": "Scheduled maintenance on Jul 10, 2022, 8–10am UTC",
+    "safeHtmlBody": "We will upgrade Aleph’s server infrastructure. Aleph will be unavailable during this time frame."
+  }
+]
+```
+
+* `level` can be one of `info`, `warning`, `error`, `success`. The message banner is color coded based on the level.
+* If you set `displayUntil` to a valid date, the message banner will only be displayed until that date.
+* You can include multiple messages in the list. However, only the first message with an empty or a future `displayUntil` date will be displayed.
+
 ### OAuth Credentials
 
 Using OAuth for login is optional. Skip this section (and leave the config commented out) if you don't want to use it.

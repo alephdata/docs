@@ -12,7 +12,7 @@ While source datasets, like company registries and other evidentiary collections
 
 To create an investigation, click the "**Investigations"** button in the left sidebar on the homepage and then click the **"New investigation"** button.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 12.54.15.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-12.54.15.png)
 
 ## Managing access to your investigation
 
@@ -20,7 +20,7 @@ When you create an investigation, its contents are by default accessible to **yo
 
 To grant colleagues access to your investigation, click the settings button in the top right toolbar on your investigation homepage.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 12.58.02.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-12.58.02.png)
 
 The access control window will then appear, allowing you to share your investigation with **other individuals** or **groups** you are a part of.
 
@@ -29,7 +29,7 @@ An individual must first have a user account on Aleph to receive access to an in
 * **View access** allows a user to browse the contents of an investigation but not create, edit, or delete anything contained within
 * **Edit access** allows a user full privileges to modify its contents
 
-![](<../../.gitbook/assets/Screen Shot 2020-07-22 at 09.46.40.png>)
+![](../../.gitbook/assets/screen-shot-2020-07-22-at-09.46.40.png)
 
 _Note: only Aleph administrators have the ability to make an investigation publicly available._
 

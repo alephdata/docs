@@ -11,7 +11,7 @@ Once you have honed your search using the [**advanced search methods**](advanced
 
 Aleph provides built-in options to filter your search results by **country**, **type of data** your are interested in (document, company entity, web page, image, video, etc.), **filetype**, **specific datasets**, **email addresses**, **phone numbers**, **bank accounts**, **names**, **language**, and more.
 
-![](../../.gitbook/assets/annotated\_facet\_search.png)
+![](<../../.gitbook/assets/annotated\_facet\_search (1).png>)
 
 Each filter type provides a list of checkboxes that allow you to select exactly what you most want to see. In addition, the checkbox options are **sorted from most prevalent to least** with the quantity of occurrences beside it. This number can be quite useful, as it shows the most common options first, giving you an indicator of where to start filtering to narrow down your search.
 
@@ -19,7 +19,7 @@ When you **select a filter value by clicking** in the checkbox, a button appears
 
 If you want to remove the filter, it is easy enough to **click on the "X" in the button to remove it** or click on the "Clear All" button to remove all of the filters at once.
 
-![](../../.gitbook/assets/annotated\_facet\_buttons.png.png)
+![](<../../.gitbook/assets/annotated\_facet\_buttons.png (1).png>)
 
 NOTE: While most filters allow you to select multiple options at once to view options that fit either one or both of the selected filter criteria, **the "Types" filter currently only supports selecting a single content type** at a time.
 
@@ -31,6 +31,6 @@ The displayed chart organizes your results according to any date type properties
 
 To filter your results by year, simply **click one of the bars** in the chart or **click and drag across** the bar chart to select a range of years.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 10.08.38.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-10.08.38.png)
 
 Just like the other filters, when you filter the data by a date range, filter buttons appear at the top of the bar chart, enabling you to see what filters are currently being applied and remove them if you no longer need them.

@@ -11,4 +11,4 @@ Cross-referencing is a powerful means for reporters to do mass comparisons betwe
 
 * \*\*\*\*[**Getting More out of Cross-Reference**,](https://docs.google.com/presentation/d/1HmT6PPq\_IseEUrzAFYf8Ug0vsE830zti1Az8IVaGHrE/edit) Finding connections and data insights in Aleph, starting with a list of people (Kirk Jackson)
 
-![Cross-referencing a sanctions list against other data on Aleph.](<../../.gitbook/assets/Screenshot 2020-04-08 at 10.00.25.png>)
+![Cross-referencing a sanctions list against other data on Aleph.](../../.gitbook/assets/screenshot-2020-04-08-at-10.00.25.png)

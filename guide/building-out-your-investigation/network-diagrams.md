@@ -14,7 +14,7 @@ description: >-
 
 Network diagrams can be created within any [**investigation**](creating-an-investigation.md) you have access to in Aleph. To get started, click the "**Network diagrams**" button in the sidebar on any investigation page, and then the "**New diagram**" button.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.10.19.png>)
+![](../../.gitbook/assets/screen-shot-2021-02-11-at-13.10.19.png)
 
 You will now be able to map people, companies, and the relationships between them, which will be saved within your Aleph account, and only be visible to you and whomever you choose to share the diagram with.
 
@@ -22,11 +22,11 @@ You will now be able to map people, companies, and the relationships between the
 
 To add people, companies, or other entities to your diagram, click the **"Add entities"** icon in the toolbar on the left side of the screen, or double click anywhere in the graphing area.
 
-![](<../../.gitbook/assets/Screen Shot 2020-03-16 at 14.55.13.png>)
+![](../../.gitbook/assets/screen-shot-2020-03-16-at-14.55.13.png)
 
 Once you have created multiple entities in your diagram, you can connect them by clicking the **"Add links"** icon.
 
-![](<../../.gitbook/assets/Screen Shot 2020-03-16 at 14.58.28.png>)
+![](../../.gitbook/assets/screen-shot-2020-03-16-at-14.58.28.png)
 
 Any entities and relationships you create within a diagram will automatically be added to the investigation in which your diagram was created. This allows you to cross-reference the lists of people, companies, and other entities you have created in your diagrams with data from across the rest of Aleph.
 
@@ -54,7 +54,7 @@ The goal of network diagrams in Aleph is to support investigative mind mapping, 
 
 Yes. Simply select two or more entities, then click the "Group selection" button, as depicted below.
 
-![](<../../.gitbook/assets/Screen Shot 2020-03-17 at 09.33.12.png>)
+![](../../.gitbook/assets/screen-shot-2020-03-17-at-09.33.12.png)
 
 ### Can I embed a diagram in an article?
 
@@ -66,4 +66,4 @@ Please be conscious, however, that network diagrams are mainly intended to be in
 
 Yes! Follow the instructions for [generating multiple entities from a spreadsheet](generating-multiple-entities-from-a-list.md). In step 4 of the entity mapping process, select the desired destination diagram, and they will be automatically added to your diagram.
 
-![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17.png>)
+![](<../../.gitbook/assets/Screen Shot 2021-02-11 at 13.16.17 (1) (1).png>)
