@@ -18,4 +18,4 @@ While the Aleph source code is openly available and licensed, the community supp
 * For questions related to the instance of Aleph operated by the [Organized Crime and Corruption Reporting Project](https://data.occrp.org) (OCCRP), contact the **data team at data@occrp.org**. Our data team provides assistance to individuals and groups engaged in public interest journalism. We do not currently offer commercial support and consultancy related to Aleph.
 * **If you are a whistleblower** and wish to share confidential information with the press, this community of software developers is not the ideal place to do so. [Contact a journalistic organisation](https://www.occrp.org/en/become-a-whistleblower/) instead.
 
-![](<.gitbook/assets/giphy (1).gif>)
+![](.gitbook/assets/giphy.gif)

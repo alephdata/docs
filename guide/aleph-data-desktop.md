@@ -24,7 +24,7 @@ Using the desktop app, investigation files can be created, edited, and shared **
 
 Another important note is that, unlike in Aleph's Network Diagrams editor where changes are saved automatically, in Aleph Data Desktop you must click **"Save"** in the menu bar to save changes to your diagram file.
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-13.34.23.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-22 at 13.34.23.png>)
 
 ## Exporting network diagrams from Aleph to Aleph Data Desktop
 
@@ -32,15 +32,15 @@ A network diagram created in Aleph can easily be exported, and then subsequently
 
 To export a network diagram from Aleph, click the **"Export"** button in the top right corner when viewing any diagram.
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-12.57.02.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-22 at 12.57.02.png>)
 
 A file called _your\_diagram\_name_.vis will now be downloaded to your computer.
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-12.59.02.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-22 at 12.59.02.png>)
 
 If you have Aleph Data Desktop downloaded, clicking this file should automatically open your diagram in the desktop application. Alternatively, with the application open, click the **"Open"** button in the top menu bar, and then select your file from your computer's file system.
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-13.48.09.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-22 at 13.48.09.png>)
 
 ## Importing network diagrams into Aleph from Aleph Data Desktop
 
@@ -50,11 +50,11 @@ There might be occasions where is useful to import a diagram you have been worki
 2. In an Aleph investigation, go to the **"Network diagrams"** tab
 3. Then click the **"Import diagram"** button
 
-![](../.gitbook/assets/screen-shot-2021-02-11-at-13.23.04.png)
+![](<../.gitbook/assets/Screen Shot 2021-02-11 at 13.23.04.png>)
 
 1. **Drag** your diagram file into the window, or click to select it from your computer's file system.
 
-![](../.gitbook/assets/screen-shot-2020-07-22-at-13.39.32.png)
+![](<../.gitbook/assets/Screen Shot 2020-07-22 at 13.39.32.png>)
 
 1.  Modify the title and description as you wish. Then click **"Create"**
 

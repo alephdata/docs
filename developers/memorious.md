@@ -22,7 +22,7 @@ Memorious (named after [Funes the Memorious](https://en.wikipedia.org/wiki/Funes
 
 Memorious has a neat user interface to monitor the status of your crawler fleet at a glance. The interface also lets you start, stop and inspect crawlers with ease.
 
-![](<../.gitbook/assets/memorious-ui (1).png>)
+![](../.gitbook/assets/memorious-ui.png)
 
 ## How it works
 

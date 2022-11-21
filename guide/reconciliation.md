@@ -14,7 +14,7 @@ To use the reconciliation function, first install the free Open Refine tool on y
 
 In the header of that column, select the drop down menu, _Reconcile_, then _Start reconciling..._.
 
-![](../.gitbook/assets/screenshot-2019-08-29-at-17.56.35.png)
+![](<../.gitbook/assets/Screenshot 2019-08-29 at 17.56.35.png>)
 
 The following window allows you to add a new standard reconciliation service. Paste the URL for Aleph and click _Add Service_.
 
@@ -22,11 +22,11 @@ The following window allows you to add a new standard reconciliation service. Pa
 It's recommended to run the reconciliation service against a specific dataset on Aleph, rather than a full site. The reconciliation URL for each dataset is shown on the dataset's overview page.
 {% endhint %}
 
-![The reconciliation service URL for each dataset can be found in the details section of the dataset home page.](../.gitbook/assets/screenshot-2019-08-29-at-17.59.27.png)
+![The reconciliation service URL for each dataset can be found in the details section of the dataset home page.](<../.gitbook/assets/Screenshot 2019-08-29 at 17.59.27.png>)
 
 Then choose _Start reconciling_ to begin the reconciliation process.
 
-![In this reconciliation result, the last row shows a match. Hovering over the match will show its profile page on Aleph.](../.gitbook/assets/screenshot-2019-08-29-at-18.01.06.png)
+![In this reconciliation result, the last row shows a match. Hovering over the match will show its profile page on Aleph.](<../.gitbook/assets/Screenshot 2019-08-29 at 18.01.06.png>)
 
 For further information, consult the following documents:
 

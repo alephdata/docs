@@ -60,7 +60,7 @@ ftm map md_companies.yml
 
 This will yield a line-based JSON stream of every company in Moldova, their directors and principal shareholders.
 
-![Generating Moldovan company data as Follow the Money entities.](../../.gitbook/assets/screenshot-2019-08-29-at-23.24.51.png)
+![Generating Moldovan company data as Follow the Money entities.](<../../.gitbook/assets/Screenshot 2019-08-29 at 23.24.51.png>)
 
 You might note, however, that this actually generates multiple entity fragments for each company (i.e. multiple entities with the same ID). This is due to the way the md\_companies mapping is written: each query section generates a partial company record. In order to mitigate this, you will need to perform entity aggregation:
 
@@ -92,7 +92,7 @@ cat us_ofac.ijson | ftm validate | ftm export-excel -o OFAC.xlsx
 
 Since writing the binary data of an Excel file to standard output is awkward, it is mandatory to include a file name with the `-o` option.
 
-![The US sanctions list, as exported via export-excel.](../../.gitbook/assets/screenshot-2019-09-01-at-20.26.02.png)
+![The US sanctions list, as exported via export-excel.](<../../.gitbook/assets/Screenshot 2019-09-01 at 20.26.02.png>)
 
 {% hint style="warning" %}
 When exporting to Excel format, it's easy to generate a workbook larger than what Microsoft Excel and similar office programs can actually open. Only export small and mid-size datasets.
@@ -132,7 +132,7 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm export-cypher | cypher-shell -u user -p password
 ```
 
-![Each entity type is turned either into a node label, or a relationship type.](../../.gitbook/assets/screenshot-2019-09-01-at-21.45.28.png)
+![Each entity type is turned either into a node label, or a relationship type.](<../../.gitbook/assets/Screenshot 2019-09-01 at 21.45.28.png>)
 
 By default, this will only make explicit edges based on entity to entity relationships. If you want to reify specific property types, use the `-e` option:
 
@@ -184,7 +184,7 @@ curl -o us_ofac.ijson https://storage.googleapis.com/occrp-data-exports/us_ofac/
 cat us_ofac.ijson | ftm validate | ftm export-cypher -e iban -o ofac.gexf
 ```
 
-![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links (i.e. In-Degree).](../../.gitbook/assets/screenshot-2019-09-01-at-22.03.51.png)
+![A small trove of emails visualised as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links (i.e. In-Degree).](<../../.gitbook/assets/Screenshot 2019-09-01 at 22.03.51.png>)
 
 ## Exporting entities to RDF/Linked Data
 

@@ -6,6 +6,17 @@ description: >-
 
 # Changelog
 
+## 3.13.0 (2022-11-21)
+
+* Library upgrades
+* Minor fixes
+* Updated Aleph to use Blueprint 4 (previous version was blueprint3)
+* react-ftm has now been re-integrated with Aleph. The react-ftm library will now be deprecated
+* Fixed the icon colour and alignment in network diagrams
+* Fixed issue with scroll position resetting
+* Fix investigation sidebar width
+* Handle off-by-one bug in table viewer
+
 ## 3.12.7 (2022-10-11)
 
 * Library upgrades
