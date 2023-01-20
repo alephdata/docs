@@ -26,6 +26,10 @@ Each entity type contains a fixed set of possible properties to describe relevan
 
 This structured vocabulary allows entities to be more easily searched, filtered, and cross-referenced with other data sources to find relevant co-occurrences and further enrich your investigation.
 
+## Mentions
+
+When you upload unstructured documents (for example, PDF documents) to Aleph, Aleph tries to extract names, locations, IBAN account numbers, and more from the document contents. Mentions are different from entities in that they're stored as text and do not contain structured data. You can search Aleph for other datasets and documents with matching mentions. For example, if an uploaded document mentions an IBAN, Aleph allows you to search for other datasets and documents that mention the same IBAN.
+
 ## Datasets & Investigations
 
 In Aleph, **datasets** and **investigations** serve as the primary containers for organizing and managing collections of documents and entities. Any document or entity in Aleph must be a part of either a dataset or an investigation.
