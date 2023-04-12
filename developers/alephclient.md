@@ -38,6 +38,12 @@ The `crawldir` command crawls through a given directory recursively and uploads 
 alephclient crawldir --foreign-id wikileaks-cable /Users/sunu/data/cable
 ```
 
+Optionally pass the `--nojunk` flag to exclude files and directories commonly created by operating systems, such as `thumbs.db` or `desktop.ini`, that you might not want to upload to Aleph:
+
+```bash
+alephclient crawldir --nojunk --foreign-id wikileaks-cable /Users/sunu/data/cable
+```
+
 When Aleph imports data, it performs optical character recognition \(OCR\) on images contained in the material. This works better when Aleph already has an idea of the language the documents might use. This can be specified with the `--language` option, which expects a 3-letter ISO 639 language code. It can be specified multiple times, for when the directory contains files in more than one language.
 
 ```bash
